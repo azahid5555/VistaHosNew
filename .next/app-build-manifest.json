@@ -1,0 +1,40 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/events/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/events/page.css",
+      "static/chunks/app/events/page.js"
+    ],
+    "/events/wedding-event/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/events/wedding-event/page.css",
+      "static/chunks/app/events/wedding-event/page.js"
+    ],
+    "/events/wedding-event/wedding-photography/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/events/wedding-event/wedding-photography/page.css",
+      "static/chunks/app/events/wedding-event/wedding-photography/page.js"
+    ],
+    "/events/corporate-events/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/events/corporate-events/page.css",
+      "static/chunks/app/events/corporate-events/page.js"
+    ]
+  }
+}
