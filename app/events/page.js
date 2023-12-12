@@ -74,12 +74,17 @@ export default function Events() {
     <PageWrapper>
       <main className="Event_main">
         <MainVideo video="/assets/ReservationVideo.MP4" />
-        <SubHeroSection
-          head1="No matter your"
-          head2="thing, we’re here for"
-          head3="you."
-          para="We believe that every occasion is deserving of a personalized touch. Each of our unique spaces is flexible to suit the range of need for any event or gathering."
-        />
+
+        <section className="Event__feature-section position-relative">
+          <div className=" container-fluid vistaCon py-0">
+            <SubHeroSection
+              head1="No matter your"
+              head2="thing, we’re here for"
+              head3="you."
+              para="We believe that every occasion is deserving of a personalized touch. Each of our unique spaces is flexible to suit the range of need for any event or gathering."
+            />
+          </div>
+        </section>
         <section className="Event__feature-section position-relative">
           <div className=" container-fluid vistaCon py-0">
             <FeaturesLists featureList={featureList} />

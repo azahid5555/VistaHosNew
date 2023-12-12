@@ -1,4 +1,4 @@
-// File: E:\Projects\Vista-Hospitality\app\page.js
+// File: E:\Projects\VistaHosNew\app\page.js
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

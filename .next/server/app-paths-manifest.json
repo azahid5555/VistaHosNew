@@ -1,7 +1,6 @@
 {
   "/page": "app/page.js",
-  "/events/page": "app/events/page.js",
-  "/events/wedding-event/page": "app/events/wedding-event/page.js",
-  "/events/wedding-event/wedding-photography/page": "app/events/wedding-event/wedding-photography/page.js",
-  "/events/corporate-events/page": "app/events/corporate-events/page.js"
+  "/events/corporate-events/annual-dinner/page": "app/events/corporate-events/annual-dinner/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/events/page": "app/events/page.js"
 }
