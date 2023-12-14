@@ -24,6 +24,9 @@ import img5 from "@/public/assets/imgs/carousel4.webp";
 import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
 import BottomCTA from "@/components/general/BottomCTA";
 
+import AED2Img1 from "@/public/assets/imgs/carousel2.webp";
+import AED2Img2 from "@/public/assets/imgs/carouselInnerEvent5.webp";
+
 const ImgArray = [
   {
     img: carouselImg,
@@ -132,7 +135,14 @@ export default function WeddingPhotography() {
           para="Dicta sunt explicabo. Nemo enim fugit ipsam aut voluptatem quia voluptas sit aspernatur aut odit."
         />
         <CarouselInnerEvent ImgArray={ImgArray} />
-        <AboutEventDetailTwo />
+        <AboutEventDetailTwo
+          subtitle="THE BEST OF THE BEST"
+          title1text1="Enchanting Gala Evening"
+          title1text2="Experience"
+          para="Indulge in an evening of unparalleled elegance and sophistication at our annual dinner. Immerse yourself in a world of exquisite cuisine, captivating entertainment, and enchanting moments that will linger in your memories."
+          img1={AED2Img1}
+          img2={AED2Img2}
+        />
         <TextMarqueeOneLine text={marqueeTexts} />
         <section className="position-relative whatweofferCom bg-dark60">
           <div className=" container-fluid vistaCon">

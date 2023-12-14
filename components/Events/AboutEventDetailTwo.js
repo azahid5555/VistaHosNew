@@ -1,15 +1,14 @@
 "use client";
 import Image from "next/image";
-import img1 from "@/public/assets/imgs/carousel2.webp";
 import flower from "@/public/assets/icons/flowerIcon.svg";
-import img2 from "@/public/assets/imgs/carouselInnerEvent5.webp";
+
 import HeadingTwo from "../general/HeadingTwo";
 import HeadingFourAnimated from "../general/HeadingFourAnimated";
 
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
 import { useRef } from "react";
-export default function AboutEventDetailTwo() {
+export default function AboutEventDetailTwo(props) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -32,7 +31,7 @@ export default function AboutEventDetailTwo() {
                       <div className="photographer--image position-relative">
                         <Image
                           alt="Vista Hospitality INN"
-                          src={img1}
+                          src={props.img1}
                           className="img-fluid object-fit-cover z-3"
                         />
                         <motion.div
@@ -56,7 +55,7 @@ export default function AboutEventDetailTwo() {
                           <div className="row">
                             <div className="col-12">
                               <div className="sub--title">
-                                <HeadingFourAnimated text="THE BEST OF THE BEST" />
+                                <HeadingFourAnimated text={props.subtitle} />
                               </div>
                             </div>
                           </div>
@@ -64,8 +63,8 @@ export default function AboutEventDetailTwo() {
                             <div className="col-12">
                               <div className="main-title">
                                 <HeadingTwo
-                                  text="Enchanting Gala Evening"
-                                  text2="Experience"
+                                  text={props.title1text1}
+                                  text2={props.title1text2}
                                 />
                               </div>
                             </div>
@@ -73,14 +72,7 @@ export default function AboutEventDetailTwo() {
                           <div className="row">
                             <div className="col-12">
                               <div className="description">
-                                <p className="Vista_para_sm">
-                                  Indulge in an evening of unparalleled elegance
-                                  and sophistication at our annual dinner.
-                                  Immerse yourself in a world of exquisite
-                                  cuisine, captivating entertainment, and
-                                  enchanting moments that will linger in your
-                                  memories.
-                                </p>
+                                <p className="Vista_para_sm">{props.para}</p>
                               </div>
                             </div>
                           </div>
@@ -90,7 +82,7 @@ export default function AboutEventDetailTwo() {
                             <Image
                               alt="Vista Hospitality INN"
                               className=" img-fluid"
-                              src={img2}
+                              src={props.img2}
                             />
                           </div>
                         </div>

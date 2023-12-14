@@ -22,6 +22,12 @@ import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
 import BottomCTA from "@/components/general/BottomCTA";
 
+import AED2Img1 from "@/public/assets/imgs/carousel2.webp";
+import AED2Img2 from "@/public/assets/imgs/carouselInnerEvent5.webp";
+
+import AED3Img1 from "@/public/assets/imgs/homeAbout.webp";
+import AED3Img2 from "@/public/assets/imgs/blogDemo3.webp";
+
 const ImgArray = [
   {
     img: carouselImg,
@@ -134,9 +140,31 @@ export default function AnnualDinner() {
             <WhatWeOffer />
           </div>
         </section>
-        <AboutEventDetailTwo />
+        <AboutEventDetailTwo
+          subtitle="THE BEST OF THE BEST"
+          title1text1="Enchanting Gala Evening"
+          title1text2="Experience"
+          para="Indulge in an evening of unparalleled elegance and sophistication at our annual dinner. Immerse yourself in a world of exquisite cuisine, captivating entertainment, and enchanting moments that will linger in your memories."
+          img1={AED2Img1}
+          img2={AED2Img2}
+        />
         <TextMarqueeOneLine text={marqueeTexts} />
-        <AboutEventDetailThree />
+        <section className="photography__wedding-album position-relative bg-dark60">
+          <div className="container-fluid vistaCon">
+            <AboutEventDetailThree
+              subtitle="THE BEST OF THE BEST"
+              title1text1="A Night of Culinary"
+              title1text2="Mastery"
+              para="Savor an extraordinary culinary journey at our annual dinner, where expertly crafted flavors meet impeccable presentation. Experience gastronomic delight in every bite, setting the stage for an unforgettable evening."
+              feature1="Exquisite Menu Selection"
+              feature2="Fine Dining Ambiance"
+              btntitle="Contact Us"
+              btnlink="/"
+              img1={AED3Img1}
+              img2={AED3Img2}
+            />
+          </div>
+        </section>
         <FaqWithSlider
           img1={img1}
           img2={img2}

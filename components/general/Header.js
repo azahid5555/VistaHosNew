@@ -8,12 +8,76 @@ import VistaBtnSmall from "./VistaBtnSmall";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 const navLinks = [
-  { title: "Home", href: "/" },
-  { title: "About Us", href: "/about-us" },
-  { title: "Events", href: "/events" },
-  { title: "Menu", href: "/menus" },
-  { title: "Tour", href: "/tour" },
-  { title: "Contact Us", href: "/contact-us" },
+  { title: "Home", href: "/", class: " " },
+  { title: "About Us", href: "/about-us", class: " " },
+  {
+    title: "Events",
+    href: "/events",
+    class: "submenuCon",
+    submenu: [
+      {
+        title: "Wedding Event",
+        href: "/events/wedding-event",
+        class: "submenuCon",
+        submenu: [
+          {
+            title: "Wedding Photography",
+            href: "/events/wedding-event/wedding-photography",
+          },
+        ],
+      },
+      {
+        title: "Corporate Events",
+        href: "/events/corporate-events",
+        class: "submenuCon",
+        submenu: [
+          {
+            title: "Annual Dinner",
+            href: "/events/corporate-events/annual-dinner",
+          },
+          {
+            title: "Annual Meetings",
+            href: "/events/corporate-events/annual-meetings",
+          },
+          {
+            title: "Exibition",
+            href: "/events/corporate-events/exibition",
+          },
+          {
+            title: "Charity Events",
+            href: "/events/corporate-events/charity-events",
+          },
+          {
+            title: "Corporate Dinner Events",
+            href: "/events/corporate-events/corporate-dinner-events",
+          },
+        ],
+      },
+      {
+        title: "Parties",
+        href: "/events/party-events",
+        class: "submenuCon",
+        submenu: [
+          {
+            title: "Royal Hightea Party",
+            href: "/events/party-events/royal-hightea-party",
+          },
+          {
+            title: "HipHop Party",
+            href: "/events/party-events/hiphop-party",
+          },
+          {
+            title: "Birthday Party",
+            href: "/events/party-events/birthday-party",
+          },
+        ],
+      },
+      { title: "Public Events", href: "/" },
+    ],
+  },
+  { title: "Menu", href: "/menus", class: " " },
+  { title: "Tour", href: "/tour", class: " " },
+  { title: "Contact Us", href: "/contact-us", class: " " },
 ];
 
 export default function Header() {
@@ -92,6 +156,12 @@ export default function Header() {
     },
   };
 
+  const [isHovered, setIsHovered] = useState(null);
+  const handleHover = (hovered, index) => {
+    if (navLinks[index].class === "submenuCon") {
+      setIsHovered(hovered ? index : null);
+    }
+  };
   return (
     <header className={color ? "nav_borderBtm sticky-top" : " sticky-top "}>
       <nav className="navbar navbar-expand-lg">
@@ -108,7 +178,14 @@ export default function Header() {
             <ul className="navbar-nav me-3">
               {navLinks.map((link, i) => {
                 return (
-                  <li className="nav-item position-relative px-2" key={i}>
+                  <li
+                    className={`nav-item position-relative px-2 ${link.class} ${
+                      isHovered === i ? "overlay" : ""
+                    }`}
+                    key={i}
+                    onMouseEnter={() => handleHover(true, i)}
+                    onMouseLeave={() => handleHover(false, i)}
+                  >
                     <Link
                       href={link.href}
                       className="text-decoration-none nav-link pe-auto  position-relative"
@@ -121,6 +198,37 @@ export default function Header() {
                       )}
                       <AnimatedLink title={link.title} className="" />
                     </Link>
+                    {link.submenu && (
+                      <ul className="submenu position-absolute">
+                        {link.submenu.map((sublink, j) => (
+                          <li
+                            key={j}
+                            className={`position-relative ${sublink.class}`}
+                          >
+                            <Link
+                              href={sublink.href}
+                              className="text-decoration-none nav-link text-white font-link navlinkTxt"
+                            >
+                              <span>{sublink.title}</span>
+                            </Link>
+                            {sublink.submenu && (
+                              <ul className="Innersubmenu position-absolute">
+                                {sublink.submenu.map((nestedSublink, k) => (
+                                  <li key={k}>
+                                    <Link
+                                      href={nestedSublink.href}
+                                      className="text-decoration-none nav-link text-white font-link navlinkTxt"
+                                    >
+                                      <span>{nestedSublink.title}</span>
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 );
               })}

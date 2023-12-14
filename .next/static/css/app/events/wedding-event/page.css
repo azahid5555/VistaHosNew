@@ -1776,6 +1776,92 @@ Wedding Event Pages Styling
   border-radius: 7px;
 }
 
+/* !charity detail section css */
+.cv-detail-img img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 140px;
+  border-bottom-left-radius: 25px;
+}
+.line__wrapper {
+  width: 135px;
+}
+.small--line {
+  border: 1.5px solid var(--secondary-color);
+}
+.vista--subtitle p {
+  letter-spacing: 5px;
+}
+.cv-detail-img--right img {
+  height: 550px;
+  width: 100%;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 20px;
+}
+
+/* !party page css */
+.sun {
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(13px);
+  background-color: rgba(217, 217, 217, 0.1);
+  backdrop-filter: blur(13px);
+  width: 168px;
+  height: 168px;
+  /* left: calc(50% + 216px); */
+  left: calc(0px - 82px);
+  bottom: calc(50% - 82px);
+  z-index: 99;
+}
+
+.text {
+  font-weight: 600;
+  letter-spacing: 8px;
+  font-size: 17px;
+}
+@keyframes rotate-circle {
+  to {
+    transform: rotate(1turn);
+  }
+}
+#rotatingText {
+  animation: rotate-circle 13s linear infinite;
+}
+/* !royal high-tea party page css */
+
+.line {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary-color),
+    transparent
+  );
+  height: 2px;
+  width: 100%;
+}
+
+/* !hiphop party page css */
+.party--details--sec .middle--image {
+  top: calc(50% - 190px);
+  left: 50%;
+  width: 300px;
+  height: 410px;
+}
+.party--details--sec .main-image {
+  width: 100% !important;
+  height: 560px !important;
+}
+.image__feature--text {
+  top: calc(50% - 25px);
+  left: calc(50% - 43px);
+}
+
+.Partyoverview__section .dotsImg {
+  left: 50px;
+  top: 200px;
+  z-index: -1;
+}
 /* Responsoive STyles */
 
 @media (min-width: 768px) {

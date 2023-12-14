@@ -1,6 +1,8 @@
 {
-  "/page": "app/page.js",
-  "/events/corporate-events/annual-dinner/page": "app/events/corporate-events/annual-dinner/page.js",
   "/about-us/page": "app/about-us/page.js",
-  "/events/page": "app/events/page.js"
+  "/events/wedding-event/wedding-photography/page": "app/events/wedding-event/wedding-photography/page.js",
+  "/events/party-events/hiphop-party/page": "app/events/party-events/hiphop-party/page.js",
+  "/events/corporate-events/charity-events/page": "app/events/corporate-events/charity-events/page.js",
+  "/events/party-events/page": "app/events/party-events/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
