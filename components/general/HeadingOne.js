@@ -47,24 +47,25 @@ export default function HeadingOne(props) {
         transition={{ staggerChildren: 0.1 }}
         aria-hidden
       >
-        {props.text.split(" ").map((word, key) => (
-          <motion.span
-            key={key}
-            className=" d-inline-block"
-            variants={mainAnimation}
-          >
-            {word.split("").map((char, i) => (
-              <motion.span
-                className="d-inline-block"
-                variants={mainAnimation}
-                key={i}
-              >
-                {char}
-              </motion.span>
-            ))}
-            <span className=" d-inline-block">&nbsp;</span>
-          </motion.span>
-        ))}
+        {props.text &&
+          props.text.split(" ").map((word, key) => (
+            <motion.span
+              key={key}
+              className=" d-inline-block"
+              variants={mainAnimation}
+            >
+              {word.split("").map((char, i) => (
+                <motion.span
+                  className="d-inline-block"
+                  variants={mainAnimation}
+                  key={i}
+                >
+                  {char}
+                </motion.span>
+              ))}
+              <span className=" d-inline-block">&nbsp;</span>
+            </motion.span>
+          ))}
         {props.text2 &&
           props.text2.split(" ").map((word, key) => (
             <motion.span

@@ -90,7 +90,11 @@ export default function Events() {
             <FeaturesLists featureList={featureList} />
           </div>
         </section>
-        <HomeAboutSec text="Welcome to Vista Hospitality, where we redefine hospitality with elegance and innovation. From the enchanting Vista Marquess to the delightful Vista Luxury Sweets, each moment is crafted with passion. Join us in creating unforgettable memories at Vista, where your journey is our priority." />
+        <section className="VistaSec_topBorder_grade position-relative bg-dark60 homeAboutSec">
+          <div className="container-fluid vistaCon position-relative z-2">
+            <HomeAboutSec text="Welcome to Vista Hospitality, where we redefine hospitality with elegance and innovation. From the enchanting Vista Marquess to the delightful Vista Luxury Sweets, each moment is crafted with passion. Join us in creating unforgettable memories at Vista, where your journey is our priority." />
+          </div>
+        </section>
         <FaqWithSlider
           img1={img1}
           img2={img2}

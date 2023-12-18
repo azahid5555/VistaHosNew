@@ -288,7 +288,7 @@ BUTTON STYLING
   color: var(--white-color);
 }
 
-.Vista_Btn_container.vistabtnSmall a {
+.Vista_Btn_container.vistabtnSmall .Vista_btn {
   width: 12rem;
   height: 40px;
   letter-spacing: 1px;

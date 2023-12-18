@@ -12,29 +12,23 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/events/corporate-events/exibition/page": [
+    "/tour/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/events/corporate-events/exibition/page.css",
-      "static/chunks/app/events/corporate-events/exibition/page.js"
+      "static/css/app/tour/page.css",
+      "static/chunks/app/tour/page.js"
     ],
-    "/events/corporate-events/charity-events/page": [
+    "/tour/la-vista-cafe/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/events/corporate-events/charity-events/page.css",
-      "static/chunks/app/events/corporate-events/charity-events/page.js"
+      "static/css/app/tour/la-vista-cafe/page.css",
+      "static/chunks/app/tour/la-vista-cafe/page.js"
     ],
-    "/events/corporate-events/corporate-dinner-events/page": [
+    "/tour/vista-ava-lawn/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/events/corporate-events/corporate-dinner-events/page.css",
-      "static/chunks/app/events/corporate-events/corporate-dinner-events/page.js"
-    ],
-    "/events/party-events/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/events/party-events/page.css",
-      "static/chunks/app/events/party-events/page.js"
+      "static/css/app/tour/vista-ava-lawn/page.css",
+      "static/chunks/app/tour/vista-ava-lawn/page.js"
     ],
     "/about-us/page": [
       "static/chunks/webpack.js",
@@ -42,47 +36,47 @@
       "static/css/app/about-us/page.css",
       "static/chunks/app/about-us/page.js"
     ],
+    "/events/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/events/page.css",
+      "static/chunks/app/events/page.js"
+    ],
+    "/tour/vista-birthday-park/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/tour/vista-birthday-park/page.css",
+      "static/chunks/app/tour/vista-birthday-park/page.js"
+    ],
+    "/tour/vista-engagment-park/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/tour/vista-engagment-park/page.css",
+      "static/chunks/app/tour/vista-engagment-park/page.js"
+    ],
+    "/tour/vista-lawn-pool-side/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/tour/vista-lawn-pool-side/page.css",
+      "static/chunks/app/tour/vista-lawn-pool-side/page.js"
+    ],
+    "/tour/vista-luxury-suits/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/tour/vista-luxury-suits/page.css",
+      "static/chunks/app/tour/vista-luxury-suits/page.js"
+    ],
+    "/tour/vista-marquee/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/tour/vista-marquee/page.css",
+      "static/chunks/app/tour/vista-marquee/page.js"
+    ],
     "/events/wedding-event/wedding-photography/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/events/wedding-event/wedding-photography/page.css",
       "static/chunks/app/events/wedding-event/wedding-photography/page.js"
-    ],
-    "/events/party-events/royal-hightea-party/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/events/party-events/royal-hightea-party/page.css",
-      "static/chunks/app/events/party-events/royal-hightea-party/page.js"
-    ],
-    "/events/party-events/hiphop-party/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/events/party-events/hiphop-party/page.css",
-      "static/chunks/app/events/party-events/hiphop-party/page.js"
-    ],
-    "/events/wedding-event/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/events/wedding-event/page.css",
-      "static/chunks/app/events/wedding-event/page.js"
-    ],
-    "/events/corporate-events/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/events/corporate-events/page.css",
-      "static/chunks/app/events/corporate-events/page.js"
-    ],
-    "/events/corporate-events/annual-dinner/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/events/corporate-events/annual-dinner/page.css",
-      "static/chunks/app/events/corporate-events/annual-dinner/page.js"
-    ],
-    "/events/party-events/birthday-party/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/events/party-events/birthday-party/page.css",
-      "static/chunks/app/events/party-events/birthday-party/page.js"
     ]
   }
 }

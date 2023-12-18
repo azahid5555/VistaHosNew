@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import VistaBtnSmall from "./VistaBtnSmall";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import InquiryModal from "./InquiryModal";
 const navLinks = [
   { title: "Home", href: "/", class: " " },
   { title: "About Us", href: "/about-us", class: " " },
@@ -72,11 +73,77 @@ const navLinks = [
           },
         ],
       },
-      { title: "Public Events", href: "/" },
+      {
+        title: "Public Events",
+        href: "/events/public-events",
+        class: "submenuCon",
+        submenu: [
+          {
+            title: "Musical Concert",
+            href: "/events/public-events/musical-concert",
+          },
+          {
+            title: "Sufi Night",
+            href: "/events/public-events/sufi-night",
+          },
+          {
+            title: "Festivals Event",
+            href: "/events/public-events/festivals-event",
+          },
+          {
+            title: "Model Photography",
+            href: "/events/public-events/model-photography",
+          },
+        ],
+      },
     ],
   },
-  { title: "Menu", href: "/menus", class: " " },
-  { title: "Tour", href: "/tour", class: " " },
+  {
+    title: "Menu",
+    href: "/menus",
+    class: "submenuCon",
+    submenu: [
+      {
+        title: "Classical Menu",
+        href: "/menus/classical-menu",
+      },
+    ],
+  },
+  {
+    title: "Tour",
+    href: "/tour",
+    class: "submenuCon",
+    submenu: [
+      {
+        title: "La Vista Cafe",
+        href: "/tour/la-vista-cafe",
+      },
+      {
+        title: "Vista Ava Lawn",
+        href: "/tour/vista-ava-lawn",
+      },
+      {
+        title: "Vista Birthday Park",
+        href: "/tour/vista-birthday-park",
+      },
+      {
+        title: "Vista Engagment Park",
+        href: "/tour/vista-engagment-park",
+      },
+      {
+        title: "Vista Lawn Pool Side",
+        href: "/tour/vista-lawn-pool-side",
+      },
+      {
+        title: "Vista Luxury Suits",
+        href: "/tour/vista-luxury-suits",
+      },
+      {
+        title: "Vista Marquee",
+        href: "/tour/vista-marquee",
+      },
+    ],
+  },
   { title: "Contact Us", href: "/contact-us", class: " " },
 ];
 
@@ -163,129 +230,141 @@ export default function Header() {
     }
   };
   return (
-    <header className={color ? "nav_borderBtm sticky-top" : " sticky-top "}>
-      <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid container-small justify-content-between">
-          <div className="logo_con">
-            <a className="navbar-brand font-heading" href="#">
-              <Image src={logo} alt="logo" className="img-fluid" />
-            </a>
-          </div>
-          <div
-            className="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
-          >
-            <ul className="navbar-nav me-3">
-              {navLinks.map((link, i) => {
-                return (
-                  <li
-                    className={`nav-item position-relative px-2 ${link.class} ${
-                      isHovered === i ? "overlay" : ""
-                    }`}
-                    key={i}
-                    onMouseEnter={() => handleHover(true, i)}
-                    onMouseLeave={() => handleHover(false, i)}
-                  >
-                    <Link
-                      href={link.href}
-                      className="text-decoration-none nav-link pe-auto  position-relative"
-                    >
-                      {link.href === path && (
-                        <motion.span
-                          layoutId="underline"
-                          className="navlink_line position-absolute start-0 w-100"
-                        />
-                      )}
-                      <AnimatedLink title={link.title} className="" />
-                    </Link>
-                    {link.submenu && (
-                      <ul className="submenu position-absolute">
-                        {link.submenu.map((sublink, j) => (
-                          <li
-                            key={j}
-                            className={`position-relative ${sublink.class}`}
-                          >
-                            <Link
-                              href={sublink.href}
-                              className="text-decoration-none nav-link text-white font-link navlinkTxt"
-                            >
-                              <span>{sublink.title}</span>
-                            </Link>
-                            {sublink.submenu && (
-                              <ul className="Innersubmenu position-absolute">
-                                {sublink.submenu.map((nestedSublink, k) => (
-                                  <li key={k}>
-                                    <Link
-                                      href={nestedSublink.href}
-                                      className="text-decoration-none nav-link text-white font-link navlinkTxt"
-                                    >
-                                      <span>{nestedSublink.title}</span>
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <div className="contactbtn_Wrapper">
-            <VistaBtnSmall text="Inquire" link="/contact-us" />
-          </div>
-          <button
-            className="mobMenuCon p-0 bg-transparent border-0 fs-4"
-            onClick={toggleMenu}
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </nav>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            variants={menuVars}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="small_screen_nav_bg"
-          >
-            <div className="small_screen_nav_inner">
-              <div className=" justify-content-between flex-row d-flex">
-                <h4>Vista Group</h4>
-                <p className="" onClick={toggleMenu}>
-                  Close
-                </p>
-              </div>
-              <motion.div
-                variants={containerVars}
-                initial="initial"
-                animate="open"
-                exit="initial"
-                className="h-100 d-flex flex-column justify-content-center text-dark align-items-center gap-3"
-              >
-                {navLinks.map((link, index) => {
+    <>
+      <header className={color ? "nav_borderBtm sticky-top" : " sticky-top "}>
+        <nav className="navbar navbar-expand-lg">
+          <div className="container-fluid container-small justify-content-between">
+            <div className="logo_con">
+              <a className="navbar-brand font-heading" href="#">
+                <Image src={logo} alt="logo" className="img-fluid" />
+              </a>
+            </div>
+            <div
+              className="collapse navbar-collapse justify-content-center"
+              id="navbarNav"
+            >
+              <ul className="navbar-nav me-3">
+                {navLinks.map((link, i) => {
                   return (
-                    <div className=" overflow-hidden" key={index}>
-                      <motion.Link
-                        variants={mobileLinkVars}
+                    <li
+                      className={`nav-item position-relative px-2 ${
+                        link.class
+                      } ${isHovered === i ? "overlay" : ""}`}
+                      key={i}
+                      onMouseEnter={() => handleHover(true, i)}
+                      onMouseLeave={() => handleHover(false, i)}
+                    >
+                      <Link
                         href={link.href}
-                        className="text-decoration-none nav-link pe-auto"
+                        className="text-decoration-none nav-link pe-auto  position-relative"
                       >
+                        {link.href === path && (
+                          <motion.span
+                            layoutId="underline"
+                            className="navlink_line position-absolute start-0 w-100"
+                          />
+                        )}
                         <AnimatedLink title={link.title} className="" />
-                      </motion.Link>
-                    </div>
+                      </Link>
+                      {link.submenu && (
+                        <ul className="submenu position-absolute">
+                          {link.submenu.map((sublink, j) => (
+                            <li
+                              key={j}
+                              className={`position-relative ${sublink.class}`}
+                            >
+                              <Link
+                                href={sublink.href}
+                                className="text-decoration-none nav-link text-white font-link navlinkTxt animated_link m-0 d-inline-block"
+                              >
+                                <span>{sublink.title}</span>
+                              </Link>
+                              {sublink.submenu && (
+                                <ul className="Innersubmenu position-absolute">
+                                  {sublink.submenu.map((nestedSublink, k) => (
+                                    <li key={k}>
+                                      <Link
+                                        href={nestedSublink.href}
+                                        className="text-decoration-none nav-link text-white font-link navlinkTxt animated_link m-0 d-inline-block"
+                                      >
+                                        <span>{nestedSublink.title}</span>
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
                   );
                 })}
-              </motion.div>
+              </ul>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </header>
+            <div className="contactbtn_Wrapper">
+              <div className="Vista_Btn_container btn_dark vistabtnSmall">
+                <button
+                  type="button"
+                  className="Vista_btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  <span className="Vista_btn_text fw-bold">Inquire</span>
+                </button>
+              </div>
+            </div>
+            <button
+              className="mobMenuCon p-0 bg-transparent border-0 fs-4"
+              onClick={toggleMenu}
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+        <AnimatePresence>
+          {open && (
+            <motion.div
+              variants={menuVars}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="small_screen_nav_bg"
+            >
+              <div className="small_screen_nav_inner">
+                <div className=" justify-content-between flex-row d-flex">
+                  <h4>Vista Group</h4>
+                  <p className="" onClick={toggleMenu}>
+                    Close
+                  </p>
+                </div>
+                <motion.div
+                  variants={containerVars}
+                  initial="initial"
+                  animate="open"
+                  exit="initial"
+                  className="h-100 d-flex flex-column justify-content-center text-dark align-items-center gap-3"
+                >
+                  {navLinks.map((link, index) => {
+                    return (
+                      <div className=" overflow-hidden" key={index}>
+                        <motion.Link
+                          variants={mobileLinkVars}
+                          href={link.href}
+                          className="text-decoration-none nav-link pe-auto"
+                        >
+                          <AnimatedLink title={link.title} className="" />
+                        </motion.Link>
+                      </div>
+                    );
+                  })}
+                </motion.div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </header>
+      <InquiryModal />
+    </>
   );
 }

@@ -33,34 +33,32 @@ export default function HomeAboutSec(props) {
   }, []);
 
   return (
-    <section className="VistaSec_topBorder_grade position-relative bg-dark60 homeAboutSec">
-      <div className="container-fluid vistaCon position-relative z-2">
-        <div className="row justify-content-center">
-          <div id="animecolorheadingCon" className="col-10 text-center">
-            <h3
-              ref={h1Ref}
-              className="vista_hos_title3 text-center  font-heading-regular lh-sm chnagecolorHeading"
-            >
-              {words.map((word, index) => (
-                <span key={index}>{word + " "}</span>
-              ))}
-            </h3>
-            <div className="ceo_details">
-              <div className="name">
-                <p className="Vista_para_sm m-0 mt-4">Ch Salahudin</p>
-                <p className="Vista_para_sm font-link fs-6 m-0">
-                  CEO VISTA GROUP
-                </p>
-              </div>
+    <>
+      <div className="row justify-content-center">
+        <div id="animecolorheadingCon" className="col-10 text-center">
+          <h3
+            ref={h1Ref}
+            className="vista_hos_title3 text-center  font-heading-regular lh-sm chnagecolorHeading"
+          >
+            {words.map((word, index) => (
+              <span key={index}>{word + " "}</span>
+            ))}
+          </h3>
+          <div className="ceo_details">
+            <div className="name">
+              <p className="Vista_para_sm m-0 mt-4">Ch Salahudin</p>
+              <p className="Vista_para_sm font-link fs-6 m-0">
+                CEO VISTA GROUP
+              </p>
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-12 text-center mt-4">
-            <VistaBtn text="Make an inquiry" link="/" />
-          </div>
+      </div>
+      <div className="row">
+        <div className="col-12 text-center mt-4">
+          <VistaBtn text="Make an inquiry" link="/" />
         </div>
       </div>
-    </section>
+    </>
   );
 }
