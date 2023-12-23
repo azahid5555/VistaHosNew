@@ -3,6 +3,14 @@ import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
+
+import poolSide1 from "@/public/assets/imgs/vista_hospitality_Inn_Poolside_1.webp";
+import poolSide2 from "@/public/assets/imgs/vista_hospitality_Inn_Poolside_2.webp";
+import poolSide3 from "@/public/assets/imgs/vista_hospitality_Inn_Poolside_3.webp";
+import poolSide4 from "@/public/assets/imgs/vista_hospitality_Inn_Poolside_4.webp";
+import poolSide5 from "@/public/assets/imgs/vista_hospitality_Inn_Tour_Poolside.webp";
+import poolSide6 from "@/public/assets/imgs/vista_hospitality_Inn_Poolside_6.webp";
+
 import img1 from "@/public/assets/imgs/corporate_event.webp";
 import img2 from "@/public/assets/imgs/corporateEventBg.webp";
 import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
@@ -34,22 +42,22 @@ import AboutEventDetailSix from "@/components/Events/AboutEventDetailSix";
 import TourWelcome from "@/components/tourComponent/TourWelcome";
 const ImgArray = [
   {
-    img: carouselImg,
+    img: poolSide1,
   },
   {
-    img: carouselImg1,
+    img: poolSide2,
   },
   {
-    img: carouselImg2,
+    img: poolSide3,
   },
   {
-    img: carouselImg3,
+    img: poolSide4,
   },
   {
-    img: carouselImg4,
+    img: poolSide5,
   },
   {
-    img: carouselImg5,
+    img: poolSide6,
   },
 ];
 const featureList = [
@@ -114,18 +122,18 @@ export default function vistaLawnPoolSide() {
         <HeroInnerPages
           subtitle="VISTA LAWN POOL SIDE"
           title1="SERENITY BY"
-          title2=" WATER "
-          para=""
+          title2="WATER "
+          para="Perfect for guests looking to unwind and enjoy the outdoors in a serene and inviting environment."
         />
         <TourWelcome
-          tourWelcome_1={tourWelcome_1}
-          tourWelcome_2={tourWelcome_2}
-          tourWelcome_3={tourWelcome_3}
-          tourWelcome_4={tourWelcome_4}
+          tourWelcome_1={poolSide1}
+          tourWelcome_2={poolSide2}
+          tourWelcome_3={poolSide3}
+          tourWelcome_4={poolSide4}
           tourWelcome_5={tourWelcome_5}
-          mainTitle="Welcome to Coffee Shop"
+          mainTitle="Welcome to Vista Lawn Pool Side"
           subtitle="The best of best"
-          para="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+          para="Enjoy the soothing ambiance of our poolside area, surrounded by lush greenery and complemented by the refreshing presence of a crystal-clear swimming pool"
         />
 
         <section className="Event__feature-section position-relative">
@@ -145,34 +153,24 @@ export default function vistaLawnPoolSide() {
         </section>
 
         <AboutEventDetailSix
-          subtitle="Dance Grooves"
-          mainTitle="Dynamic Dance Floor"
-          para="Immerse in the pulsating energy of Hip Grooves on our
-                      Dynamic Dance Floor. Elevate your party experience with
-                      beats that make your celebration unforgettable."
-          feature1="Beating"
+          subtitle="POOL SIDE"
+          mainTitle="A Tranquil Oasis for Leisure and Celebration"
+          para="Vista Lawn Pool Side, a picturesque haven within Vista Hospitality Inn that seamlessly blends the beauty of nature with the joy of leisure and celebration. This unique outdoor space is designed to offer a tranquil escape for guests seeking relaxation and a charming setting for a variety of events."
           feature1br="Sync"
           feature2="Rhythmic"
           feature2br="Waves"
-          detailImg1={detailImg1}
-          detailImg2={detailImg2}
+          detailImg1={poolSide5}
+          detailImg2={poolSide6}
           featureImg={featureImg}
         />
         <section className="VistaSec_topBorder_grade position-relative bg-dark60 homeAboutSec">
           <div className="container-fluid vistaCon position-relative z-2">
-            <HomeAboutSec text="Welcome to Vista Hospitality, where we redefine hospitality with elegance and innovation. From the enchanting Vista Marquess to the delightful Vista Luxury Sweets, each moment is crafted with passion. Join us in creating unforgettable memories at Vista, where your journey is our priority." />
+            <HomeAboutSec text="Vista Lawn Pool Side offers versatile event spaces that can be tailored to host a range of events, from intimate gatherings and cocktail parties to poolside celebrations. Ample seating options and customizable layouts ensure flexibility to accommodate your unique event vision" />
           </div>
         </section>
         <CarouselInnerEvent ImgArray={ImgArray} />
 
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

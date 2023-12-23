@@ -1,119 +1,56 @@
+import "@/styles/style.css";
 import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
 import featureImg from "@/public/assets/imgs/feature--1.png";
-import detailImg1 from "@/public/assets/imgs/teamDemo.jpg";
-import detailImg2 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import img1 from "@/public/assets/imgs/corporate_event.webp";
-import img2 from "@/public/assets/imgs/corporateEventBg.webp";
-import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import img4 from "@/public/assets/imgs/charity.webp";
+
+import sweet1 from "@/public/assets/imgs/vista_hospitality_Inn_sweets_1.webp";
+import sweet2 from "@/public/assets/imgs/vista_hospitality_Inn_sweets_2.png";
+import sweet3 from "@/public/assets/imgs/vista_hospitality_Inn_sweets_3.webp";
+import sweet4 from "@/public/assets/imgs/vista_hospitality_Inn_sweets_4.webp";
+import sweet5 from "@/public/assets/imgs/vista_hospitality_Inn_sweets_5.webp";
+import sweet6 from "@/public/assets/imgs/vista_hospitality_Inn_sweets_6.webp";
+import sweet7 from "@/public/assets/imgs/vista_hospitality_Inn_sweets_7.webp";
+
 import featureImg1 from "@/public/assets/imgs/golden__leave.png";
 import featureImg2 from "@/public/assets/imgs/golden__paint.png";
-import tourWelcome_1 from "@/public/assets/imgs/cup-1.jpg";
-import tourWelcome_2 from "@/public/assets/imgs/cup-2.jpg";
-import tourWelcome_3 from "@/public/assets/imgs/cup-3.jpg";
-import tourWelcome_4 from "@/public/assets/imgs/cup-4.jpg";
 import tourWelcome_5 from "@/public/assets/imgs/line-bg.png";
-import img5 from "@/public/assets/imgs/exhibition.webp";
-import "@/styles/style.css";
-import ColorChnagingHeadThreeImage from "@/components/general/ColorChnagingHeadThreeImage";
 import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
 import AboutEventDetailSix from "@/components/Events/AboutEventDetailSix";
 import FeaturesListsTwo from "@/components/tourComponent/FeaturesListsTwo";
-import ServiceFeature from "@/components/Events/ServiceFeature";
-import BirthdayPackage from "@/components/tourComponent/BirthdayPackage";
-import AboutEventDetailFour from "@/components/Events/AboutEventDetailFour";
 import WhatWeOffer from "@/components/Events/WhatWeOffer";
 import TourWelcome from "@/components/tourComponent/TourWelcome";
 const featureList_2 = [
   {
     id: 1,
     img: featureImg1,
-    title: "ELEGANT",
-    desc: "Sophisticated spaces and stunning decor for your occasion.",
+    title: "High-Speed Wi-Fi",
+    desc: "Ensuring you can effortlessly work, browse, or connect with loved ones during your stay.",
   },
   {
     id: 2,
     img: featureImg2,
-    title: "VERSATILE",
-    desc: "Spaces for weddings, conferences, trade shows, and more.",
+    title: "Free Room Service",
+    desc: "Enjoy the convenience of complimentary room service, ensuring a delightful culinary experience within the comfort of your suite.",
   },
   {
     id: 3,
     img: featureImg1,
-    title: "PERSONAL",
-    desc: "Experienced team for personalized service and tailored events.",
+    title: "Luxurious Bath Amenities",
+    desc: "Enhancing your bathing experience and adding a touch of opulence to your stay.",
   },
   {
     id: 4,
     img: featureImg2,
-    title: "VERSATILE",
-    desc: "Spaces for weddings, conferences, trade shows, and more.",
+    title: "Concierge Assistance",
+    desc: "Our dedicated concierge team is at your service, offering personalized assistance and recommendations for local experiences.",
   },
   {
     id: 5,
     img: featureImg1,
-    title: "PERSONAL",
-    desc: "Experienced team for personalized service and tailored events.",
-  },
-];
-
-const packageList_1 = [
-  {
-    id: 1,
-    package_1: "Guided Nature Walk",
-  },
-  {
-    id: 2,
-    package_1: "Picnic Setup",
-  },
-  {
-    id: 3,
-    package_1: "Outdoor Games",
-  },
-];
-const packageList_2 = [
-  {
-    id: 1,
-    package_2: "Rock Climbing",
-  },
-  {
-    id: 2,
-    package_2: "Zip-lining",
-  },
-  {
-    id: 3,
-    package_2: "Catered Outdoor Lunch",
-  },
-];
-const packageList_3 = [
-  {
-    id: 1,
-    package_3: "Lakeside Picnic",
-  },
-  {
-    id: 2,
-    package_3: "Yoga Session",
-  },
-  {
-    id: 3,
-    package_3: "Relaxing Nature Walk",
-  },
-];
-const featurelist = [
-  {
-    id: 1,
-    feature_1: "Select Your Desired Date",
-  },
-  {
-    id: 2,
-    feature_1: "Choose a Birthday Package",
-  },
-  {
-    id: 3,
-    feature_1: "Confirm the Reservation with Secure Online Payment",
+    title: "Complimentary Parking",
+    desc: "Allowing you to travel with ease and ensuring that your arrival and departure are seamless.",
   },
 ];
 const questions = [
@@ -150,62 +87,102 @@ const questions = [
       "Certainly! Explore our Previous Model Shoots and Gallery sections for a glimpse into successful model photoshoots held in our dynamic and versatile marquee.",
   },
 ];
-
+const imgArray = [
+  {
+    img: sweet1,
+  },
+  {
+    img: sweet2,
+  },
+  {
+    img: sweet3,
+  },
+  {
+    img: sweet4,
+  },
+  {
+    img: sweet5,
+  },
+  {
+    img: sweet6,
+  },
+  {
+    img: sweet7,
+  },
+];
+import icon1 from "@/public/assets/icons/weddingDay.svg";
+import icon2 from "@/public/assets/icons/weddingDay2.svg";
+import icon3 from "@/public/assets/icons/weddingDay3.svg";
+const whyChooseUS = [
+  {
+    id: 1,
+    icon: icon1,
+    title: "Personalized Luxury",
+    para: "Experience a level of personalized luxury that goes beyond expectations.",
+  },
+  {
+    id: 2,
+    icon: icon2,
+    title: "Exclusive Access",
+    para: "Enjoy exclusive access to amenities within Vista Hospitality Inn.",
+  },
+  {
+    id: 2,
+    icon: icon3,
+    title: "Panoramic Views",
+    para: "Enjoy sweeping views of the surroundings from expansive windows.",
+  },
+];
 export default function vistaLuxurySuits() {
   return (
     <PageWrapper>
       <main className="vistaBirthdayParty">
         <HeroInnerPages
           subtitle="VISTA LUXURY SUITES"
-          title1="OPULENT STAY"
-          title2="EXPERIENCE"
+          title1="Where Opulence"
+          title2="Meets Comfort"
           para=""
         />
 
         <TourWelcome
-          tourWelcome_1={tourWelcome_1}
-          tourWelcome_2={tourWelcome_2}
-          tourWelcome_3={tourWelcome_3}
-          tourWelcome_4={tourWelcome_4}
+          tourWelcome_1={sweet1}
+          tourWelcome_2={sweet2}
+          tourWelcome_3={sweet3}
+          tourWelcome_4={sweet4}
           tourWelcome_5={tourWelcome_5}
-          mainTitle="Welcome to Coffee Shop"
+          mainTitle="Welcome to Vista Luxury Sweets"
           subtitle="The best of best"
-          para="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+          para="Select suites feature private balconies, inviting you to bask in the beauty of the surroundings in exclusive privacy. Enjoy sweeping views of the surroundings from expansive windows, providing a picturesque backdrop to your stay."
         />
 
         <AboutEventDetailSix
-          subtitle="Dance Grooves"
-          mainTitle="Dynamic Dance Floor"
-          para="Immerse in the pulsating energy of Hip Grooves on our
-                      Dynamic Dance Floor. Elevate your party experience with
-                      beats that make your celebration unforgettable."
-          feature1="Beating"
-          feature1br="Sync"
+          subtitle="Opulent Living Spaces"
+          mainTitle="Unparalleled Comfort"
+          para="Indulge in the epitome of luxury at Vista Luxury Suites, an exclusive accommodation within Vista Hospitality Inn. Designed for discerning travelers seeking a blend of opulence and comfort, our suites provide a haven of tranquility and sophistication."
+          feature1="Beautiful"
+          feature1br="View"
           feature2="Rhythmic"
           feature2br="Waves"
-          detailImg1={detailImg1}
-          detailImg2={detailImg2}
+          detailImg1={sweet5}
+          detailImg2={sweet6}
           featureImg={featureImg}
         />
 
         <section className="Event__feature-section position-relative bg-dark60 VistaSec_topBorder_grade">
-          <div className=" container-fluid vistaCon py-0">
+          <div className=" container-fluid vistaCon  mb-0">
             <FeaturesListsTwo featureList_2={featureList_2} title="Amenities" />
           </div>
         </section>
         <section className="position-relative whatweofferCom bg-dark60">
-          <div className=" container-fluid vistaCon">
-            <WhatWeOffer />
+          <div className=" container-fluid vistaCon mt-0">
+            <WhatWeOffer
+              heading="Capture the precious moments of your Annual Dinner"
+              subHeading="WHY US"
+              cardsArray={whyChooseUS}
+            />
           </div>
         </section>
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={imgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

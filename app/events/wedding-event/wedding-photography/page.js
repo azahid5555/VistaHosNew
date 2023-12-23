@@ -3,12 +3,21 @@ import { PageWrapper } from "@/components/general/PageWrapper";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import CarouselInnerEvent from "@/components/Events/CarouselInnerEvent";
 
-import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
-import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
-import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
-import carouselImg3 from "@/public/assets/imgs/carouselInnerEvent3.webp";
-import carouselImg4 from "@/public/assets/imgs/carouselInnerEvent4.webp";
-import carouselImg5 from "@/public/assets/imgs/carouselInnerEvent5.webp";
+import weddingImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
+import weddingImg1 from "@/public/assets/imgs/vista_hospitality_Inn_Wedding_1.webp";
+import weddingImg2 from "@/public/assets/imgs/vista_hospitality_Inn_Wedding_2.webp";
+import weddingImg3 from "@/public/assets/imgs/vista_hospitality_Inn_Wedding_3.webp";
+import weddingImg4 from "@/public/assets/imgs/vista_hospitality_Inn_Wedding_4.webp";
+import weddingImg5 from "@/public/assets/imgs/vista_hospitality_Inn_Wedding_5.webp";
+import weddingImg6 from "@/public/assets/imgs/vista_hospitality_Inn_Wedding_6.webp";
+import weddingImg7 from "@/public/assets/imgs/vista_hospitality_Inn_Wedding_7.webp";
+import weddingImg8 from "@/public/assets/imgs/vista_hospitality_Inn_Wedding_8.webp";
+import weddingImg9 from "@/public/assets/imgs/vista_hospitality_Inn_Wedding_9.webp";
+import weddingImg10 from "@/public/assets/imgs/carousel1.webp";
+import weddingImg11 from "@/public/assets/imgs/carousel2.webp";
+import weddingImg12 from "@/public/assets/imgs/carousel3.webp";
+import weddingImg13 from "@/public/assets/imgs/carousel4.webp";
+
 import AboutEventDetailTwo from "@/components/Events/AboutEventDetailTwo";
 import TextMarqueeOneLine from "@/components/Events/TextMarqueeOneLine";
 import WhatWeDo from "@/components/aboutPage/WhatWeDo";
@@ -27,58 +36,95 @@ import BottomCTA from "@/components/general/BottomCTA";
 import AED2Img1 from "@/public/assets/imgs/carousel2.webp";
 import AED2Img2 from "@/public/assets/imgs/carouselInnerEvent5.webp";
 
+import icon1 from "@/public/assets/icons/weddingDay.svg";
+import icon2 from "@/public/assets/icons/weddingDay2.svg";
+import icon3 from "@/public/assets/icons/weddingDay3.svg";
+
 const ImgArray = [
   {
-    img: carouselImg,
+    img: weddingImg9,
   },
   {
-    img: carouselImg1,
+    img: weddingImg,
   },
   {
-    img: carouselImg2,
+    img: weddingImg1,
   },
   {
-    img: carouselImg3,
+    img: weddingImg2,
   },
   {
-    img: carouselImg4,
+    img: weddingImg3,
   },
   {
-    img: carouselImg5,
+    img: weddingImg4,
+  },
+];
+const ImgArrayTwo = [
+  {
+    img: weddingImg5,
+  },
+  {
+    img: weddingImg6,
+  },
+  {
+    img: weddingImg7,
+  },
+  {
+    img: weddingImg8,
+  },
+  {
+    img: weddingImg9,
+  },
+  {
+    img: weddingImg10,
+  },
+  {
+    img: weddingImg11,
   },
 ];
 const questions = [
   {
     id: 1,
-    question: "What types of events are possible? ",
+    question:
+      "How do I inquire about booking Vista Hospitality's wedding photography services?",
     answer:
-      "The Vista Hospitality INN is a versatile event venue that can accommodate a wide range of events, including weddings, corporate meetings, banquets, private parties, fundraisers, conferences, trade shows, product launches, galas, awards ceremonies, concerts, plays, dance recitals, bar mitzvahs, bat mitzvahs, sweet 16 parties, graduation parties, retirement parties, anniversaries, birthday parties, and more.",
+      "To inquire about our wedding photography services, please fill out the contact form on our website or contact our dedicated photography team via email or phone for detailed information and availability.",
   },
   {
     id: 2,
     question:
-      "Are there specific features for model photoshoots in   your marquee? ",
+      "What styles of photography do Vista Hospitality's wedding photographers specialize in?",
     answer:
-      "Certainly! Explore our Previous Model Shoots and Gallery sections for a glimpse into successful model photoshoots held in our dynamic and versatile marquee.",
+      "Our talented photographers specialize in various styles, including traditional, photojournalistic, candid, and artistic approaches, ensuring a diverse range of captured moments tailored to your preferences.",
   },
   {
     id: 3,
-    question: "What are the catering options available? ",
+    question:
+      "Can I customize my wedding photography package to suit my specific needs?",
     answer:
-      "The Vista Hospitality INN offers a variety of menus prepared by the full-service on-site kitchen and a team of experienced chefs. If you prefer outside catering vendors, please discuss with our sales team.",
+      "Absolutely! We offer customizable photography packages to cater to your unique needs, allowing you to select services, coverage hours, albums, prints, and additional add-ons according to your preferences.",
   },
   {
     id: 4,
-    question: "What are the parking options available? ",
+    question:
+      "Are engagement or pre-wedding photoshoots included in Vista Hospitality's wedding photography services?",
     answer:
-      "The Vista Hospitality has a large parking lot that can accommodate up to 500 cars. The venue also has a valet parking service available for an additional fee.",
+      "Yes, engagement or pre-wedding photoshoots can be included in your photography package. Our photographers work with you to schedule and capture memorable moments before your big day.",
   },
   {
     id: 5,
     question:
-      "Can I see examples of past model photoshoots in your   marquee? ",
+      "What is the typical turnaround time for receiving edited wedding photos from Vista Hospitality?",
     answer:
-      "Certainly! Explore our Previous Model Shoots and Gallery sections for a glimpse into successful model photoshoots held in our dynamic and versatile marquee.",
+      "Our turnaround time for edited wedding photos generally ranges from [Insert Timeframe] after the event. We prioritize quality editing to ensure your cherished moments are beautifully preserved.",
+  },
+  {
+    id: 6,
+    question:
+      "Do Vista Hospitality's wedding photography services include destination weddings or travel arrangements?",
+    answer:
+      "Absolutely! Our photography services extend to destination weddings. Contact our photography team to discuss travel arrangements and tailored services for your destination wedding needs.",
   },
 ];
 const marqueeTexts = [
@@ -124,6 +170,27 @@ const marqueeTexts = [
   "Inspiration",
 ];
 
+const whyChooseUS = [
+  {
+    id: 1,
+    icon: icon1,
+    title: "Wedding Day Coverage",
+    para: "Immortalize every heartfelt moment on your big day with our comprehensive wedding photography coverage.",
+  },
+  {
+    id: 2,
+    icon: icon2,
+    title: "Professional Photography",
+    para: "Experience excellence in capturing emotions and memories with our skilled and seasoned photographers.",
+  },
+  {
+    id: 2,
+    icon: icon3,
+    title: "Pre-Wedding Photoshoot",
+    para: "Begin your journey together with a captivating pre-wedding shoot, creating beautiful memories before the big day.",
+  },
+];
+
 export default function WeddingPhotography() {
   return (
     <PageWrapper>
@@ -132,21 +199,25 @@ export default function WeddingPhotography() {
           subtitle="WEDDINGS PHOTOGRAPHY"
           title1="Images that are"
           title2="unique"
-          para="Dicta sunt explicabo. Nemo enim fugit ipsam aut voluptatem quia voluptas sit aspernatur aut odit."
+          para="Experience a collection of exclusive and captivating visuals that stand out. Our unique images capture moments beyond ordinary, offering a distinctive perspective that evokes fascination and inspiration."
         />
         <CarouselInnerEvent ImgArray={ImgArray} />
         <AboutEventDetailTwo
-          subtitle="THE BEST OF THE BEST"
-          title1text1="Enchanting Gala Evening"
-          title1text2="Experience"
-          para="Indulge in an evening of unparalleled elegance and sophistication at our annual dinner. Immerse yourself in a world of exquisite cuisine, captivating entertainment, and enchanting moments that will linger in your memories."
+          subtitle="THE PIMMACLE OF EXCELLENCE"
+          title1text1="Captivating Gala"
+          title1text2="Evening Experience"
+          para="Immerse yourself in a captivating gala evening experience unlike any other. From the glamorous ambiance to the enchanting entertainment, our gala events promise an unforgettable evening filled with sophistication and excitement. Indulge in exquisite cuisine, mingle amidst elegant surroundings, and revel in the delightful moments that make our galas truly extraordinary. Join us for an evening of glamour and sophistication, where every detail is meticulously crafted to ensure a memorable experience for all attendees."
           img1={AED2Img1}
           img2={AED2Img2}
         />
         <TextMarqueeOneLine text={marqueeTexts} />
         <section className="position-relative whatweofferCom bg-dark60">
           <div className=" container-fluid vistaCon">
-            <WhatWeOffer />
+            <WhatWeOffer
+              heading="Capture the precious moments of your couple"
+              subHeading="WHAT WE OFFER"
+              cardsArray={whyChooseUS}
+            />
           </div>
         </section>
         <section className="Event__subHero-section position-relative">
@@ -159,14 +230,7 @@ export default function WeddingPhotography() {
             />
           </div>
         </section>
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArrayTwo} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

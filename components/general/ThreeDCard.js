@@ -44,41 +44,40 @@ export default function ThreeDCard(props) {
   };
 
   return (
-    <Link href="/">
-      <motion.div
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
+    <motion.div
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        rotateY,
+        rotateX,
+        transformStyle: "preserve-3d",
+      }}
+      className=" position-relative threeDCon"
+    >
+      <div
         style={{
-          rotateY,
-          rotateX,
+          transform: "translateZ(75px)",
           transformStyle: "preserve-3d",
         }}
-        className=" position-relative threeDCon"
+        className=" position-absolute inset-4 d-flex gap-3 justify-content-center align-items-center flex-column rounded shadow threeDCardInner"
       >
-        <div
-          style={{
-            transform: "translateZ(75px)",
-            transformStyle: "preserve-3d",
-          }}
-          className=" position-absolute inset-4 d-flex gap-3 justify-content-center align-items-center flex-column rounded shadow threeDCardInner"
-        >
-          {/* <icon
+        {/* <icon
           style={{
             transform: "translateZ(75px)",
           }}
           className="mx-auto text-4xl fs-1"
         /> */}
-          <div className=" threeDCard_img text-center">
-            <Image
-              className=" img-fluid"
-              style={{
-                transform: "translateZ(75px)",
-              }}
-              alt="icons"
-              src={props.icon}
-            />
-          </div>
-          {/* <p
+        <div className=" threeDCard_img text-center">
+          <Image
+            className=" img-fluid"
+            style={{
+              transform: "translateZ(75px)",
+            }}
+            alt="icons"
+            src={props.icon}
+          />
+        </div>
+        {/* <p
           style={{
             transform: "translateZ(50px)",
           }}
@@ -86,22 +85,21 @@ export default function ThreeDCard(props) {
         >
           HOVER ME
         </p> */}
-          <HeadingThree
-            text={props.title}
-            style={{
-              transform: "translateZ(50px)",
-            }}
-          />
-          <p
-            style={{
-              transform: "translateZ(50px)",
-            }}
-            className=" Vista_para_sm text-center"
-          >
-            {props.para}
-          </p>
-        </div>
-      </motion.div>
-    </Link>
+        <HeadingThree
+          text={props.title}
+          style={{
+            transform: "translateZ(50px)",
+          }}
+        />
+        <p
+          style={{
+            transform: "translateZ(50px)",
+          }}
+          className=" Vista_para_sm text-center"
+        >
+          {props.para}
+        </p>
+      </div>
+    </motion.div>
   );
 }

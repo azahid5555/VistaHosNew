@@ -1,82 +1,16 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
-    ],
-    "/tour/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/tour/page.css",
-      "static/chunks/app/tour/page.js"
-    ],
-    "/tour/la-vista-cafe/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/tour/la-vista-cafe/page.css",
-      "static/chunks/app/tour/la-vista-cafe/page.js"
-    ],
-    "/tour/vista-ava-lawn/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/tour/vista-ava-lawn/page.css",
-      "static/chunks/app/tour/vista-ava-lawn/page.js"
-    ],
     "/about-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/about-us/page.css",
       "static/chunks/app/about-us/page.js"
     ],
-    "/events/page": [
+    "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/events/page.css",
-      "static/chunks/app/events/page.js"
-    ],
-    "/tour/vista-birthday-park/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/tour/vista-birthday-park/page.css",
-      "static/chunks/app/tour/vista-birthday-park/page.js"
-    ],
-    "/tour/vista-engagment-park/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/tour/vista-engagment-park/page.css",
-      "static/chunks/app/tour/vista-engagment-park/page.js"
-    ],
-    "/tour/vista-lawn-pool-side/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/tour/vista-lawn-pool-side/page.css",
-      "static/chunks/app/tour/vista-lawn-pool-side/page.js"
-    ],
-    "/tour/vista-luxury-suits/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/tour/vista-luxury-suits/page.css",
-      "static/chunks/app/tour/vista-luxury-suits/page.js"
-    ],
-    "/tour/vista-marquee/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/tour/vista-marquee/page.css",
-      "static/chunks/app/tour/vista-marquee/page.js"
-    ],
-    "/events/wedding-event/wedding-photography/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/events/wedding-event/wedding-photography/page.css",
-      "static/chunks/app/events/wedding-event/wedding-photography/page.js"
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ]
   }
 }

@@ -1,49 +1,35 @@
+import "@/styles/style.css";
 import AboutEventDetailThree from "@/components/Events/AboutEventDetailThree";
 import CarouselInnerEvent from "@/components/Events/CarouselInnerEvent";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import { PageWrapper } from "@/components/general/PageWrapper";
-import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
-import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
-import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
-import carouselImg3 from "@/public/assets/imgs/carouselInnerEvent3.webp";
-import carouselImg4 from "@/public/assets/imgs/carouselInnerEvent4.webp";
-import carouselImg5 from "@/public/assets/imgs/carouselInnerEvent5.webp";
-import img1 from "@/public/assets/imgs/corporate_event.webp";
-import img2 from "@/public/assets/imgs/corporateEventBg.webp";
-import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import img4 from "@/public/assets/imgs/charity.webp";
-import img5 from "@/public/assets/imgs/exhibition.webp";
-import "@/styles/style.css";
+
+import ExeImg1 from "@/public/assets/imgs/vista_hospitality_Inn_Exe_1.webp";
+import ExeImg2 from "@/public/assets/imgs/vista_hospitality_Inn_Exe_2.webp";
+import ExeImg3 from "@/public/assets/imgs/vista_hospitality_Inn_Exe_3.webp";
+import ExeImg4 from "@/public/assets/imgs/vista_hospitality_Inn_Exe_4.webp";
+import ExeImg5 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_8.webp";
+
 import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import BottomCTA from "@/components/general/BottomCTA";
 import AboutEventDetailTwo from "@/components/Events/AboutEventDetailTwo";
-import HomeAboutSecImage from "@/components/general/ColorChnagingHeadThreeImage";
 import ColorChnagingHeadThreeImage from "@/components/general/ColorChnagingHeadThreeImage";
-
-import AED2Img1 from "@/public/assets/imgs/carousel2.webp";
-import AED2Img2 from "@/public/assets/imgs/carouselInnerEvent5.webp";
-
-import AED3Img1 from "@/public/assets/imgs/homeAbout.webp";
-import AED3Img2 from "@/public/assets/imgs/blogDemo3.webp";
 
 const ImgArray = [
   {
-    img: carouselImg,
+    img: ExeImg5,
   },
   {
-    img: carouselImg1,
+    img: ExeImg1,
   },
   {
-    img: carouselImg2,
+    img: ExeImg2,
   },
   {
-    img: carouselImg3,
+    img: ExeImg3,
   },
   {
-    img: carouselImg4,
-  },
-  {
-    img: carouselImg5,
+    img: ExeImg4,
   },
 ];
 const questions = [
@@ -80,57 +66,66 @@ const questions = [
       "Certainly! Explore our Previous Model Shoots and Gallery sections for a glimpse into successful model photoshoots held in our dynamic and versatile marquee.",
   },
 ];
-
+const ImgArrayTwo = [
+  {
+    img: ExeImg5,
+  },
+  {
+    img: ExeImg1,
+  },
+  {
+    img: ExeImg2,
+  },
+  {
+    img: ExeImg3,
+  },
+  {
+    img: ExeImg4,
+  },
+];
 export default function exhibition() {
   return (
     <PageWrapper>
       <main className="exibition">
         <HeroInnerPages
           subtitle="EXIBITION"
-          title1="VISTA INNOVATION"
-          title2="SHOWCASE"
+          title1="Where Innovation Meets Inspiration"
+          title2="in Every Showcase."
           para=""
         />
         <CarouselInnerEvent ImgArray={ImgArray} />
 
         <ColorChnagingHeadThreeImage
-          text="Step into the world of limitless possibilities at Vista Hospitality's Exhibition Showcase. Our marquee stands as a versatile and dynamic space, curated to elevate your exhibitions. With an expansive layout and cutting-edge facilities, our venue is designed to accentuate and spotlight your innovations, creating an immersive experience for both exhibitors and attendees."
-          mainTitle="Wedding and organizing "
-          mainTitleWord="Event Planning"
+          text="At Vista Hospitality, we invite you to showcase your vision and captivate your audience in our versatile and inspiring exhibition spaces. Our commitment to excellence ensures that your exhibition event is not only seamlessly executed but becomes an immersive experience for attendees."
+          mainTitle="Step into a World of Innovation "
+          mainTitleWord="Exhibition Events at Vista Hospitality"
         />
         <AboutEventDetailTwo
           subtitle="THE BEST OF THE BEST"
-          title1text1="Enchanting Gala Evening"
-          title1text2="Experience"
-          para="Indulge in an evening of unparalleled elegance and sophistication at our annual dinner. Immerse yourself in a world of exquisite cuisine, captivating entertainment, and enchanting moments that will linger in your memories."
-          img1={AED2Img1}
-          img2={AED2Img2}
+          title1text1="The Pinnacle of"
+          title1text2="Excellence"
+          para="Welcome to a realm where excellence is not just a standard but a commitment. At Vista Hospitality, we take pride in curating experiences that stand out as the epitome of sophistication, service, and innovation. Discover what sets us apart and why we are proud to be recognized as 'The Best of the Best.'"
+          img1={ExeImg5}
+          img2={ExeImg1}
         />
         <section className="photography__wedding-album position-relative bg-dark60">
           <div className="container-fluid vistaCon">
             <AboutEventDetailThree
               subtitle="THE BEST OF THE BEST"
-              title1text1="A Night of Culinary"
-              title1text2="Mastery"
-              para="Savor an extraordinary culinary journey at our annual dinner, where expertly crafted flavors meet impeccable presentation. Experience gastronomic delight in every bite, setting the stage for an unforgettable evening."
-              feature1="Exquisite Menu Selection"
-              feature2="Fine Dining Ambiance"
+              title1text1="Unveiling Excellence"
+              title1text2="One Exhibit at a Time"
+              para="Our commitment to excellence has not gone unnoticed. Vista Hospitality is honored to be recognized as The Best of the Best in the hospitality industry. These accolades reflect our continuous dedication to providing unparalleled service and creating moments that transcend expectations."
+              feature1="Unparalleled Venues"
+              feature2="Technological Innovation"
               btntitle="Contact Us"
               btnlink="/"
-              img1={AED3Img1}
-              img2={AED3Img2}
+              img1={ExeImg1}
+              img2={ExeImg2}
             />
           </div>
         </section>
 
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArrayTwo} questions={questions} />
         <BottomCTA />
       </main>
     </PageWrapper>

@@ -4,25 +4,18 @@ import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
-import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
-import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
-import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
-import carouselImg3 from "@/public/assets/imgs/carouselInnerEvent3.webp";
-import carouselImg4 from "@/public/assets/imgs/carouselInnerEvent4.webp";
-import carouselImg5 from "@/public/assets/imgs/carouselInnerEvent5.webp";
-import tourWelcome_1 from "@/public/assets/imgs/cup-1.jpg";
-import tourWelcome_2 from "@/public/assets/imgs/cup-2.jpg";
-import tourWelcome_3 from "@/public/assets/imgs/cup-3.jpg";
-import tourWelcome_4 from "@/public/assets/imgs/cup-4.jpg";
+
+import vistaLawn1 from "@/public/assets/imgs/vista_hospitality_Inn_AvaLawn_1.webp";
+import vistaLawn2 from "@/public/assets/imgs/vista_hospitality_Inn_AvaLawn_2.webp";
+import vistaLawn3 from "@/public/assets/imgs/vista_hospitality_Inn_AvaLawn_3.webp";
+import vistaLawn4 from "@/public/assets/imgs/vista_hospitality_Inn_AvaLawn_4.webp";
+import vistaLawn5 from "@/public/assets/imgs/vista_hospitality_Inn_AvaLawn_5.webp";
+import vistaLawn6 from "@/public/assets/imgs/vista_hospitality_Inn_AvaLawn_6.webp";
+
 import tourWelcome_5 from "@/public/assets/imgs/line-bg.png";
-import img1 from "@/public/assets/imgs/corporate_event.webp";
-import img2 from "@/public/assets/imgs/corporateEventBg.webp";
-import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import img4 from "@/public/assets/imgs/charity.webp";
-import img5 from "@/public/assets/imgs/exhibition.webp";
+
 import featureImg1 from "@/public/assets/imgs/golden__leave.png";
 import featureImg2 from "@/public/assets/imgs/golden__paint.png";
-import ColorChnagingHeadThreeImage from "@/components/general/ColorChnagingHeadThreeImage";
 import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
 import SubHeroSection from "@/components/Events/SubHeroSection";
 import FeaturesLists from "@/components/Events/FeaturesLists";
@@ -30,22 +23,22 @@ import HomeAboutSec from "@/components/general/ColorChnagingHeadThree";
 import TourWelcome from "@/components/tourComponent/TourWelcome";
 const ImgArray = [
   {
-    img: carouselImg,
+    img: vistaLawn1,
   },
   {
-    img: carouselImg1,
+    img: vistaLawn2,
   },
   {
-    img: carouselImg2,
+    img: vistaLawn3,
   },
   {
-    img: carouselImg3,
+    img: vistaLawn4,
   },
   {
-    img: carouselImg4,
+    img: vistaLawn5,
   },
   {
-    img: carouselImg5,
+    img: vistaLawn6,
   },
 ];
 const featureList = [
@@ -109,20 +102,20 @@ export default function vistaAvaLawn() {
       <main className="vistaAvaLawn">
         <HeroInnerPages
           subtitle="VISTA AVA LAWN"
-          title1="NATURAL EVENT "
-          title2=" HAVEN"
+          title1="Where Grandeur Meets"
+          title2="Greenery"
           para=""
         />
 
         <TourWelcome
-          tourWelcome_1={tourWelcome_1}
-          tourWelcome_2={tourWelcome_2}
-          tourWelcome_3={tourWelcome_3}
-          tourWelcome_4={tourWelcome_4}
+          tourWelcome_1={vistaLawn2}
+          tourWelcome_2={vistaLawn3}
+          tourWelcome_3={vistaLawn4}
+          tourWelcome_4={vistaLawn5}
           tourWelcome_5={tourWelcome_5}
-          mainTitle="Welcome to Coffee Shop"
+          mainTitle="Welcome to Vista Ava Lawn"
           subtitle="The best of best"
-          para="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+          para="This sprawling venue within Vista Hospitality Inn is designed to elevate your events, providing a picturesque backdrop of nature combined with the sophistication of modern amenities."
         />
 
         <section className="Event__feature-section position-relative">
@@ -144,18 +137,11 @@ export default function vistaAvaLawn() {
         <CarouselInnerEvent ImgArray={ImgArray} />
         <section className="VistaSec_topBorder_grade position-relative bg-dark60 homeAboutSec">
           <div className="container-fluid vistaCon position-relative z-2">
-            <HomeAboutSec text="Welcome to Vista Hospitality, where we redefine hospitality with elegance and innovation. From the enchanting Vista Marquess to the delightful Vista Luxury Sweets, each moment is crafted with passion. Join us in creating unforgettable memories at Vista, where your journey is our priority." />
+            <HomeAboutSec text="Vista Ava Lawn harmonizes the grandeur of celebrations with the serenity of nature. Whether you envision a lavish wedding, a corporate gala, or an intimate social gathering, this venue invites you to create memorable moments against the backdrop of open skies and lush landscapes." />
           </div>
         </section>
 
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

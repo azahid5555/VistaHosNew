@@ -5,6 +5,7 @@ import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import img from "@/public/assets/icons/callimg.svg";
+import HeadingTwo from "./HeadingTwo";
 export default function BottomCTA() {
   const xOne = useRef(null);
   const xTwo = useRef(null);
@@ -39,7 +40,7 @@ export default function BottomCTA() {
       <section ref={xOne} className="bottomCta_sec position-relative">
         <div ref={xTwo} className=" w-100 overflow-hidden position-relative">
           <div className="row justify-content-between z-3">
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-sm-6">
               <div className="text">
                 <motion.p
                   className="bottomCTA_title"
@@ -57,9 +58,9 @@ export default function BottomCTA() {
                 </motion.p>
               </div>
             </div>
-            <div className="col-12 col-md-6 z-3">
-              <div className="row">
-                <div className="col-8">
+            <div className="col-12 col-sm-6 z-3 d-none d-sm-block">
+              <div className="row justify-content-center">
+                <div className="col-12 col-sm-11 col-md-10 col-lg-8">
                   <Link
                     href="/"
                     className="BottomCta_link text-decoration-none text-white  d-block"
@@ -91,10 +92,10 @@ export default function BottomCTA() {
                             Lets Talk
                           </span>
                         </div>
-                        <h2 className="vista_hos_title2">Inquire Today</h2>
+                        <HeadingTwo text="Inquire Today" />
                       </div>
                       <div className="BottomCta_img">
-                        <Image alt="call us" src={img} />
+                        <Image alt="call us" className=" img-fluid" src={img} />
                       </div>
                     </motion.div>
                   </Link>
@@ -112,6 +113,55 @@ export default function BottomCTA() {
             >
               <source src="/assets/CtaBgVideo.MP4" />
             </motion.video>
+          </div>
+        </div>
+        <div
+          className="row d-block d-sm-none g-0"
+          style={{ marginTop: "-80px" }}
+        >
+          <div className="col-12 col-sm-6 z-3">
+            <div className="row justify-content-center g-0">
+              <div className="col-11">
+                <Link
+                  href="/"
+                  className="BottomCta_link text-decoration-none text-white  d-block"
+                >
+                  <motion.div
+                    style={{ y: y, opacity: op }}
+                    whileHover={{ scale: 0.97 }}
+                    className="BottomCta_link_inner d-flex flex-column justify-content-center align-content-center text-center position-relative"
+                  >
+                    <div className="icon position-absolute">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        class="absolute top-[3vw] right-[3vw] -rotate-45"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-width="2"
+                          d="M.87 12.314h21.757m0 0L11.314 1m11.313 11.314L11.314 23.627"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div className="BottomCta_content">
+                      <div>
+                        <span className="font-link d-inline-block">
+                          Lets Talk
+                        </span>
+                      </div>
+                      <HeadingTwo text="Inquire Today" />
+                    </div>
+                    <div className="BottomCta_img">
+                      <Image alt="call us" className=" img-fluid" src={img} />
+                    </div>
+                  </motion.div>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

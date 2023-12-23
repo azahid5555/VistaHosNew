@@ -65,7 +65,7 @@ export default function VideoBanner(props) {
             <h1 className="vista_hos_title text-center">The Destination</h1>
             <ThreeDText />
           </div>
-          <div className="heroBtn_con d-flex justify-content-center align-items-center gap-4">
+          <div className="heroBtn_con d-flex justify-content-center align-items-center gap-2 flex-wrap gap-sm-4">
             <VistaBtn text="Book Venue" link="#" />
             <VistaBtnLight text="Book Sweets" link="#" />
           </div>

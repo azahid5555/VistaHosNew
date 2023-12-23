@@ -3,6 +3,12 @@ import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
+
+import sofiImg1 from "@/public/assets/imgs/vista_hospitality_Inn_SofiNight_1.webp";
+import sofiImg2 from "@/public/assets/imgs/vista_hospitality_Inn_SofiNight_2.webp";
+import sofiImg3 from "@/public/assets/imgs/vista_hospitality_Inn_SofiNight_3.webp";
+import sofiImg4 from "@/public/assets/imgs/vista_hospitality_Inn_7.webp";
+
 import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
 import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
 import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
@@ -25,22 +31,16 @@ import ReservationSec from "@/components/general/ReservationSec";
 import ServiceFeature from "@/components/Events/ServiceFeature";
 const ImgArray = [
   {
-    img: carouselImg,
+    img: sofiImg1,
   },
   {
-    img: carouselImg1,
+    img: sofiImg2,
   },
   {
-    img: carouselImg2,
+    img: sofiImg3,
   },
   {
-    img: carouselImg3,
-  },
-  {
-    img: carouselImg4,
-  },
-  {
-    img: carouselImg5,
+    img: sofiImg4,
   },
 ];
 const questions = [
@@ -83,19 +83,20 @@ export default function sufiNight() {
     <PageWrapper>
       <main className="sufiNight">
         <HeroInnerPages
-          subtitle="Sufi Night"
-          title1="SOULFUL SUFI"
-          title2="EVENINGS"
+          subtitle="SUFI NIGHT"
+          title1="Immerse in Spiritual "
+          title2="Harmony"
           para=""
         />
 
         <CarouselInnerEvent ImgArray={ImgArray} />
         <ColorChnagingHeadThreeImage
-          text="Step into the world of limitless possibilities at Vista Hospitality's Exhibition Showcase. Our marquee stands as a versatile and dynamic space, curated to elevate your exhibitions. With an expansive layout and cutting-edge facilities, our venue is designed to accentuate and spotlight your innovations, creating an immersive experience for both exhibitors and attendees."
-          mainTitle="Wedding and organizing "
-          mainTitleWord="Event Planning"
+          text="Journey into the soulful realm of Sufi music at Vista Hospitality, where the mystical melodies of Sufi Nights transport you to a world of spiritual bliss and tranquility. Our Sufi Night Events are an ode to the rich tradition of Sufism, offering an intimate space for reflection, connection, and a profound musical experience."
+          mainTitle="Live Performances by"
+          mainTitleWord="Sufi Maestros"
         />
-        <ReservationSec video="/assets/ReservationVideo.MP4" />
+        {/* video="/assets/ReservationVideo.MP4" */}
+        <ReservationSec ResImg={sofiImg2} />
         <ServiceFeature
           subtitle="Musical Serenity"
           mainTitle="Vista Music "
@@ -111,14 +112,7 @@ export default function sufiNight() {
           serviceFeatureImg4={serviceFeatureImg4}
         />
 
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

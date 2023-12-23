@@ -223,15 +223,9 @@ export default function ReviewsSlider() {
                     <h2>Ali Zahid</h2>
                   </div>
                   <p className="review">
-                    We recently hosted our dream wedding at Vista Marquess, and
-                    it was nothing short of magical! The venue itself is
-                    breathtaking, with its elegant architecture and stunning
-                    views. The event planning team at Vista Hospitality went
-                    above and beyond to bring our vision to life. The attention
-                    to detail, personalized service, and the culinary experience
-                    exceeded our expectations. Our guests are still raving about
-                    the memorable celebration. Vista Hospitality truly knows how
-                    to make dreams come true!
+                    Absolutely stunning! Vista Hospitality transformed our
+                    wedding into a fairytale. Impeccable service and a
+                    dream-like setting!
                   </p>
                 </div>
                 <div className="review_btm">
@@ -256,15 +250,9 @@ export default function ReviewsSlider() {
                     <h2>Hassan Sajjad</h2>
                   </div>
                   <p className="review">
-                    As a corporate event planner, I am always on the lookout for
-                    venues that offer a perfect blend of professionalism and
-                    aesthetics. Vista Hospitality delivered on all fronts! The
-                    teams responsiveness and flexibility during the planning
-                    process were commendable. Our conference at Vista Ava Lawn
-                    was a resounding success, thanks to the top-notch facilities
-                    and seamless coordination. I highly recommend Vista
-                    Hospitality for any corporate event; they truly understand
-                    the needs of the business world.
+                    The exceptional care and warmth offered at Vista Hospitality
+                    is unmatched. Our corporate event was flawlessly executed.
+                    Highly recommend!
                   </p>
                 </div>
                 <div className="review_btm">
@@ -288,14 +276,8 @@ export default function ReviewsSlider() {
                     <h2>Ch Naeem</h2>
                   </div>
                   <p className="review">
-                    We chose Vista Luxury Sweets to create a custom cake for our
-                    daughters birthday, and it was an absolute showstopper! The
-                    attention to detail in the design and the delectable flavors
-                    exceeded our expectations. The team at Vista Hospitality was
-                    a pleasure to work with, ensuring that every aspect of the
-                    order was tailored to our preferences. The cake not only
-                    looked incredible but tasted divine. Vista Luxury Sweets is
-                    now our go-to for all special occasions!
+                    Exceptional venue choices and top-notch hospitality. Vista
+                    made our anniversary celebration truly special.
                   </p>
                 </div>
                 <div className="review_btm">
@@ -318,15 +300,9 @@ export default function ReviewsSlider() {
                     <h2>Ch Murtaza</h2>
                   </div>
                   <p className="review">
-                    What stood out to me about Vista Hospitality was their
-                    commitment to sustainability. As someone who values
-                    eco-friendly practices, it was refreshing to see their
-                    dedication to minimizing their environmental impact. The
-                    venues green initiatives, from energy-efficient lighting to
-                    waste reduction programs, make it a conscientious choice for
-                    events. Beyond that, the staffs warm hospitality and the
-                    beautiful surroundings make Vista Hospitality a top choice
-                    for anyone looking for an event venue with a conscience.
+                    We had a blast at our birthday party hosted by Vista! The
+                    setting was awesome, and the staff exceeded everyones
+                    expectations.
                   </p>
                 </div>
                 <div className="review_btm">
@@ -351,15 +327,8 @@ export default function ReviewsSlider() {
                     <h2>Ali Zahid</h2>
                   </div>
                   <p className="review">
-                    We recently hosted our dream wedding at Vista Marquess, and
-                    it was nothing short of magical! The venue itself is
-                    breathtaking, with its elegant architecture and stunning
-                    views. The event planning team at Vista Hospitality went
-                    above and beyond to bring our vision to life. The attention
-                    to detail, personalized service, and the culinary experience
-                    exceeded our expectations. Our guests are still raving about
-                    the memorable celebration. Vista Hospitality truly knows how
-                    to make dreams come true!
+                    The Vista Luxury Suites are divine! Perfect for any event.
+                    Our guests couldnt get enough of them.
                   </p>
                 </div>
                 <div className="review_btm">
@@ -384,15 +353,8 @@ export default function ReviewsSlider() {
                     <h2>Hassan Sajjad</h2>
                   </div>
                   <p className="review">
-                    As a corporate event planner, I am always on the lookout for
-                    venues that offer a perfect blend of professionalism and
-                    aesthetics. Vista Hospitality delivered on all fronts! The
-                    teams responsiveness and flexibility during the planning
-                    process were commendable. Our conference at Vista Ava Lawn
-                    was a resounding success, thanks to the top-notch facilities
-                    and seamless coordination. I highly recommend Vista
-                    Hospitality for any corporate event; they truly understand
-                    the needs of the business world.
+                    Our engagement at Vistas park was magical. A serene and
+                    romantic setting for a perfect beginning.
                   </p>
                 </div>
                 <div className="review_btm">
@@ -416,14 +378,8 @@ export default function ReviewsSlider() {
                     <h2>Ch Naeem</h2>
                   </div>
                   <p className="review">
-                    We chose Vista Luxury Sweets to create a custom cake for our
-                    daughters birthday, and it was an absolute showstopper! The
-                    attention to detail in the design and the delectable flavors
-                    exceeded our expectations. The team at Vista Hospitality was
-                    a pleasure to work with, ensuring that every aspect of the
-                    order was tailored to our preferences. The cake not only
-                    looked incredible but tasted divine. Vista Luxury Sweets is
-                    now our go-to for all special occasions!
+                    The Vista Marquee provided us with the flexibility we truly
+                    desired for our event. Everything was organized flawlessly.
                   </p>
                 </div>
                 <div className="review_btm">
@@ -446,15 +402,8 @@ export default function ReviewsSlider() {
                     <h2>Ch Murtaza</h2>
                   </div>
                   <p className="review">
-                    What stood out to me about Vista Hospitality was their
-                    commitment to sustainability. As someone who values
-                    eco-friendly practices, it was refreshing to see their
-                    dedication to minimizing their environmental impact. The
-                    venues green initiatives, from energy-efficient lighting to
-                    waste reduction programs, make it a conscientious choice for
-                    events. Beyond that, the staffs warm hospitality and the
-                    beautiful surroundings make Vista Hospitality a top choice
-                    for anyone looking for an event venue with a conscience.
+                    Exquisite taste and presentation! Vista Luxury Sweets added
+                    a touch of sophistication to our event.
                   </p>
                 </div>
                 <div className="review_btm">

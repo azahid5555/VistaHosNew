@@ -4,6 +4,14 @@ import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
 import AboutEventDetail from "@/components/Events/AboutEventDetail";
+
+import BDpartyImg1 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_1.webp";
+import BDpartyImg2 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_2.webp";
+import BDpartyImg3 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_3.webp";
+import BDpartyImg4 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_4.webp";
+import BDpartyImg5 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_5.webp";
+import BDpartyImg6 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_6.webp";
+
 import img11 from "@/public/assets/imgs/homeAbout.webp";
 import img22 from "@/public/assets/imgs/carousel1.webp";
 import img33 from "@/public/assets/imgs/carousel2.webp";
@@ -25,6 +33,27 @@ import FeaturesLists from "@/components/Events/FeaturesLists";
 import AboutStickySecTwo from "@/components/Events/AboutStickySecTwo";
 import WhatWeOffer from "@/components/Events/WhatWeOffer";
 import Banner from "@/components/general/Banner";
+
+const ImgArray = [
+  {
+    img: BDpartyImg1,
+  },
+  {
+    img: BDpartyImg2,
+  },
+  {
+    img: BDpartyImg3,
+  },
+  {
+    img: BDpartyImg4,
+  },
+  {
+    img: BDpartyImg5,
+  },
+  {
+    img: BDpartyImg6,
+  },
+];
 const featureList = [
   {
     id: 1,
@@ -88,18 +117,37 @@ const StickyContent = [
   },
   {
     headText1: "",
-    headText2: "Offset Meetings",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    headText2: "Collaborative Event Planning",
+    para: "Our experienced event planning team collaborates with organizers to ensure seamless planning and execution. We understand the unique requirements of public events and provide support every step of the way.",
   },
   {
     headText1: "",
-    headText2: "Team Happy Hours",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    headText2: "Technology Integration",
+    para: "Leverage our state-of-the-art audiovisual technology for impactful presentations and performances. Our venues are equipped to enhance the visibility and engagement of your event.",
+  },
+];
+
+import icon1 from "@/public/assets/icons/weddingDay.svg";
+import icon2 from "@/public/assets/icons/weddingDay2.svg";
+import icon3 from "@/public/assets/icons/weddingDay3.svg";
+const whyChooseUS = [
+  {
+    id: 1,
+    icon: icon1,
+    title: "Inclusive Venue Spaces",
+    para: "Vista Hospitality offers inclusive venues designed to accommodate a variety of public events.",
   },
   {
-    headText1: "",
-    headText2: "Conferences",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    id: 2,
+    icon: icon2,
+    title: "Culinary Diversity",
+    para: "Explore a world of culinary diversity at our Public Events.",
+  },
+  {
+    id: 2,
+    icon: icon3,
+    title: "Engaging Entertainment",
+    para: "Elevate your public gatherings with engaging entertainment options. ",
   },
 ];
 
@@ -109,36 +157,29 @@ export default function PublicEvents() {
       <main className="PublicEvents">
         <Banner
           heading="Vista public Events"
-          para="Discover a world of possibilities at Vista Grand Celebrations – your premier venue for every occasion"
+          para="Vista Hospitality offers inclusive venues designed to accommodate a variety of public events. From open-air spaces for festivals to versatile indoor settings for cultural gatherings, our venues provide a canvas for events that unite people from all walks of life."
           bgImg={bannerImg}
         />
-        <AboutEventDetail text="A wedding is a truly amazing moment in life, and we would love to help make it special and memorable. We offer a range of wedding packages to fit any budget or style, from intimate ceremonies to elaborate ballroom receptions. Let us help make your day perfect and truly unforgettable." />
+        <AboutEventDetail text="At Vista Hospitality, we believe in the power of bringing people together. Our Public Events are a celebration of community, culture, and shared experiences. Whether it's a festival, cultural gathering, or a public celebration, our venues provide the perfect setting for moments that connect, inspire, and leave a lasting impact." />
         <section className=" VistaSec_topBorder_grade bg-dark60 position-relative Event__feature-section">
           <div className=" container-fluid vistaCon">
             <FeaturesLists featureList={featureList} />
           </div>
         </section>
         <AboutStickySecTwo
-          img1={img11}
-          img2={img22}
-          img3={img33}
-          img4={img44}
-          img5={img55}
+          carouselArray={ImgArray}
           StickyContent={StickyContent}
         />
         <section className="position-relative whatweofferCom bg-dark60">
           <div className=" container-fluid vistaCon">
-            <WhatWeOffer />
+            <WhatWeOffer
+              heading="Capture the precious moments of your Annual Dinner"
+              subHeading="WHY US"
+              cardsArray={whyChooseUS}
+            />
           </div>
         </section>
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

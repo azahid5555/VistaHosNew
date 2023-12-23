@@ -9,12 +9,12 @@ export default function Possibilities() {
     <section className="position-relative  possibilitiesSec VistaSec_topBorder_grade bg-dark60">
       <div className="container-fluid vistaCon position-relative mb-0 pb-0  z-3">
         <div className="row z-3">
-          <div className="col-12 z-3">
+          <div className="col-12 z-3 text-center text-sm-start">
             <HeadingTwo text="Grand Celebrations at Vista" />
           </div>
         </div>
       </div>
-      <div className="position-relative container-fluid mt-3 marquees_con">
+      <div className="position-relative container-fluid mt-0 mt-lg-3 marquees_con">
         <div className="row">
           <div className="col-12">
             <TextMarquee />
@@ -27,11 +27,11 @@ export default function Possibilities() {
         </div>
       </div>
       <div className="container-fluid vistaCon position-relative mt-0 pt-0 mb-0 z-3 text-end">
-        <div className="row z-3">
-          <div className="col-12 col-sm-6 text-start">
-            <VistaBtnLarge text="See all possibilities" link="/" />
+        <div className="row z-3 flex-column flex-column-reverse flex-sm-row">
+          <div className="col-12 col-sm-6 text-center text-sm-start">
+            <VistaBtnLarge text="See all possibilities" link="/events" />
           </div>
-          <div className="col-12 col-sm-6 z-3">
+          <div className="col-12 col-sm-6 z-3 text-center text-sm-end mb-4 mb-sm-0">
             <HeadingTwo text="Start Here" />
           </div>
         </div>

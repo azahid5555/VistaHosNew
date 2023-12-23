@@ -2,9 +2,6 @@
 import FuzzyOverla from "../general/FuzzyOverlay";
 import { useEffect, useRef, useState } from "react";
 import VideoPlayerControls from "../general/VideoPlayerControls";
-import VistaBtn from "../general/VistaBtn";
-import VistaBtnLight from "../general/VistaBtnLight";
-import ThreeDText from "../general/ThreeDText";
 
 export default function VideoWithControls(props) {
   const [isPaused, setIsPaused] = useState(false);

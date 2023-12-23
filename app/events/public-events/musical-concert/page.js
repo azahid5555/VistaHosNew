@@ -3,6 +3,16 @@ import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
+
+import HiphopDanceImg1 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_1.webp";
+import HiphopDanceImg2 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_2.webp";
+import HiphopDanceImg3 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_3.webp";
+import HiphopDanceImg4 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_4.webp";
+import HiphopDanceImg5 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_5.webp";
+import HiphopDanceImg6 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_6.webp";
+import HiphopDanceImg7 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_7.webp";
+import HiphopDanceImg8 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_8.webp";
+
 import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
 import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
 import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
@@ -26,22 +36,45 @@ import AboutEventDetailSeven from "@/components/Events/AboutEventDetailSeven";
 import ServiceFeature from "@/components/Events/ServiceFeature";
 const ImgArray = [
   {
-    img: carouselImg,
+    img: HiphopDanceImg1,
   },
   {
-    img: carouselImg1,
+    img: HiphopDanceImg2,
   },
   {
-    img: carouselImg2,
+    img: HiphopDanceImg3,
   },
   {
-    img: carouselImg3,
+    img: HiphopDanceImg4,
   },
   {
-    img: carouselImg4,
+    img: HiphopDanceImg5,
+  },
+];
+const ImgArrayTwo = [
+  {
+    img: HiphopDanceImg1,
   },
   {
-    img: carouselImg5,
+    img: HiphopDanceImg2,
+  },
+  {
+    img: HiphopDanceImg3,
+  },
+  {
+    img: HiphopDanceImg4,
+  },
+  {
+    img: HiphopDanceImg5,
+  },
+  {
+    img: HiphopDanceImg6,
+  },
+  {
+    img: HiphopDanceImg7,
+  },
+  {
+    img: HiphopDanceImg8,
   },
 ];
 const questions = [
@@ -85,14 +118,14 @@ export default function musicalConcert() {
       <main className="musicalConcert">
         <HeroInnerPages
           subtitle="MUSICAL CONCERT"
-          title1="VISTA CONCERT"
-          title2="EXTRAVAGANZA"
+          title1="Harmonize Your"
+          title2="Night"
           para=""
         />
 
         <CarouselInnerEvent ImgArray={ImgArray} />
         <ColorChnagingHeadThreeImage
-          text="Step into the world of limitless possibilities at Vista Hospitality's Exhibition Showcase. Our marquee stands as a versatile and dynamic space, curated to elevate your exhibitions. With an expansive layout and cutting-edge facilities, our venue is designed to accentuate and spotlight your innovations, creating an immersive experience for both exhibitors and attendees."
+          text="Experience the magic of live music at Vista Hospitality, where every musical note resonates with the energy of the crowd. Our Musical Concerts are not just events; they're unforgettable experiences that immerse you in the soul-stirring melodies and electrifying performances of renowned artists."
           mainTitle="Wedding and organizing "
           mainTitleWord="Event Planning"
         />
@@ -100,7 +133,7 @@ export default function musicalConcert() {
           subtitle="Musical Serenity"
           mainTitle="Vista Harmony"
           mainTitleWord="Haven"
-          para="Immerse yourself in the rhythmic enchantment at Vista Harmony Haven, where every note resonates with magic. Join us in a musical journey curated to captivate your senses and create unforgettable memories."
+          para="Step into a world-class venue designed to amplify the sounds of your favorite music. Our acoustically optimized spaces create an immersive environment that ensures every beat, chord, and lyric is delivered with precision and clarity."
           feature_1="Sound Vibes"
           feature1_desc="Sonic sensations await"
           feature_2="Echo Harmoney"
@@ -111,7 +144,7 @@ export default function musicalConcert() {
           counterNum_2="10"
           countertitle_3="Days concert"
           counterNum_3="13"
-          detailSevenImg={detailSevenImg}
+          detailSevenImg={HiphopDanceImg6}
           counterDuration={4}
         />
         <ServiceFeature
@@ -128,14 +161,7 @@ export default function musicalConcert() {
           serviceFeatureImg3={serviceFeatureImg3}
           serviceFeatureImg4={serviceFeatureImg4}
         />
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArrayTwo} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

@@ -5,6 +5,14 @@ import { PageWrapper } from "@/components/general/PageWrapper";
 import featureImg from "@/public/assets/imgs/feature--1.png";
 import detailImg1 from "@/public/assets/imgs/teamDemo.jpg";
 import detailImg2 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
+
+import bdimg1 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_1.webp";
+import bdimg2 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_2.webp";
+import bdimg3 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_3.webp";
+import bdimg4 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_4.webp";
+import bdimg5 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_5.webp";
+import bdimg6 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_6.webp";
+
 import img1 from "@/public/assets/imgs/corporate_event.webp";
 import img2 from "@/public/assets/imgs/corporateEventBg.webp";
 import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
@@ -31,75 +39,75 @@ const featureList_2 = [
   {
     id: 1,
     img: featureImg1,
-    title: "ELEGANT",
-    desc: "Sophisticated spaces and stunning decor for your occasion.",
+    title: "Vista Luxury Suites",
+    desc: "Indulge in opulence with our spacious and well-appointed luxury suites, offering a blend of comfort and sophistication.",
   },
   {
     id: 2,
     img: featureImg2,
-    title: "VERSATILE",
-    desc: "Spaces for weddings, conferences, trade shows, and more.",
+    title: "Modern Conveniences",
+    desc: "Enjoy the convenience of modern amenities, including high-speed Wi-Fi, flat-screen TVs, and in-room services for a seamless stay.",
   },
   {
     id: 3,
     img: featureImg1,
-    title: "PERSONAL",
-    desc: "Experienced team for personalized service and tailored events.",
+    title: "La Vista Cafe",
+    desc: "Savor culinary excellence at La Vista Cafe, where each dish is a celebration of flavors, and the ambiance is one of timeless elegance.",
   },
   {
     id: 4,
     img: featureImg2,
-    title: "VERSATILE",
-    desc: "Spaces for weddings, conferences, trade shows, and more.",
+    title: "Event Planning Expertise",
+    desc: "Benefit from our seasoned event planning team, ensuring meticulous coordination and flawless execution for your special occasions.",
   },
   {
     id: 5,
     img: featureImg1,
-    title: "PERSONAL",
-    desc: "Experienced team for personalized service and tailored events.",
+    title: "Professional Staff",
+    desc: "Our dedicated staff is committed to providing attentive and personalized service, ensuring that every guest feels valued and well-cared-for.",
   },
 ];
 
 const packageList_1 = [
   {
     id: 1,
-    package_1: "Guided Nature Walk",
+    package_1: "Adaptable spaces",
   },
   {
     id: 2,
-    package_1: "Picnic Setup",
+    package_1: "Playful and interactive",
   },
   {
     id: 3,
-    package_1: "Outdoor Games",
+    package_1: "Options for themed parties",
   },
 ];
 const packageList_2 = [
   {
     id: 1,
-    package_2: "Rock Climbing",
+    package_2: "Collaborative planning",
   },
   {
     id: 2,
-    package_2: "Zip-lining",
+    package_2: "Flexible arrangements",
   },
   {
     id: 3,
-    package_2: "Catered Outdoor Lunch",
+    package_2: "Unique and memorable",
   },
 ];
 const packageList_3 = [
   {
     id: 1,
-    package_3: "Lakeside Picnic",
+    package_3: "Picturesque surroundings",
   },
   {
     id: 2,
-    package_3: "Yoga Session",
+    package_3: "Vibrant decor",
   },
   {
     id: 3,
-    package_3: "Relaxing Nature Walk",
+    package_3: "Unforgettable memory",
   },
 ];
 const featurelist = [
@@ -151,40 +159,59 @@ const questions = [
   },
 ];
 
+const imgArray = [
+  {
+    img: bdimg1,
+  },
+  {
+    img: bdimg2,
+  },
+  {
+    img: bdimg3,
+  },
+  {
+    img: bdimg4,
+  },
+  {
+    img: bdimg5,
+  },
+  {
+    img: bdimg6,
+  },
+];
+
 export default function vistaBirthdayPark() {
   return (
     <PageWrapper>
       <main className="vistaBirthdayParty">
         <HeroInnerPages
           subtitle="VISTA BIRTHDAY PARK"
-          title1="FESTIVE CELEBRATION "
-          title2="VENUE"
+          title1="A Joyous Haven for "
+          title2="Celebrations"
           para=""
         />
 
         <TourWelcome
-          tourWelcome_1={tourWelcome_1}
-          tourWelcome_2={tourWelcome_2}
-          tourWelcome_3={tourWelcome_3}
-          tourWelcome_4={tourWelcome_4}
+          tourWelcome_1={bdimg1}
+          tourWelcome_2={bdimg2}
+          tourWelcome_3={bdimg3}
+          tourWelcome_4={bdimg4}
           tourWelcome_5={tourWelcome_5}
-          mainTitle="Welcome to Coffee Shop"
+          mainTitle="Welcome to Vista Birthday Park"
           subtitle="The best of best"
-          para="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+          para="Vista Hospitality Inn dedicated to creating unforgettable birthday experiences. Nestled in a charming setting, this park is designed to infuse every celebration with an air of whimsy and delight."
         />
 
         <AboutEventDetailSix
-          subtitle="Dance Grooves"
-          mainTitle="Dynamic Dance Floor"
-          para="Immerse in the pulsating energy of Hip Grooves on our
-                      Dynamic Dance Floor. Elevate your party experience with
-                      beats that make your celebration unforgettable."
+          subtitle="Birthday Park"
+          mainTitle="A Celebration Wonderland"
+          para="Vista Birthday Park is more than a venue; it's a celebration wonderland. The park's charming setting and versatile spaces make it the ideal canvas for creating birthday memories that last a lifetime."
           feature1="Beating"
           feature1br="Sync"
           feature2="Rhythmic"
           feature2br="Waves"
-          detailImg1={detailImg1}
-          detailImg2={detailImg2}
+          detailImg1={bdimg5}
+          detailImg2={bdimg6}
           featureImg={featureImg}
         />
 
@@ -194,13 +221,13 @@ export default function vistaBirthdayPark() {
           </div>
         </section>
         <BirthdayPackage
-          subtitle="Musical Serenity"
-          mainTitle="Vista Music "
-          mainTitleWord="Extravaganza"
-          para="Immerse yourself in the rhythmic enchantment at Vista Harmony Haven, where every note resonates with magic. Join us in a musical journey curated to captivate your senses and create unforgettable memories."
-          featureTitle1="Nature Explorer"
-          featureTitle2="Adventure Seeker"
-          featureTite3="Tranquil Retreat"
+          subtitle="Whimsical Atmosphere"
+          mainTitle="Vista Birthday "
+          mainTitleWord="Park"
+          para="Immerse yourself in a whimsical ambiance, where vibrant decor and playful touches set the stage for a birthday celebration filled with joy."
+          featureTitle1="Versatility "
+          featureTitle2="Tailored Themes"
+          featureTite3="Lasting Memories"
           packageList_1={packageList_1}
           packageList_2={packageList_2}
           packageList_3={packageList_3}
@@ -208,6 +235,7 @@ export default function vistaBirthdayPark() {
         <section className="charity__details--sec position-relative bg-dark60 VistaSec_topBorder_grade">
           <div className="container-fluid vistaCon CulinaryExcellence-con">
             <AboutEventDetailFour
+              video="/assets/BirthdayReel.mp4"
               className="row py-5 gap-5 flex-row-reverse"
               mainTitle="Book Your Nature inspired Celebration"
               subtitle="TIMELESS CELEBRATIONS BEGIN HERE"
@@ -218,14 +246,7 @@ export default function vistaBirthdayPark() {
             />
           </div>
         </section>
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={imgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

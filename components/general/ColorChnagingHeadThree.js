@@ -35,7 +35,7 @@ export default function HomeAboutSec(props) {
   return (
     <>
       <div className="row justify-content-center">
-        <div id="animecolorheadingCon" className="col-10 text-center">
+        <div id="animecolorheadingCon" className="col-11 col-sm-10 text-center">
           <h3
             ref={h1Ref}
             className="vista_hos_title3 text-center  font-heading-regular lh-sm chnagecolorHeading"

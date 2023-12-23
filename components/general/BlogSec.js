@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import ReviewsSec from "./ReviewsSec";
+import HeadingFourAnimated from "./HeadingFourAnimated";
 
 export default function BlogSec() {
   const swiperRef = useRef();
@@ -46,22 +47,24 @@ export default function BlogSec() {
       <div className=" container-fluid position-relative p-0">
         <div className="vistaCon container-fluid mb-0 pb-0">
           <div className="row align-items-center">
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-3 col-lg-3">
               <h5 className="subheading vista_hos_title5 clrSec">
                 Latest News
               </h5>
               <HeadingTwo text="News" />
             </div>
-            <div className="col-12 col-md-6 col-lg-7">
+            <div className="col-12 col-md-7 col-lg-7">
               <p className=" Vista_para_sm m-0">
-                Stay informed about the exciting happenings, upcoming events,
-                and noteworthy milestones at Vista Hospitality INN. Our news
-                section is your go-to source for the latest updates on
-                everything related to our venues, services, and community
-                involvement.
+                Stay updated with Vista Hospitality latest happenings, insights,
+                and industry trends. From exclusive event highlights to useful
+                tips for hosting memorable occasions, our news section keeps you
+                in the loop. Discover exciting stories, upcoming events, and
+                innovative ideas that inspire unforgettable experiences. Visit
+                regularly to stay informed and be part of our journey in
+                redefining hospitality excellence.
               </p>
             </div>
-            <div className="col-2 d-flex align-items-center justify-content-end">
+            <div className=" col-md-2 col-lg-2 d-flex align-items-center justify-content-end">
               <div className="whatwedo-slider-control d-flex justify-content-flex-end position-relative">
                 <button
                   className={`swiper_prev ${isPrevDisabled ? "disable" : ""}`}
@@ -95,19 +98,27 @@ export default function BlogSec() {
               breakpoints={{
                 0: {
                   slidesPerView: 1,
+                  spaceBetween: 10,
+                  centeredSlides: true,
+                },
+                500: {
+                  slidesPerView: 1.2,
                   spaceBetween: 20,
+                  centeredSlides: true,
                 },
                 640: {
                   slidesPerView: 2,
                   spaceBetween: 20,
+                  centeredSlides: true,
                 },
                 768: {
                   slidesPerView: 2,
                   spaceBetween: 40,
+                  centeredSlides: true,
                 },
                 900: {
                   slidesPerView: 3,
-                  spaceBetween: 40,
+                  spaceBetween: 20,
                 },
               }}
               className="mySwiper position-relative"
@@ -129,9 +140,9 @@ export default function BlogSec() {
                               href="#"
                               className="text-decoration-none text-white"
                             >
-                              <h4 className="h4 mb-0 pb-0 vista_hos_title4">
-                                Behind the Scenes at Vista Hospitality
-                              </h4>
+                              <div className="h4">
+                                <HeadingFourAnimated text="Behind the Scenes at Vista Hospitality" />
+                              </div>
                             </Link>
                           </div>
                           <div className="read--more">
@@ -178,9 +189,9 @@ export default function BlogSec() {
                               href="#"
                               className="text-decoration-none text-white"
                             >
-                              <h4 className="h4 mb-0 pb-0 vista_hos_title4">
-                                Cultural Festivals at Vista Hospitality
-                              </h4>
+                              <div className="h4">
+                                <HeadingFourAnimated text="Cultural Festivals at Vista Hospitality" />
+                              </div>
                             </Link>
                           </div>
                           <div className="read--more">
@@ -227,9 +238,9 @@ export default function BlogSec() {
                               href="#"
                               className="text-decoration-none text-white"
                             >
-                              <h4 className="h4 mb-0 pb-0 vista_hos_title4">
-                                Eco Friendly Initiatives at Vista Hospitality
-                              </h4>
+                              <div className="h4">
+                                <HeadingFourAnimated text="Eco Friendly Initiatives at Vista Hospitality" />
+                              </div>
                             </Link>
                           </div>
                           <div className="read--more">
@@ -276,10 +287,9 @@ export default function BlogSec() {
                               href="#"
                               className="text-decoration-none text-white"
                             >
-                              <h4 className="h4 mb-0 pb-0 vista_hos_title4">
-                                Designing Personalized Events at Vista
-                                Hospitality
-                              </h4>
+                              <div className="h4">
+                                <HeadingFourAnimated text="Designing Personalized Events at Vista Hospitality" />
+                              </div>
                             </Link>
                           </div>
                           <div className="read--more">

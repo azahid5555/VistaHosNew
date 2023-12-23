@@ -25,10 +25,10 @@ export default function AboutStickySec(props) {
     <section className="wedding__FAQ-section">
       <div className="container-fluid vistaCon position-relative z-2 pt-0">
         <div className="project project-a Event__faq-wrapper py-5 row">
-          <div className=" col-6">
+          <div className=" col-12 col-md-6">
             {props.StickyContent.map((list, i) => (
-              <div className="faq__left-wrapper mt-3 pt-3" key={i}>
-                <div className="faq__inner-content p-5">
+              <div className="faq__left-wrapper mt-3 pt-0 pt-md-3" key={i}>
+                <div className="faq__inner-content px-2 py-3 px-sm-5 py-sm-3 p-md-5">
                   <div className="faq-headline text-center faeture__content-wrapper">
                     <HeadingTwo text={list.headText1} text2={list.headText2} />
                     <p className=" wedding_story-desc text-center Vista_para_sm text-paragraph text-white">
@@ -66,41 +66,15 @@ export default function AboutStickySec(props) {
                   onAutoplayTimeLeft={onAutoplayTimeLeft}
                   className="mySwiper"
                 >
-                  <SwiperSlide>
-                    <Image
-                      alt="Our Story"
-                      src={props.img1}
-                      className=" img-fluid"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      alt="Our Story"
-                      src={props.img2}
-                      className=" img-fluid"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      alt="Our Story"
-                      src={props.img3}
-                      className=" img-fluid"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      alt="Our Story"
-                      src={props.img4}
-                      className=" img-fluid"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      alt="Our Story"
-                      src={props.img5}
-                      className=" img-fluid"
-                    />
-                  </SwiperSlide>
+                  {props.carouselArray.map((img, i) => (
+                    <SwiperSlide key={i}>
+                      <Image
+                        alt="Our Story"
+                        src={img.img}
+                        className=" img-fluid"
+                      />
+                    </SwiperSlide>
+                  ))}
                   <div className="autoplay-progress" slot="container-end">
                     <svg viewBox="0 0 48 48" ref={progressCircle}>
                       <circle cx="24" cy="24" r="20"></circle>

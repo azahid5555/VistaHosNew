@@ -3,6 +3,24 @@ import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
+
+import modelingImg1 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_1.webp";
+import modelingImg2 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_2.webp";
+import modelingImg3 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_3.webp";
+import modelingImg4 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_4.webp";
+import modelingImg5 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_5.webp";
+import modelingImg6 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_6.webp";
+import modelingImg7 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_7.webp";
+import modelingImg8 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_8.webp";
+import modelingImg9 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_9.webp";
+import modelingImg10 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_10.webp";
+import modelingImg11 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_11.webp";
+import modelingImg12 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_12.webp";
+import modelingImg13 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_13.webp";
+import modelingImg14 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_14.webp";
+import modelingImg15 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_15.webp";
+import modelingImg16 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_16.webp";
+
 import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
 import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
 import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
@@ -23,66 +41,105 @@ import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
 import FeaturesLists from "@/components/Events/FeaturesLists";
 import TextMarqueeOneLine from "@/components/Events/TextMarqueeOneLine";
 import ReservationSec from "@/components/general/ReservationSec";
+import AboutEventDetailTwo from "@/components/Events/AboutEventDetailTwo";
 const marqueeTexts = [
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
+  "Fashion Flourish",
+  "Style Soars",
+  "Glamour Unbound",
+  "Model Moments",
+  "Fashion Flourish",
+  "Style Soars",
+  "Glamour Unbound",
+  "Model Moments",
+  "Fashion Flourish",
+  "Style Soars",
+  "Glamour Unbound",
+  "Model Moments",
+  "Fashion Flourish",
+  "Style Soars",
+  "Glamour Unbound",
+  "Model Moments",
+  "Fashion Flourish",
+  "Style Soars",
+  "Glamour Unbound",
+  "Model Moments",
+  "Fashion Flourish",
+  "Style Soars",
+  "Glamour Unbound",
+  "Model Moments",
+  "Fashion Flourish",
+  "Style Soars",
+  "Glamour Unbound",
+  "Model Moments",
+  "Fashion Flourish",
+  "Style Soars",
+  "Glamour Unbound",
+  "Model Moments",
+  "Fashion Flourish",
+  "Style Soars",
+  "Glamour Unbound",
+  "Model Moments",
+  "Fashion Flourish",
+  "Style Soars",
+  "Glamour Unbound",
+  "Model Moments",
 ];
 const ImgArray = [
   {
-    img: carouselImg,
+    img: modelingImg15,
   },
   {
-    img: carouselImg1,
+    img: modelingImg14,
   },
   {
-    img: carouselImg2,
+    img: modelingImg1,
   },
   {
-    img: carouselImg3,
+    img: modelingImg2,
   },
   {
-    img: carouselImg4,
+    img: modelingImg3,
   },
   {
-    img: carouselImg5,
+    img: modelingImg4,
+  },
+  {
+    img: modelingImg5,
+  },
+  {
+    img: modelingImg6,
+  },
+  {
+    img: modelingImg7,
+  },
+  {
+    img: modelingImg8,
+  },
+  {
+    img: modelingImg9,
+  },
+];
+const ImgArrayTwo = [
+  {
+    img: modelingImg16,
+  },
+  {
+    img: modelingImg15,
+  },
+  {
+    img: modelingImg10,
+  },
+  {
+    img: modelingImg11,
+  },
+  {
+    img: modelingImg12,
+  },
+  {
+    img: modelingImg13,
+  },
+  {
+    img: modelingImg14,
   },
 ];
 const questions = [
@@ -119,25 +176,24 @@ const questions = [
       "Certainly! Explore our Previous Model Shoots and Gallery sections for a glimpse into successful model photoshoots held in our dynamic and versatile marquee.",
   },
 ];
-
 const featureList = [
   {
     id: 1,
     img: featureImg1,
-    title: "ELEGANT",
-    desc: "Sophisticated spaces and stunning decor for your occasion.",
+    title: "Versatile Runway Spaces",
+    desc: "Bring your vision to life in our adaptable venues, perfect for both intimate shows and grand fashion extravaganzas.",
   },
   {
     id: 2,
     img: featureImg2,
-    title: "VERSATILE",
-    desc: "Spaces for weddings, conferences, trade shows, and more.",
+    title: "Inclusive Model Platform",
+    desc: "Celebrate diversity on our runways, welcoming models of all backgrounds, ages, and sizes.",
   },
   {
     id: 3,
     img: featureImg1,
-    title: "PERSONAL",
-    desc: "Experienced team for personalized service and tailored events.",
+    title: "Creative Collaborations",
+    desc: "Ignite fashion innovation with us—thematic showcases, avant-garde presentations, and more, we bring your vision to life.",
   },
 ];
 
@@ -146,14 +202,14 @@ export default function modelPhotography() {
     <PageWrapper>
       <main className="modelPhotography">
         <HeroInnerPages
-          subtitle="Add Photography"
-          title1="images that  "
-          title2="unique"
-          para="Dicta sunt explicabo. Nemo enim fugit ipsam aut voluptatem quia voluptas sit aspernatur aut odit."
+          subtitle="MODELING EVENT"
+          title1="Modeling Excellence at"
+          title2="Vista Hospitality."
+          para="Benefit from our cutting-edge audiovisual technology, creating a high-definition runway experience that captures every detail of your fashion creations."
         />
 
         <CarouselInnerEvent ImgArray={ImgArray} />
-        <AboutEventDetail text="A wedding is a truly amazing moment in life, and we would love to help make it special and memorable. We offer a range of wedding packages to fit any budget or style, from intimate ceremonies to elaborate ballroom receptions. Let us help make your day perfect and truly unforgettable." />
+        <AboutEventDetail text="Unleash your inner confidence and express your unique style on the runway at Vista Hospitality. Our Modeling experiences are not just about showcasing fashion; they are about embracing individuality, celebrating diversity, and creating moments of glamour that leave a lasting impression." />
         <TextMarqueeOneLine text={marqueeTexts} />
 
         <section className=" VistaSec_topBorder_grade bg-dark60 position-relative Event__feature-section">
@@ -161,15 +217,17 @@ export default function modelPhotography() {
             <FeaturesLists featureList={featureList} />
           </div>
         </section>
-        <ReservationSec video="/assets/ReservationVideo.MP4" />
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
+        <AboutEventDetailTwo
+          subtitle="THE BEST OF THE BEST"
+          title1text1="Unveil Your Style"
+          title1text2="Beyond the Catwalk"
+          para="At Vista Hospitality, our Modeling Events are designed to be more than just runway showcases; they're immersive experiences that captivate audiences and empower models to express their unique identity. Connect with industry professionals, designers, and fashion enthusiasts at our exclusive networking events."
+          img1={modelingImg10}
+          video="/assets/vistaModeling.mp4"
         />
+        <ReservationSec video="/assets/modeling.mp4" />
+
+        <FaqWithSlider carouselArray={ImgArrayTwo} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

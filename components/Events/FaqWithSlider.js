@@ -46,7 +46,6 @@ export default function FaqWithSlider(props) {
             <div className="description swiper-container faqslider_con">
               <div className="overflow-hidden position-relative">
                 <FuzzyOverla />
-                {/* <Image alt="Our Story" src={img} className=" img-fluid" /> */}
                 <Swiper
                   spaceBetween={30}
                   centeredSlides={true}
@@ -64,41 +63,16 @@ export default function FaqWithSlider(props) {
                   onAutoplayTimeLeft={onAutoplayTimeLeft}
                   className="mySwiper"
                 >
-                  <SwiperSlide>
-                    <Image
-                      alt="Our Story"
-                      src={props.img1}
-                      className=" img-fluid"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      alt="Our Story"
-                      src={props.img2}
-                      className=" img-fluid"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      alt="Our Story"
-                      src={props.img3}
-                      className=" img-fluid"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      alt="Our Story"
-                      src={props.img4}
-                      className=" img-fluid"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      alt="Our Story"
-                      src={props.img5}
-                      className=" img-fluid"
-                    />
-                  </SwiperSlide>
+                  {props.carouselArray &&
+                    props.carouselArray.map((img, i) => (
+                      <SwiperSlide key={i}>
+                        <Image
+                          alt="Our Story"
+                          src={img.img}
+                          className=" img-fluid"
+                        />
+                      </SwiperSlide>
+                    ))}
                   <div className="autoplay-progress" slot="container-end">
                     <svg viewBox="0 0 48 48" ref={progressCircle}>
                       <circle cx="24" cy="24" r="20"></circle>

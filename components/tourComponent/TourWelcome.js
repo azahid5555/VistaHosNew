@@ -8,9 +8,8 @@ export default function TourWelcome(props) {
     <section className="tourWelcome position-relative">
       <div className="container-fluid vistaCon">
         <div className="row align-items-center justify-content-center">
-          {/* !left cvolumn started */}
-          <div className="col-5 z-3">
-            <div className="content-wrapper gap-2 py-5 px-2 bg-dark60 text-center d-flex flex-column justify-content-center align-items-center">
+          <div className="col-md-5 z-3">
+            <div className="content-wrapper gap-2 py-5 px-3 bg-dark60 text-center d-flex flex-column justify-content-center align-items-center">
               <HeadingThree
                 text2={props.subtitle}
                 className="font-italic text-center"
@@ -27,9 +26,7 @@ export default function TourWelcome(props) {
               <p className=" text-white-50">{props.para}</p>
             </div>
           </div>
-          {/* !left column ended */}
-          {/* right column for images started */}
-          <div className="col-6 z-0">
+          <div className="col-md-6 z-0 rightImgCon">
             <div className="row pb-4">
               <div className="col-6">
                 <Image
@@ -63,7 +60,6 @@ export default function TourWelcome(props) {
               </div>
             </div>
           </div>
-          {/* right column for images ended */}
         </div>
       </div>
     </section>

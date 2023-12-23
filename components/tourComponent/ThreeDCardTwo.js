@@ -46,94 +46,78 @@ export default function ThreeDCardTwo(props) {
   };
 
   return (
-    <Link href="/">
-      <motion.div
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
+    <motion.div
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        rotateY,
+        rotateX,
+        transformStyle: "preserve-3d",
+      }}
+      className=" position-relative threeDCon"
+    >
+      <div
         style={{
-          rotateY,
-          rotateX,
+          transform: "translateZ(75px)",
           transformStyle: "preserve-3d",
         }}
-        className=" position-relative threeDCon"
+        className=" position-absolute inset-4 d-flex gap-3 justify-content-center align-items-center flex-column rounded shadow threeDCardInner"
       >
-        <div
-          style={{
-            transform: "translateZ(75px)",
-            transformStyle: "preserve-3d",
-          }}
-          className=" position-absolute inset-4 d-flex gap-3 justify-content-center align-items-center flex-column rounded shadow threeDCardInner"
-        >
-          {/* <icon
-          style={{
-            transform: "translateZ(75px)",
-          }}
-          className="mx-auto text-4xl fs-1"
-        /> */}
-          {/* <p
+        <HeadingThree
+          text={props.title}
           style={{
             transform: "translateZ(50px)",
           }}
-          className="text-center text-2xl font-bold"
-        >
-          HOVER ME
-        </p> */}
-          <HeadingThree
-            text={props.title}
+        />
+        {props.packageList_1 && (
+          <ul
             style={{
               transform: "translateZ(50px)",
             }}
-          />
-          {props.packageList_1 && (
-            <ul
-              style={{
-                transform: "translateZ(50px)",
-              }}
-              className="list-inline list-unstyled mb-4 Vista_para_sm text-center"
-            >
-              {props.packageList_1.map((li) => (
-                <li className="d-flex align-items-center  " key={li.id}>
-                  <i className="bi bi-check fs-3 clrPrime" />
-                  <HeadingFourAnimated text={li.package_1} />
-                </li>
-              ))}
-            </ul>
-          )}
-          {/* for package list-2 for package list-3 */}
-          {props.packageList_2 && (
-            <ul
-              style={{
-                transform: "translateZ(50px)",
-              }}
-              className="list-inline list-unstyled mb-4 Vista_para_sm text-center"
-            >
-              {props.packageList_2.map((li) => (
-                <li className="d-flex align-items-center  " key={li.id}>
-                  <i className="bi bi-check fs-3 clrPrime" />
-                  <HeadingFourAnimated text={li.package_2} />
-                </li>
-              ))}
-            </ul>
-          )}
-          {/* for package list-2 for package list-3 */}
-          {props.packageList_3 && (
-            <ul
-              style={{
-                transform: "translateZ(50px)",
-              }}
-              className="list-inline list-unstyled mb-4 Vista_para_sm text-center"
-            >
-              {props.packageList_3.map((li) => (
-                <li className="d-flex align-items-center  " key={li.id}>
-                  <i className="bi bi-check fs-3 clrPrime" />
-                  <HeadingFourAnimated text={li.package_3} />
-                </li>
-              ))}
-            </ul>
-          )}
-          {/* for package list-2 for package list-3 */}
-        </div>
-      </motion.div>
-    </Link>
+            className="list-inline list-unstyled mb-4 Vista_para_sm text-center d-flex justify-content-center flex-column align-items-center"
+          >
+            {props.packageList_1.map((li) => (
+              <li className="d-flex align-items-center  " key={li.id}>
+                <i className="bi bi-check fs-3 clrPrime" />
+                <HeadingFourAnimated text={li.package_1} />
+              </li>
+            ))}
+          </ul>
+        )}
+        {/* for package list-2 for package list-3 */}
+        {props.packageList_2 && (
+          <ul
+            style={{
+              transform: "translateZ(50px)",
+            }}
+            className="list-inline list-unstyled mb-4 Vista_para_sm text-center d-flex justify-content-center flex-column align-items-center"
+          >
+            {props.packageList_2.map((li) => (
+              <li className="d-flex align-items-center  " key={li.id}>
+                <i className="bi bi-check fs-3 clrPrime" />
+                <HeadingFourAnimated text={li.package_2} />
+              </li>
+            ))}
+          </ul>
+        )}
+        {/* for package list-2 for package list-3 */}
+        {props.packageList_3 && (
+          <ul
+            style={{
+              transform: "translateZ(50px)",
+            }}
+            className="list-inline list-unstyled mb-4 Vista_para_sm text-center d-flex justify-content-center flex-column align-items-center"
+          >
+            {props.packageList_3.map((li) => (
+              <li className="d-flex align-items-center  " key={li.id}>
+                <i className="bi bi-check fs-3 clrPrime" />
+                <HeadingFourAnimated text={li.package_3} />
+              </li>
+            ))}
+          </ul>
+        )}
+        {/* for package list-2 for package list-3 */}
+      </div>
+    </motion.div>
   );
 }

@@ -14,9 +14,9 @@ export default function MainVideo(props) {
         <div className=" container-fluid vistaCon mb-0">
           <div className="row">
             <div className="col-12 z-2">
-              <div className="row border-bottom">
+              <div className="row border-bottom align-items-end">
                 <div className="col-6 p-0 mb-2">
-                  <h5 className=" font-heading">Vista Hospitality INN</h5>
+                  <h5 className=" font-heading mb-0">Vista Hospitality INN</h5>
                 </div>
                 <div className="col-6 text-end p-0 mb-2">
                   <Link
@@ -30,7 +30,7 @@ export default function MainVideo(props) {
                   </Link>
                 </div>
               </div>
-              <div className="pt-4 d-flex justify-content-between">
+              <div className="pt-4 d-flex justify-content-between align-items-center">
                 <HeadingOne text="Escape To Paradise" />
                 <div className="videoIconCon">
                   <div className="videoIconCon_wrapper">
@@ -44,9 +44,9 @@ export default function MainVideo(props) {
                   </div>
                 </div>
               </div>
-              <div className="row mt-4">
-                <div className="col-12 col-md-6 d-flex">
-                  <div className="icon text-white fs-1 fw-light me-4">
+              <div className="row mt-4 vistaDetailsCon">
+                <div className="col-12 col-md-6 d-flex align-items-end align-items-sm-baseline">
+                  <div className="icon text-white fs-1 fw-light me-2 me-md-4 mb-4 mb-sm-0">
                     <span>
                       <i class="bi bi-arrow-down"></i>
                     </span>

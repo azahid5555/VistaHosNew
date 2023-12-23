@@ -1,16 +1,20 @@
+import "@/styles/style.css";
 import CarouselInnerEvent from "@/components/Events/CarouselInnerEvent";
 import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
-import img1 from "@/public/assets/imgs/corporate_event.webp";
-import img2 from "@/public/assets/imgs/corporateEventBg.webp";
-import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import img4 from "@/public/assets/imgs/charity.webp";
-import img5 from "@/public/assets/imgs/exhibition.webp";
-import cafeimg1 from "@/public/assets/imgs/exhibition.webp";
-import cafeimg2 from "@/public/assets/imgs/charity.webp";
-import cafeimg3 from "@/public/assets/imgs/charity.webp";
+
+import cafe1 from "@/public/assets/imgs/vista_hospitality_Inn_Cafe_1.webp";
+import cafe2 from "@/public/assets/imgs/vista_hospitality_Inn_Cafe_2.webp";
+import cafe3 from "@/public/assets/imgs/vista_hospitality_Inn_Cafe_3.webp";
+import cafe4 from "@/public/assets/imgs/vista_hospitality_Inn_Cafe_4.webp";
+import cafe5 from "@/public/assets/imgs/vista_hospitality_Inn_Cafe_5.webp";
+import cafe6 from "@/public/assets/imgs/vista_hospitality_Inn_Cafe_6.webp";
+
+import cafe7 from "@/public/assets/imgs/cafe1.webp";
+import cafe8 from "@/public/assets/imgs/cafe2.webp";
+
 import menulineImage from "@/public/assets/imgs/line-2.png";
 import recepieImage_1 from "@/public/assets/imgs/menu-image-1.jpg";
 import recepieImage_2 from "@/public/assets/imgs/recepieImage_2.jpg";
@@ -23,9 +27,6 @@ import tourWelcome_2 from "@/public/assets/imgs/cup-2.jpg";
 import tourWelcome_3 from "@/public/assets/imgs/cup-3.jpg";
 import tourWelcome_4 from "@/public/assets/imgs/cup-4.jpg";
 import tourWelcome_5 from "@/public/assets/imgs/line-bg.png";
-import cafeImageName from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import "@/styles/style.css";
-import ColorChnagingHeadThreeImage from "@/components/general/ColorChnagingHeadThreeImage";
 import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
 import CafeDetails from "@/components/tourComponent/CafeDetails";
 import WhatWeOffer from "@/components/Events/WhatWeOffer";
@@ -89,28 +90,70 @@ const colOneRecepie_deatail = [
     col_1_recepiePrice: "$2.75",
     col_1_recepieImage: recepieImage_3,
   },
+  {
+    id: 4,
+    col_1_recepieName: "Fried Rice With Vegetable",
+    col_1_recepiedesc: "Suspendisse ipsum fringilla",
+    col_1_recepiePrice: "$2.30",
+    col_1_recepieImage: recepieImage_1,
+  },
+  {
+    id: 5,
+    col_1_recepieName: "Wild Mushroom Cream",
+    col_1_recepiedesc: "Donec quam libero",
+    col_1_recepiePrice: "$3.71",
+    col_1_recepieImage: recepieImage_2,
+  },
+  {
+    id: 6,
+    col_1_recepieName: "Chocoholic’s Cheese Cake",
+    col_1_recepiedesc: "Mauris tempus consequat tellus.",
+    col_1_recepiePrice: "$9.99",
+    col_1_recepieImage: recepieImage_3,
+  },
 ];
-const colTwoRecepie_deatail = [
+const imgArray = [
+  {
+    img: cafe1,
+  },
+  {
+    img: cafe2,
+  },
+  {
+    img: cafe3,
+  },
+  {
+    img: cafe4,
+  },
+  {
+    img: cafe5,
+  },
+  {
+    img: cafe6,
+  },
+];
+
+import icon1 from "@/public/assets/icons/weddingDay.svg";
+import icon2 from "@/public/assets/icons/weddingDay2.svg";
+import icon3 from "@/public/assets/icons/weddingDay3.svg";
+const whyChooseUS = [
   {
     id: 1,
-    col_2_recepieName: "Fried Rice With Vegetable",
-    col_2_recepiedesc: "Suspendisse ipsum fringilla",
-    col_2_recepiePrice: "$2.30",
-    col_2_recepieImage: recepieImage_1,
+    icon: icon1,
+    title: "Artisanal Coffee Mastery",
+    para: "Who elevate each cup to perfection, ensuring a sensory journey with every sip.",
   },
   {
     id: 2,
-    col_2_recepieName: "Wild Mushroom Cream",
-    col_2_recepiedesc: "Donec quam libero",
-    col_2_recepiePrice: "$3.71",
-    col_2_recepieImage: recepieImage_2,
+    icon: icon2,
+    title: "Timeless Elegance",
+    para: "where contemporary design, warm hues, and subtle lighting create an inviting haven of sophistication.",
   },
   {
-    id: 3,
-    col_2_recepieName: "Chocoholic’s Cheese Cake",
-    col_2_recepiedesc: "Mauris tempus consequat tellus.",
-    col_2_recepiePrice: "$9.99",
-    col_2_recepieImage: recepieImage_3,
+    id: 2,
+    icon: icon3,
+    title: "Signature Blends",
+    para: "thoughtfully curated to offer unique and memorable taste experiences that set us apart.",
   },
 ];
 
@@ -120,28 +163,28 @@ export default function lAVistaCafe() {
       <main className="lAVistaCafe">
         <HeroInnerPages
           subtitle="LA VISTA CAFE"
-          title1="CHIC CULINARY"
-          title2="ESCAPE"
-          para=""
+          title1="Indulge in"
+          title2="Elegance"
+          para="Where every sip is a journey through the world of refined flavors and sophisticated ambiance"
         />
         <TourWelcome
           tourWelcome_1={tourWelcome_1}
-          tourWelcome_2={tourWelcome_2}
-          tourWelcome_3={tourWelcome_3}
+          tourWelcome_2={cafe7}
+          tourWelcome_3={cafe8}
           tourWelcome_4={tourWelcome_4}
           tourWelcome_5={tourWelcome_5}
-          mainTitle="Welcome to Coffee Shop"
+          mainTitle="Welcome to Vista Cafe"
           subtitle="The best of best"
-          para="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+          para="La Vista Cafe, where every sip is a journey through the world of refined flavors and sophisticated ambiance. Nestled within Vista Hospitality Inn, this charming cafe beckons you to experience an elevated coffee and dining experience like no other."
         />
         <section className="charity__details--sec position-relative">
           <div className="container-fluid vistaCon CulinaryExcellence-con">
             <CafeDetails
-              cafeimg1={cafeimg1}
-              cafeimg2={cafeimg2}
-              mainTitle="Vista Charity Support and giving Hub"
-              subtitle="A PREMIER EVENT DESIGN & PLANNING FIRM"
-              para="Welcome to Vista Giving Hub, where compassion meets action. Explore our dedicated space designed for impactful charity events. Join us in making a difference and creating positive change in our community"
+              cafeimg1={cafe1}
+              cafeimg2={cafe5}
+              mainTitle="Sip, Savor, and Elevate Your Culinary Journey in Style."
+              subtitle="AMBIANCE OF SOPHISTICATION"
+              para="At La Vista Cafe, hospitality is an art. Our attentive staff is committed to providing a seamless and enjoyable experience, ensuring that every visit is a delightful escape from the ordinary. Explore our signature blends and La Vista exclusives, each curated to offer a unique and memorable taste. Indulge in the richness of our coffee creations and discover a symphony of flavors that lingers on the palate."
             />
           </div>
         </section>
@@ -150,11 +193,10 @@ export default function lAVistaCafe() {
           mainTitle="Chef Recomended Special Menu"
           menulineImage={menulineImage}
           colOneRecepie_deatail={colOneRecepie_deatail}
-          colTwoRecepie_deatail={colTwoRecepie_deatail}
         />
         {/* !next section will be added by you */}
         <ReservationCafe
-          cafeimg3={cafeimg3}
+          cafeimg3={cafe4}
           subtitle="Call For Reservations"
           mainTitle="Opening Hours"
           timing_1="Monday to Thursday"
@@ -164,17 +206,14 @@ export default function lAVistaCafe() {
         />
         <section className="position-relative whatweofferCom bg-dark60">
           <div className=" container-fluid vistaCon">
-            <WhatWeOffer />
+            <WhatWeOffer
+              heading="Capture the precious moments of your Annual Dinner"
+              subHeading="WHY US"
+              cardsArray={whyChooseUS}
+            />
           </div>
         </section>
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={imgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

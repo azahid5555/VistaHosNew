@@ -25,8 +25,8 @@ export default function AboutEventDetailTwo(props) {
           <div className="col-12">
             <div className="photographer_detail-wrapper">
               <div className="photographer_detail-content">
-                <div className="row justify-content-center">
-                  <div className="col-11 col-md-5">
+                <div className="row justify-content-start justify-content-md-center">
+                  <div className="col-12 col-sm-11 col-md-5 mb-5 mb-md-0">
                     <div className="photographer_detail-left d-flex justify-content-start position-relative">
                       <div className="photographer--image position-relative">
                         <Image
@@ -35,7 +35,7 @@ export default function AboutEventDetailTwo(props) {
                           className="img-fluid object-fit-cover z-3"
                         />
                         <motion.div
-                          className="flower-image z-1"
+                          className="flower-image "
                           style={{ rotate: rotateValue }}
                         >
                           <Image
@@ -79,11 +79,23 @@ export default function AboutEventDetailTwo(props) {
                         </div>
                         <div className="lower--content">
                           <div className="photographer--image">
-                            <Image
-                              alt="Vista Hospitality INN"
-                              className=" img-fluid"
-                              src={props.img2}
-                            />
+                            {props.img2 && (
+                              <Image
+                                alt="Vista Hospitality INN"
+                                className=" img-fluid"
+                                src={props.img2}
+                              />
+                            )}
+                            {props.video && (
+                              <video
+                                className="w-100 rounded"
+                                loop
+                                muted
+                                autoPlay
+                              >
+                                <source src={props.video} />
+                              </video>
+                            )}
                           </div>
                         </div>
                       </div>

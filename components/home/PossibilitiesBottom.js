@@ -1,10 +1,11 @@
 "use client";
 import { useState } from "react";
-import img1 from "@/public/assets/imgs/marriage_event.webp";
-import img2 from "@/public/assets/imgs/birthdays_event.webp";
-import img3 from "@/public/assets/imgs/corporate_event.webp";
-import img4 from "@/public/assets/imgs/public_event.webp";
+import img1 from "@/public/assets/imgs/vista_hospitality_Inn_2.webp";
+import img2 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_1.webp";
+import img3 from "@/public/assets/imgs/corporateEventBg.webp";
+import img4 from "@/public/assets/imgs/vista_hospitality_Inn_Modeling_1.webp";
 import FuzzyOverla from "../general/FuzzyOverlay";
+import Link from "next/link";
 
 export default function PossibilitiesBottom() {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -14,10 +15,16 @@ export default function PossibilitiesBottom() {
   };
 
   const eventTypes = [
-    "Marriage Event",
-    "Birthday Parties",
+    "Wedding Events",
+    "Parties Events",
     "Corporate Events",
     "Public Events",
+  ];
+  const eventLinks = [
+    "/events/wedding-event",
+    "/events/party-events",
+    "/events/corporate-events",
+    "/events/public-events",
   ];
 
   return (
@@ -34,10 +41,15 @@ export default function PossibilitiesBottom() {
                 }`}
                 onMouseEnter={() => handleCardHover(index)}
               >
-                <div className="poss_item_inner text-center">
-                  <p className="Vista_para_sm mb-1">Vista Hospitality</p>
-                  <h3 className="vista_hos_title3">{eventTypes[index]}</h3>
-                </div>
+                <Link
+                  href={eventLinks[index]}
+                  className=" text-decoration-none"
+                >
+                  <div className="poss_item_inner text-center">
+                    <p className="Vista_para_sm mb-1">Vista Hospitality</p>
+                    <h3 className="vista_hos_title3">{eventTypes[index]}</h3>
+                  </div>
+                </Link>
               </div>
             ))}
           </div>

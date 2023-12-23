@@ -3,6 +3,13 @@ import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
+
+import festivalImg1 from "@/public/assets/imgs/vista_hospitality_Inn_festivals_1.webp";
+import festivalImg2 from "@/public/assets/imgs/vista_hospitality_Inn_festivals_2.webp";
+import festivalImg3 from "@/public/assets/imgs/vista_hospitality_Inn_festivals_3.webp";
+import festivalImg4 from "@/public/assets/imgs/vista_hospitality_Inn_festivals_4.webp";
+import festivalImg5 from "@/public/assets/imgs/vista_hospitality_Inn_festivals_5.webp";
+
 import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
 import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
 import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
@@ -26,36 +33,33 @@ import TextMarqueeOneLine from "@/components/Events/TextMarqueeOneLine";
 import AboutEventDetailTwo from "@/components/Events/AboutEventDetailTwo";
 const ImgArray = [
   {
-    img: carouselImg,
+    img: festivalImg5,
   },
   {
-    img: carouselImg1,
+    img: festivalImg1,
   },
   {
-    img: carouselImg2,
+    img: festivalImg2,
   },
   {
-    img: carouselImg3,
+    img: festivalImg3,
   },
   {
-    img: carouselImg4,
-  },
-  {
-    img: carouselImg5,
+    img: festivalImg4,
   },
 ];
 const featurelist = [
   {
     id: 1,
-    feature_1: " Expert Event Planning Services",
+    feature_1: " Inclusive Venue Spaces",
   },
   {
     id: 2,
-    feature_1: "Tailored Culinary Excellence",
+    feature_1: " Culinary Exploration",
   },
   {
     id: 3,
-    feature_1: "Unmatched Attention to Detail",
+    feature_1: " Interactive Cultural Displays",
   },
 ];
 const questions = [
@@ -93,46 +97,41 @@ const questions = [
   },
 ];
 const marqueeTexts = [
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
+  "Celebrate Together",
+  "Cultural Bliss",
+  "Embrace Diversity",
+  "Community Festivities",
+  "Infinite Memories",
+  "Celebrate Together",
+  "Cultural Bliss",
+  "Embrace Diversity",
+  "Community Festivities",
+  "Infinite Memories",
+  "Celebrate Together",
+  "Cultural Bliss",
+  "Embrace Diversity",
+  "Community Festivities",
+  "Infinite Memories",
+  "Celebrate Together",
+  "Cultural Bliss",
+  "Embrace Diversity",
+  "Community Festivities",
+  "Infinite Memories",
+  "Celebrate Together",
+  "Cultural Bliss",
+  "Embrace Diversity",
+  "Community Festivities",
+  "Infinite Memories",
+  "Celebrate Together",
+  "Cultural Bliss",
+  "Embrace Diversity",
+  "Community Festivities",
+  "Infinite Memories",
+  "Celebrate Together",
+  "Cultural Bliss",
+  "Embrace Diversity",
+  "Community Festivities",
+  "Infinite Memories",
 ];
 
 export default function FestivalsEvent() {
@@ -140,9 +139,9 @@ export default function FestivalsEvent() {
     <PageWrapper>
       <main className="FestivalsEvent">
         <HeroInnerPages
-          subtitle="Public Festivals"
-          title1="CORPORATE EXCELLENCE "
-          title2="UNVEILED"
+          subtitle="PUBLIC FESTIVALS"
+          title1="Celebrate Unity in "
+          title2="Diversity"
           para=""
         />
         <CarouselInnerEvent ImgArray={ImgArray} />
@@ -164,10 +163,11 @@ export default function FestivalsEvent() {
         <section className="charity__details--sec position-relative">
           <div className="container-fluid vistaCon CulinaryExcellence-con">
             <AboutEventDetailFour
+              img={festivalImg5}
               className="row py-5 gap-5 flex-row-reverse"
-              mainTitle="Vista Charity Support and giving Hub"
+              mainTitle="Your Community, Your Festival, Your Vista Hospitality."
               subtitle="A PREMIER EVENT DESIGN and PLANNING FIRM"
-              para="Welcome to Vista Giving Hub, where compassion meets action. Explore our dedicated space designed for impactful charity events. Join us in making a difference and creating positive change in our community"
+              para="Our venues are thoughtfully designed to accommodate a variety of public festivals, from cultural celebrations to community gatherings. Whether indoors or outdoors, the spaces are versatile, ensuring a comfortable and engaging environment for attendees."
               featurelist={featurelist}
               btntext="Contact Us"
               btnlink="/"
@@ -175,27 +175,20 @@ export default function FestivalsEvent() {
           </div>
         </section>
         <ColorChnagingHeadThreeImage
-          text="Step into the world of limitless possibilities at Vista Hospitality's Exhibition Showcase. Our marquee stands as a versatile and dynamic space, curated to elevate your exhibitions. With an expansive layout and cutting-edge facilities, our venue is designed to accentuate and spotlight your innovations, creating an immersive experience for both exhibitors and attendees."
-          mainTitle="Wedding and organizing "
-          mainTitleWord="Event Planning"
+          text="Vista Hospitality embraces the spirit of diversity and community through our vibrant Public Festivals, where people of all backgrounds come together to celebrate, connect, and revel in the joy of shared experiences. Our venues provide a welcoming space for public celebrations, fostering a sense of unity and cultural richness."
+          mainTitle="Celebrate Unity in Diversity "
+          mainTitleWord="at Vista Hospitality Inn"
         />
         <TextMarqueeOneLine text={marqueeTexts} />
         <AboutEventDetailTwo
           subtitle="THE BEST OF THE BEST"
-          title1text1="Enchanting Gala Evening"
-          title1text2="Experience"
-          para="Indulge in an evening of unparalleled elegance and sophistication at our annual dinner. Immerse yourself in a world of exquisite cuisine, captivating entertainment, and enchanting moments that will linger in your memories."
-          img1={AED2Img1}
-          img2={AED2Img2}
+          title1text1="EPublic Festivals at"
+          title1text2="Vista Hospitality"
+          para="Delight in a culinary journey that mirrors the diversity of the festivals we host. Our expert chefs craft menus inspired by different cuisines, allowing attendees to savor a variety of flavors and culinary traditions."
+          img1={festivalImg1}
+          img2={festivalImg3}
         />
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

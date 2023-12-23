@@ -3,6 +3,14 @@ import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
 
+import marquee1 from "@/public/assets/imgs/vista_hospitality_Inn_1.webp";
+import marquee2 from "@/public/assets/imgs/vista_hospitality_Inn_2.webp";
+import marquee3 from "@/public/assets/imgs/vista_hospitality_Inn_3.webp";
+import marquee4 from "@/public/assets/imgs/vista_hospitality_Inn_4.webp";
+import marquee5 from "@/public/assets/imgs/vista_hospitality_Inn_5.webp";
+import marquee6 from "@/public/assets/imgs/vista_hospitality_Inn_6.webp";
+import marquee7 from "@/public/assets/imgs/vista_hospitality_Inn_7.webp";
+
 import img1 from "@/public/assets/imgs/corporate_event.webp";
 import img2 from "@/public/assets/imgs/corporateEventBg.webp";
 import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
@@ -36,48 +44,6 @@ import CarouselInnerEvent from "@/components/Events/CarouselInnerEvent";
 import HomeAboutSec from "@/components/general/ColorChnagingHeadThree";
 import TourWelcome from "@/components/tourComponent/TourWelcome";
 
-const packageList_1 = [
-  {
-    id: 1,
-    package_1: "Guided Nature Walk",
-  },
-  {
-    id: 2,
-    package_1: "Picnic Setup",
-  },
-  {
-    id: 3,
-    package_1: "Outdoor Games",
-  },
-];
-const packageList_2 = [
-  {
-    id: 1,
-    package_2: "Rock Climbing",
-  },
-  {
-    id: 2,
-    package_2: "Zip-lining",
-  },
-  {
-    id: 3,
-    package_2: "Catered Outdoor Lunch",
-  },
-];
-const packageList_3 = [
-  {
-    id: 1,
-    package_3: "Lakeside Picnic",
-  },
-  {
-    id: 2,
-    package_3: "Yoga Session",
-  },
-  {
-    id: 3,
-    package_3: "Relaxing Nature Walk",
-  },
-];
 const featurelist = [
   {
     id: 1,
@@ -134,18 +100,18 @@ const StickyContent = [
   },
   {
     headText1: "",
-    headText2: "Offset Meetings",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    headText2: "Adaptable Event Spaces",
+    para: "Vista Marquee offers adaptable event spaces that can be configured to accommodate a variety of occasions, ensuring flexibility for your unique requirements.",
   },
   {
     headText1: "",
-    headText2: "Team Happy Hours",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    headText2: "Cutting Edge Facilities",
+    para: "Modern amenities and infrastructure create a seamless and sophisticated environment for your guests.",
   },
   {
     headText1: "",
-    headText2: "Conferences",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    headText2: "Modern Amenities",
+    para: "Enjoy the convenience of modern amenities and cutting-edge facilities that enhance the overall experience for both hosts and guests.",
   },
 ];
 const featureList = [
@@ -172,52 +138,52 @@ const featureList_2 = [
   {
     id: 1,
     img: featureImg1,
-    title: "ELEGANT",
-    desc: "Sophisticated spaces and stunning decor for your occasion.",
+    title: "Professional Event Planning",
+    desc: "With a dedicated team ready to assist you at every stage of the planning process.",
   },
   {
     id: 2,
     img: featureImg2,
-    title: "VERSATILE",
-    desc: "Spaces for weddings, conferences, trade shows, and more.",
+    title: "Catering Services",
+    desc: "Diverse menu offering a range of culinary delights, from hors d'oeuvres to gourmet meals.",
   },
   {
     id: 3,
     img: featureImg1,
-    title: "PERSONAL",
-    desc: "Experienced team for personalized service and tailored events.",
+    title: "Ample Parking",
+    desc: "Well-maintained parking areas to accommodate attendees without any hassle.",
   },
   {
     id: 4,
     img: featureImg2,
-    title: "VERSATILE",
-    desc: "Spaces for weddings, conferences, trade shows, and more.",
+    title: "Event Coordination",
+    desc: "Expert event coordination services to ensure a seamless flow of activities during your event.",
   },
   {
     id: 5,
     img: featureImg1,
-    title: "PERSONAL",
-    desc: "Experienced team for personalized service and tailored events.",
+    title: "Modern Infrastructure",
+    desc: "Contemporary and sophisticated infrastructure that sets the stage for a memorable event experience.",
   },
 ];
 const ImgArray = [
   {
-    img: carouselImg,
+    img: marquee1,
   },
   {
-    img: carouselImg1,
+    img: marquee2,
   },
   {
-    img: carouselImg2,
+    img: marquee3,
   },
   {
-    img: carouselImg3,
+    img: marquee4,
   },
   {
-    img: carouselImg4,
+    img: marquee5,
   },
   {
-    img: carouselImg5,
+    img: marquee6,
   },
 ];
 
@@ -227,20 +193,20 @@ export default function vistaMarquee() {
       <main className="vistaMarquee">
         <HeroInnerPages
           subtitle="VISTA MARQUEE"
-          title1="VERSATILE GRAND"
-          title2="VENUE"
+          title1="A Dynamic Canvas for"
+          title2="Your Events"
           para=""
         />
 
         <TourWelcome
-          tourWelcome_1={tourWelcome_1}
-          tourWelcome_2={tourWelcome_2}
-          tourWelcome_3={tourWelcome_3}
-          tourWelcome_4={tourWelcome_4}
+          tourWelcome_1={marquee1}
+          tourWelcome_2={marquee2}
+          tourWelcome_3={marquee5}
+          tourWelcome_4={marquee6}
           tourWelcome_5={tourWelcome_5}
-          mainTitle="Welcome to Coffee Shop"
+          mainTitle="Welcome to Vista Marquee"
           subtitle="The best of best"
-          para="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+          para="As a canvas that adapts to your vision, Vista Marquee is designed to host a spectrum of events, from grand galas and celebrations to intimate gatherings and corporate functions."
         />
 
         <section className="Event__feature-section position-relative">
@@ -259,9 +225,7 @@ export default function vistaMarquee() {
           </div>
         </section>
         <AboutStickySec
-          img1={img1}
-          img2={img2}
-          img3={img3}
+          carouselArray={ImgArray}
           StickyContent={StickyContent}
         />
 
@@ -273,18 +237,11 @@ export default function vistaMarquee() {
         <CarouselInnerEvent ImgArray={ImgArray} />
         <section className="VistaSec_topBorder_grade position-relative bg-dark60 homeAboutSec">
           <div className="container-fluid vistaCon position-relative z-2">
-            <HomeAboutSec text="Welcome to Vista Hospitality, where we redefine hospitality with elegance and innovation. From the enchanting Vista Marquess to the delightful Vista Luxury Sweets, each moment is crafted with passion. Join us in creating unforgettable memories at Vista, where your journey is our priority." />
+            <HomeAboutSec text="Welcome to Vista Marquee, the versatile and dynamic event space within Vista Hospitality Inn. As a canvas that adapts to your vision, Vista Marquee is designed to host a spectrum of events, from grand galas and celebrations to intimate gatherings and corporate functions." />
           </div>
         </section>
 
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

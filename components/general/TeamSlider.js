@@ -23,27 +23,35 @@ export default function TeamSlider() {
         slidesPerView="0"
         loop={true}
         autoplay={false}
-        width={960}
         breakpoints={{
           0: {
             slidesPerView: 1,
             spaceBetween: 10,
           },
           500: {
-            slidesPerView: 1,
-            spaceBetween: 10,
+            slidesPerView: 2,
+            spaceBetween: 0,
+            // width: 760,
           },
           640: {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 0,
+            // width: 760,
           },
           768: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            width: 560,
+          },
+          900: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 0,
+            width: 760,
           },
           1024: {
             slidesPerView: 3,
             spaceBetween: 0,
+            width: 960,
           },
         }}
         coverflowEffect={{

@@ -3,20 +3,16 @@ import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
-import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
-import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
-import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
-import carouselImg3 from "@/public/assets/imgs/carouselInnerEvent3.webp";
-import carouselImg4 from "@/public/assets/imgs/carouselInnerEvent4.webp";
-import carouselImg5 from "@/public/assets/imgs/carouselInnerEvent5.webp";
-import img1 from "@/public/assets/imgs/corporate_event.webp";
-import img2 from "@/public/assets/imgs/corporateEventBg.webp";
-import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import img4 from "@/public/assets/imgs/charity.webp";
-import img5 from "@/public/assets/imgs/exhibition.webp";
+import HiphopDanceImg1 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_1.webp";
+import HiphopDanceImg2 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_2.webp";
+import HiphopDanceImg3 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_3.webp";
+import HiphopDanceImg4 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_4.webp";
+import HiphopDanceImg5 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_5.webp";
+import HiphopDanceImg6 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_6.webp";
+import HiphopDanceImg7 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_7.webp";
+import HiphopDanceImg8 from "@/public/assets/imgs/vista_hospitality_Inn_DanceParty_8.webp";
+
 import featureImg from "@/public/assets/imgs/feature--1.png";
-import detailImg1 from "@/public/assets/imgs/teamDemo.jpg";
-import detailImg2 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
 
 import "@/styles/style.css";
 import ColorChnagingHeadThreeImage from "@/components/general/ColorChnagingHeadThreeImage";
@@ -26,33 +22,21 @@ import AboutEventDetailTwo from "@/components/Events/AboutEventDetailTwo";
 import AboutEventDetailSix from "@/components/Events/AboutEventDetailSix";
 import TextMarqueeOneLine from "@/components/Events/TextMarqueeOneLine";
 
-import img11 from "@/public/assets/imgs/homeAbout.webp";
-import img22 from "@/public/assets/imgs/carousel1.webp";
-import img33 from "@/public/assets/imgs/carousel2.webp";
-import img44 from "@/public/assets/imgs/carousel3.webp";
-import img55 from "@/public/assets/imgs/carousel4.webp";
-
-import AED2Img1 from "@/public/assets/imgs/carousel2.webp";
-import AED2Img2 from "@/public/assets/imgs/carouselInnerEvent5.webp";
-
 const ImgArray = [
   {
-    img: carouselImg,
+    img: HiphopDanceImg1,
   },
   {
-    img: carouselImg1,
+    img: HiphopDanceImg2,
   },
   {
-    img: carouselImg2,
+    img: HiphopDanceImg3,
   },
   {
-    img: carouselImg3,
+    img: HiphopDanceImg4,
   },
   {
-    img: carouselImg4,
-  },
-  {
-    img: carouselImg5,
+    img: HiphopDanceImg5,
   },
 ];
 const questions = [
@@ -97,61 +81,53 @@ const StickyContent = [
   },
   {
     headText1: "",
-    headText2: "Offset Meetings",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    headText2: "State-of-the-Art Audiovisual Setup",
+    para: "Immerse yourself in the music with our cutting-edge audiovisual setup, ensuring crystal-clear sound and dynamic lighting that enhance the overall experience.",
   },
   {
     headText1: "",
-    headText2: "Team Happy Hours",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    headText2: "Event Planning Assistance",
+    para: "Our experienced event planning team is here to assist you every step of the way, from conceptualization to execution, ensuring your Hip-Hop Party is a seamless and unforgettable affair.",
   },
   {
     headText1: "",
-    headText2: "Conferences",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    headText2: "Customizable Themes",
+    para: "Personalize your Hip-Hop Party with customizable themes and decor that reflect the vibrant and dynamic nature of the Hip-Hop culture.",
   },
 ];
 const marqueeTexts = [
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
+  "Beating",
+  "Sync",
+  "Rhythmic",
+  "Waves",
+  "Beating",
+  "Sync",
+  "Rhythmic",
+  "Waves",
+  "Beating",
+  "Sync",
+  "Rhythmic",
+  "Waves",
+  "Beating",
+  "Sync",
+  "Rhythmic",
+  "Waves",
+  "Beating",
+  "Sync",
+  "Rhythmic",
+  "Waves",
+  "Beating",
+  "Sync",
+  "Rhythmic",
+  "Waves",
+  "Beating",
+  "Sync",
+  "Rhythmic",
+  "Waves",
+  "Beating",
+  "Sync",
+  "Rhythmic",
+  "Waves",
 ];
 
 export default function HipHopParty() {
@@ -160,8 +136,8 @@ export default function HipHopParty() {
       <main className="HipHopParty">
         <HeroInnerPages
           subtitle="HipHop Party"
-          title1="HIP HOP EXTRAVAGANZA"
-          title2="NIGHTS"
+          title1="Get Ready to "
+          title2="Groove"
           para=""
         />
 
@@ -169,48 +145,35 @@ export default function HipHopParty() {
         <AboutEventDetailSix
           subtitle="Dance Grooves"
           mainTitle="Dynamic Dance Floor"
-          para="Immerse in the pulsating energy of Hip Grooves on our
-                      Dynamic Dance Floor. Elevate your party experience with
-                      beats that make your celebration unforgettable."
+          para="Dive into the rhythm, feel the beats, and experience an electrifying night of Hip-Hop at Vista Hospitality. Our Hip-Hop Party is not just an event; it's a celebration of urban culture, music, and the vibrant energy that defines the spirit of the city."
           feature1="Beating"
           feature1br="Sync"
           feature2="Rhythmic"
           feature2br="Waves"
-          detailImg1={detailImg1}
-          detailImg2={detailImg2}
+          detailImg1={HiphopDanceImg6}
+          detailImg2={HiphopDanceImg7}
           featureImg={featureImg}
         />
 
         <ColorChnagingHeadThreeImage
-          text="Step into the world of limitless possibilities at Vista Hospitality's Exhibition Showcase. Our marquee stands as a versatile and dynamic space, curated to elevate your exhibitions. With an expansive layout and cutting-edge facilities, our venue is designed to accentuate and spotlight your innovations, creating an immersive experience for both exhibitors and attendees."
+          text="Groove to the hottest beats spun by our expert DJs, creating a playlist that spans the latest chart-toppers and classic Hip-Hop anthems. The dance floor comes alive with a mix of rhythm and rhyme, ensuring an unforgettable musical experience."
           mainTitle="Wedding and organizing "
           mainTitleWord="Event Planning"
         />
         <AboutStickySecTwo
-          img1={img11}
-          img2={img22}
-          img3={img33}
-          img4={img44}
-          img5={img55}
+          carouselArray={ImgArray}
           StickyContent={StickyContent}
         />
         <TextMarqueeOneLine text={marqueeTexts} />
         <AboutEventDetailTwo
           subtitle="THE BEST OF THE BEST"
-          title1text1="Enchanting Gala Evening"
-          title1text2="Experience"
-          para="Indulge in an evening of unparalleled elegance and sophistication at our annual dinner. Immerse yourself in a world of exquisite cuisine, captivating entertainment, and enchanting moments that will linger in your memories."
-          img1={AED2Img1}
-          img2={AED2Img2}
+          title1text1="Dynamic Music Lineup"
+          title1text2="Urban Aesthetics"
+          para="Witness the fusion of art and music with urban aesthetics that adorn our venues. Graffiti art, neon lights, and street-inspired decor set the stage for an immersive experience, capturing the essence of the Hip-Hop culture."
+          img1={HiphopDanceImg8}
+          img2={HiphopDanceImg6}
         />
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

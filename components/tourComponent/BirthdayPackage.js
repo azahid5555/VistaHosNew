@@ -23,7 +23,7 @@ export default function BirthdayPackage(props) {
         </div>
 
         {/* 3d card started from here  */}
-        <div className="row pt-4">
+        <div className="row pt-4 birthdayParkAdvantages">
           <div className="col-12 col-sm-6 col-md-4 text-center">
             <ThreeDCardTwo
               title={props.featureTitle1}

@@ -10,12 +10,14 @@ export default function TitleNDescription() {
           </div>
           <div className="col-12 col-md-6">
             <p className=" Vista_para_sm">
-              This place is more than just a venue, its a hub of social activity
-              that sits at the center of the Long Beach community, where people
-              from all walks of life can come together to celebrate, network,
-              and make memories that last a lifetime. Our 40+ years of expertise
-              and local roots make us the premier event venue for all your So
-              Cal events.
+              At Vista Hospitality, we take immense pride in being a
+              family-owned business deeply rooted in our values. Founded on
+              principles of warmth, integrity, and a commitment to excellence,
+              our heritage drives every aspect of our operations. As a family,
+              we extend our ethos of care and dedication to every event and
+              service we offer. Our legacy inspires us to create unforgettable
+              experiences, fostering a sense of belonging and hospitality that
+              transcends expectations.
             </p>
           </div>
         </div>

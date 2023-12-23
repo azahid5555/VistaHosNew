@@ -3,6 +3,13 @@ import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
+import TeaImg1 from "@/public/assets/imgs/vista_hospitality_Inn_teaParty_1.webp";
+import TeaImg2 from "@/public/assets/imgs/vista_hospitality_Inn_teaParty_2.webp";
+import TeaImg3 from "@/public/assets/imgs/vista_hospitality_Inn_teaParty_3.webp";
+import TeaImg4 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_8.webp";
+import TeaImg5 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_3.webp";
+import TeaImg6 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_1.webp";
+import TeaImg7 from "@/public/assets/imgs/aboutOne.webp";
 import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
 import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
 import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
@@ -20,22 +27,43 @@ import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
 import AboutEventDetailFive from "@/components/Events/AboutEventDetailFive";
 const ImgArray = [
   {
-    img: carouselImg,
+    img: TeaImg1,
   },
   {
-    img: carouselImg1,
+    img: TeaImg2,
   },
   {
-    img: carouselImg2,
+    img: TeaImg3,
   },
   {
-    img: carouselImg3,
+    img: TeaImg4,
   },
   {
-    img: carouselImg4,
+    img: TeaImg5,
+  },
+];
+const ImgArrayTwo = [
+  {
+    img: TeaImg5,
   },
   {
-    img: carouselImg5,
+    img: TeaImg1,
+  },
+  {
+    img: TeaImg2,
+  },
+  {
+    img: TeaImg3,
+  },
+  {
+    img: TeaImg7,
+  },
+  {
+    img: TeaImg4,
+  },
+
+  {
+    img: TeaImg6,
   },
 ];
 const questions = [
@@ -79,89 +107,61 @@ export default function RoyalHighTea() {
       <main className="RoyalHighTea_main">
         <HeroInnerPages
           subtitle="ROYAL HIGH TEA"
-          title1="SOVEREIGN TEA "
-          title2="ELEGANCE "
+          title1="Elevate Your"
+          title2="Afternoons"
           para=""
         />
 
         <CarouselInnerEvent ImgArray={ImgArray} />
         <ColorChnagingHeadThreeImage
-          text="Step into the world of limitless possibilities at Vista Hospitality's Exhibition Showcase. Our marquee stands as a versatile and dynamic space, curated to elevate your exhibitions. With an expansive layout and cutting-edge facilities, our venue is designed to accentuate and spotlight your innovations, creating an immersive experience for both exhibitors and attendees."
-          mainTitle="Wedding and organizing "
-          mainTitleWord="Event Planning"
+          text="Indulge in the timeless charm of an afternoon filled with sophistication, delectable treats, and refined conversations. At Vista Hospitality INN, we invite you to experience the epitome of elegance with our High Tea Party, where every detail is curated to provide a delightful escape into a world of tasteful indulgence."
+          mainTitle="High Tea Party at"
+          mainTitleWord="Vista Hospitality INN"
         />
         <section className="why__choose--section faq--section position-relative">
           <div className=" container-fluid vistaCon">
             <AboutEventDetailFive
-              className="row gap-lg-0 gap-5 align-items-center justify-content-around"
+              className="row  align-items-center justify-content-between"
               btntext1="Contact Us"
               link1="/"
               btntext2="View Menu"
               link2="/"
-              img1={img1}
-              img2={img2}
-              img3={img3}
-              img4={img4}
-              img5={img5}
+              img1={TeaImg1}
+              img2={TeaImg2}
+              img3={TeaImg3}
+              img4={TeaImg4}
+              img5={TeaImg5}
               subtitle="ROYAL HIGH TEA"
               mainTitle="Regal Lounge"
-              feature1="Savor Regal Moments Together"
-              feature2="Tea Elegance Beyond Compare"
-              para="Indulge in the epitome of sophistication at our Tea Haven, where Royal Treats and Decadent Delights create an Elegant Indulgence. Sip and Savor every moment in our Regal Lounge, where the ambiance and exquisite offerings invite you to experience a Tea Haven like no other. Join us for an afternoon of luxury and share in the joy of savoring regal moments together."
+              feature1="Savor Every Moment"
+              feature2="The Vista High Tea Experience"
+              para="Embark on an afternoon of refined indulgence with the Vista High Tea Experience, a celebration of elegance, delightful flavors, and conviviality. At Vista Hospitality INN, we redefine the art of hosting a High Tea Party, curating an experience that transcends the ordinary and transforms your afternoons into moments of tasteful luxury."
             />
           </div>
         </section>
         <section className="why__choose--section bg-dark60 faq--section position-relative VistaSec_topBorder_grade">
           <div className=" container-fluid vistaCon">
             <AboutEventDetailFive
-              className="row gap-lg-0 gap-5 align-items-center justify-content-around flex-row-reverse"
+              className="row  align-items-center justify-content-between flex-row-reverse"
               btntext1="Contact Us"
               link1="/"
               btntext2="View Menu"
               link2="/"
-              img1={img1}
-              img2={img2}
-              img3={img3}
-              img4={img4}
-              img5={img5}
+              img1={TeaImg6}
+              img2={TeaImg7}
+              img3={TeaImg2}
+              img4={TeaImg3}
+              img5={TeaImg5}
               subtitle="ROYAL HIGH TEA"
-              mainTitle="Regal Lounge"
-              feature1="Savor Regal Moments Together"
-              feature2="Tea Elegance Beyond Compare"
-              para="Indulge in the epitome of sophistication at our Tea Haven, where Royal Treats and Decadent Delights create an Elegant Indulgence. Sip and Savor every moment in our Regal Lounge, where the ambiance and exquisite offerings invite you to experience a Tea Haven like no other. Join us for an afternoon of luxury and share in the joy of savoring regal moments together."
-            />
-          </div>
-        </section>
-        <section className="why__choose--section faq--section position-relative">
-          <div className=" container-fluid vistaCon">
-            <AboutEventDetailFive
-              className="row gap-lg-0 gap-5 align-items-center justify-content-around"
-              btntext1="Contact Us"
-              link1="/"
-              btntext2="View Menu"
-              link2="/"
-              img1={img1}
-              img2={img2}
-              img3={img3}
-              img4={img4}
-              img5={img5}
-              subtitle="ROYAL HIGH TEA"
-              mainTitle="Regal Lounge"
-              feature1="Savor Regal Moments Together"
-              feature2="Tea Elegance Beyond Compare"
-              para="Indulge in the epitome of sophistication at our Tea Haven, where Royal Treats and Decadent Delights create an Elegant Indulgence. Sip and Savor every moment in our Regal Lounge, where the ambiance and exquisite offerings invite you to experience a Tea Haven like no other. Join us for an afternoon of luxury and share in the joy of savoring regal moments together."
+              mainTitle="Savor Every Moment"
+              feature1="The Culinary Symphony"
+              feature2="Delights for the Discerning Palate"
+              para="Indulge in a symphony of flavors meticulously curated by our culinary artisans. From delicate finger sandwiches with gourmet fillings to exquisitely crafted pastries and desserts, our High Tea offerings are a showcase of culinary finesse, complemented by an extensive selection of premium teas."
             />
           </div>
         </section>
 
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArrayTwo} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

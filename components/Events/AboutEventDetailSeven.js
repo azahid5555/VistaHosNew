@@ -12,7 +12,7 @@ export default function AboutEventDetailSeven(props) {
             <Image
               alt="img"
               src={props.detailSevenImg}
-              className="object-fit-cover img-fluid w-100 h-100"
+              className="object-fit-cover img-fluid w-100 h-100 rounded"
             />
           </div>
           <div className="col-lg-6 d-flex flex-column col-md-12 col-sm-12">

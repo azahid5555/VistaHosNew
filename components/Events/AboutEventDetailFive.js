@@ -28,7 +28,7 @@ export default function FaqWithSlider(props) {
   };
   return (
     <div className={props.className}>
-      <div className="column right-column col-12 col-md-5">
+      <div className="column right-column col-12 col-md-5 col-lg-5">
         <div className="description swiper-container faqslider_con">
           <div className="overflow-hidden position-relative">
             <FuzzyOverla />
@@ -96,7 +96,7 @@ export default function FaqWithSlider(props) {
         </div>
       </div>
 
-      <div className="col-lg-5 d-flex flex-column col-md-12 col-sm-12">
+      <div className="col-lg-6 d-flex flex-column col-md-7 mt-5 mt-md-0 ">
         <div className="sub--title pb-2">
           <span className="text-uppercase Vista_para_ssm">
             {props.subtitle}
@@ -107,7 +107,7 @@ export default function FaqWithSlider(props) {
 
         {/* !lower seprator section */}
         <div className="d-flex gap-3 align-items-center pt-2">
-          <h6 className="h6 text-white">Savor Regal Moments Together</h6>
+          <h6 className="h6 text-white">{props.feature1}</h6>
           <p className="text-white">|</p>
           <div className="icon-wrappers d-flex gap-2">
             <svg
@@ -120,7 +120,7 @@ export default function FaqWithSlider(props) {
               {/*!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.*/}
               <path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z" />
             </svg>
-            <h6 className="h6 text-white"> Tea Elegance Beyond Compare</h6>
+            <h6 className="h6 text-white"> {props.feature2}</h6>
           </div>
         </div>
         {/* !lower seprater section neded */}

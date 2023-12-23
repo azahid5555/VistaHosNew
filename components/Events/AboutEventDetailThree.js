@@ -5,12 +5,12 @@ import HeadingFourAnimated from "../general/HeadingFourAnimated";
 import VistaBtn from "../general/VistaBtn";
 export default function AboutEventDetailThree(props) {
   return (
-    <div className="row mb-5 pb-5">
+    <div className="row pb-5">
       <div className="col-12">
         <div className="wedding__album--wrapper">
           <div className="wedding__album--content">
-            <div className="row justify-content-center align-items-center for-gap">
-              <div className="col-lg-5 mb-5 mb-md-0 col-md-4">
+            <div className="row justify-content-between align-items-center">
+              <div className="col-lg-5 col-md-5 col-12 col-sm-8">
                 <div className="album__image-wrapper">
                   <div className="album__image--content">
                     <div className="album__images--1">
@@ -37,9 +37,8 @@ export default function AboutEventDetailThree(props) {
                   </div>
                 </div>
               </div>
-              {/* !right content column */}
-              <div className="col-lg-5 col-md-5">
-                <div className="right-column py-5 d-flex flex-column justify-content-center gap-lg-4 gap-3">
+              <div className="col-lg-5 col-md-6 col-12 mt-5 mt-md-0">
+                <div className="right-column pt-5 pt-md-0 d-flex flex-column justify-content-center gap-lg-4 gap-3">
                   <div className="upper--wrapper d-flex flex-column justify-content-center gap-lg-3 gap-2">
                     <div className="sub--title">
                       <span className="text-uppercase Vista_para_ssm">

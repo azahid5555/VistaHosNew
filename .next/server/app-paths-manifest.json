@@ -1,8 +1,3 @@
 {
-  "/events/page": "app/events/page.js",
-  "/tour/vista-marquee/page": "app/tour/vista-marquee/page.js",
-  "/tour/la-vista-cafe/page": "app/tour/la-vista-cafe/page.js",
-  "/about-us/page": "app/about-us/page.js",
-  "/page": "app/page.js",
-  "/events/wedding-event/wedding-photography/page": "app/events/wedding-event/wedding-photography/page.js"
+  "/about-us/page": "app/about-us/page.js"
 }

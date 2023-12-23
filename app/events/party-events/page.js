@@ -1,19 +1,16 @@
+import "@/styles/style.css";
 import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
-import img1 from "@/public/assets/imgs/corporate_event.webp";
-import img2 from "@/public/assets/imgs/corporateEventBg.webp";
-import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import img4 from "@/public/assets/imgs/charity.webp";
-import img5 from "@/public/assets/imgs/exhibition.webp";
-import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
-import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
-import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
-import carouselImg3 from "@/public/assets/imgs/carouselInnerEvent3.webp";
-import carouselImg4 from "@/public/assets/imgs/carouselInnerEvent4.webp";
-import carouselImg5 from "@/public/assets/imgs/carouselInnerEvent5.webp";
-import bannerImg from "@/public/assets/imgs/aboutBanner.webp";
-import "@/styles/style.css";
+import PartiesImg1 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_1.webp";
+import PartiesImg2 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_2.webp";
+import PartiesImg3 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_3.webp";
+import PartiesImg4 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_4.webp";
+import PartiesImg5 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_5.webp";
+import PartiesImg6 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_6.webp";
+
+// import birthdayVideo from "@/public/assets/BirthdayReel.mp4";
+
 import ColorChnagingHeadThreeImage from "@/components/general/ColorChnagingHeadThreeImage";
 import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
 import Banner from "@/components/general/Banner";
@@ -22,33 +19,24 @@ import WhatWeOffer from "@/components/Events/WhatWeOffer";
 import PartyDetails from "@/components/Events/PartyDetails";
 import AboutStickySecTwo from "@/components/Events/AboutStickySecTwo";
 
-import AED3Img1 from "@/public/assets/imgs/blogDemo3.webp";
-import AED3Img2 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-
-import img11 from "@/public/assets/imgs/homeAbout.webp";
-import img22 from "@/public/assets/imgs/carousel1.webp";
-import img33 from "@/public/assets/imgs/carousel2.webp";
-import img44 from "@/public/assets/imgs/carousel3.webp";
-import img55 from "@/public/assets/imgs/carousel4.webp";
-
 const ImgArray = [
   {
-    img: carouselImg,
+    img: PartiesImg1,
   },
   {
-    img: carouselImg1,
+    img: PartiesImg2,
   },
   {
-    img: carouselImg2,
+    img: PartiesImg3,
   },
   {
-    img: carouselImg3,
+    img: PartiesImg4,
   },
   {
-    img: carouselImg4,
+    img: PartiesImg5,
   },
   {
-    img: carouselImg5,
+    img: PartiesImg6,
   },
 ];
 const questions = [
@@ -93,46 +81,69 @@ const StickyContent = [
   },
   {
     headText1: "",
-    headText2: "Offset Meetings",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    headText2: "Diverse Venue Selection",
+    para: "Elevate your celebrations with a range of unique and versatile venues tailored to suit any party theme or size. From intimate gatherings to grand soirées, Vista Hospitality provides the perfect setting for every occasion.",
   },
   {
     headText1: "",
-    headText2: "Team Happy Hours",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    headText2: "Culinary Excellence",
+    para: "Indulge your senses with our culinary expertise. Our chefs craft menus that go beyond mere meals, creating a gastronomic journey that enhances the overall party experience. ",
   },
   {
     headText1: "",
-    headText2: "Conferences",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    headText2: "Customized Themes and Decor",
+    para: "Infuse your party with personality. Whether it's a themed birthday celebration or a sophisticated engagement party, we offer customizable themes and decor to create an atmosphere that reflects your individuality and makes your event truly memorable.",
   },
 ];
 
+import icon1 from "@/public/assets/icons/weddingDay.svg";
+import icon2 from "@/public/assets/icons/weddingDay2.svg";
+import icon3 from "@/public/assets/icons/weddingDay3.svg";
+const whyChooseUS = [
+  {
+    id: 1,
+    icon: icon1,
+    title: "Versatile Venue Selection",
+    para: "Explore a canvas of possibilities with our diverse and adaptable venues. ",
+  },
+  {
+    id: 2,
+    icon: icon2,
+    title: "Culinary Excellence",
+    para: "Indulge in a culinary journey curated for perfection.",
+  },
+  {
+    id: 2,
+    icon: icon3,
+    title: "Personalized Service",
+    para: "From planning to execution, we ensure that every detail reflects your individual style, ",
+  },
+];
 export default function party() {
   return (
     <PageWrapper>
       <main className="Party_mian">
         <Banner
           heading="Vista Grand Celebrations"
-          para="Discover a world of possibilities at Vista Grand Celebrations – your premier venue for every occasion"
-          bgImg={bannerImg}
+          para="Craft unforgettable moments in our settings curated for sophistication and style, suitable for a diverse range of events."
+          bgImg={PartiesImg3}
         />
         <ColorChnagingHeadThreeImage
-          text="Step into the world of limitless possibilities at Vista Hospitality's Exhibition Showcase. Our marquee stands as a versatile and dynamic space, curated to elevate your exhibitions. With an expansive layout and cutting-edge facilities, our venue is designed to accentuate and spotlight your innovations, creating an immersive experience for both exhibitors and attendees."
-          mainTitle="Wedding and organizing "
-          mainTitleWord="Event Planning"
+          text="Welcome to Vista Grand Celebrations, where sophistication meets versatility, transforming your vision into extraordinary events with distinction. Our marquee, a canvas for limitless possibilities, echoes with elegance, setting the stage for unforgettable celebrations."
+          mainTitle="Crafting Extraordinary Moments with"
+          mainTitleWord="Elegance and Excellence"
         />
         <section className=" position-relative">
           <div className=" container-fluid vistaCon">
             <AboutEventDetailThreeRight
-              subtitle="Embracing Innovation Together."
-              title1text1="Showcase Annual"
-              title1text2="Exhibition"
-              para=" Step into a realm of creativity and innovation at our Annual Exhibition, where ideas unfold and inspiration ignites. Join us in celebrating the power of innovation, where every exhibit tells a unique story of creativity and ingenuity."
-              feature1="Innovative Showcases"
-              feature2="Interactive Learning Experiences"
-              img1={AED3Img1}
-              img2={AED3Img2}
+              subtitle="Elevate Every Celebration to an Unmatched Experience"
+              title1text1="Meticulously crafted to surpass "
+              title1text2="your expectations"
+              para="Welcome to Vista Hospitality, where every celebration is transformed into an exceptional experience. Explore our diverse venues, culinary delights, and personalized service, ensuring your parties are not just events but extraordinary moments that linger in the hearts of your guests."
+              feature1="Diverse Venue Selection"
+              feature2="Personalized Service"
+              img1={PartiesImg1}
+              img2={PartiesImg2}
               btntitle="Contact Us"
               btnlink="/"
             />
@@ -152,26 +163,20 @@ export default function party() {
           feature4_para="Explore innovative solutions tailored to your event, making every occasion unique and memorable."
         />
         <AboutStickySecTwo
-          img1={img11}
-          img2={img22}
-          img3={img33}
-          img4={img44}
-          img5={img55}
+          carouselArray={ImgArray}
           StickyContent={StickyContent}
+          video="public/assets/BirthdayReel.mp4"
         />
         <section className="position-relative whatweofferCom bg-dark60">
           <div className=" container-fluid vistaCon">
-            <WhatWeOffer />
+            <WhatWeOffer
+              heading="Crafting Moments, Elevating Experiences"
+              subHeading="DISTINCTIVE FEATURES OF VISTA HOSPITALITY INN"
+              cardsArray={whyChooseUS}
+            />
           </div>
         </section>
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

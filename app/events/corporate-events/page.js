@@ -14,11 +14,14 @@ import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
 import BottomCTA from "@/components/general/BottomCTA";
 
-import img11 from "@/public/assets/imgs/corporate_event.webp";
-import img22 from "@/public/assets/imgs/corporateEventBg.webp";
-import img33 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import img44 from "@/public/assets/imgs/charity.webp";
-import img55 from "@/public/assets/imgs/exhibition.webp";
+import corporateImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
+import corporateImg1 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_1.webp";
+import corporateImg2 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_2.webp";
+import corporateImg3 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_3.webp";
+import corporateImg4 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_4.webp";
+import corporateImg5 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_5.webp";
+import corporateImg6 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_6.webp";
+import corporateImg7 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_7.webp";
 
 const StickyContent = [
   {
@@ -34,63 +37,97 @@ const StickyContent = [
   {
     headText1: "",
     headText2: "Team Happy Hours",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    para: "Our venues boast modern amenities and versatile spaces suitable for a range of corporate functions.",
   },
   {
     headText1: "",
     headText2: "Conferences",
-    para: "Enhance productivity and collaboration in a unique marquee atmosphere.",
+    para: "With attention to detail and a focus on your objectives, we ensure that every aspect of your corporate event exceeds expectations.",
   },
 ];
 
 const questions = [
   {
     id: 1,
-    question: "What types of events are possible? ",
+    question: "What types of corporate events does Vista Hospitality cater to?",
     answer:
-      "The Vista Hospitality INN is a versatile event venue that can accommodate a wide range of events, including weddings, corporate meetings, banquets, private parties, fundraisers, conferences, trade shows, product launches, galas, awards ceremonies, concerts, plays, dance recitals, bar mitzvahs, bat mitzvahs, sweet 16 parties, graduation parties, retirement parties, anniversaries, birthday parties, and more.",
+      "Vista Hospitality specialises in a wide range of corporate events, including conferences, seminars, board meetings, product launches, team-building sessions, and corporate dinners.",
   },
   {
     id: 2,
     question:
-      "Are there specific features for model photoshoots in   your marquee? ",
+      "Can we customize the venue setup to suit our event's specific requirements?",
     answer:
-      "Certainly! Explore our Previous Model Shoots and Gallery sections for a glimpse into successful model photoshoots held in our dynamic and versatile marquee.",
+      "Absolutely! Our venues offer versatile setups that can be tailored to accommodate your event's unique needs. We work closely with you to customize the layout, seating arrangements, and technical requirements as per your preferences.",
   },
   {
     id: 3,
-    question: "What are the catering options available? ",
+    question:
+      "What support does Vista Hospitality provide in planning and executing corporate events?",
     answer:
-      "The Vista Hospitality INN offers a variety of menus prepared by the full-service on-site kitchen and a team of experienced chefs. If you prefer outside catering vendors, please discuss with our sales team.",
+      "We offer comprehensive support throughout the planning and execution phases. Our dedicated team assists with event conceptualization, logistics, audiovisual setups, catering arrangements, and on-site coordination to ensure a seamless and successful event.",
   },
   {
     id: 4,
-    question: "What are the parking options available? ",
+    question:
+      "Are there options for team-building activities or breakout sessions available at your venues?",
     answer:
-      "The Vista Hospitality has a large parking lot that can accommodate up to 500 cars. The venue also has a valet parking service available for an additional fee.",
+      "Yes, our venues offer versatile spaces suitable for team-building activities, breakout sessions, or workshops. We can assist in organizing various activities and provide the necessary arrangements to enhance your event's objectives.",
   },
   {
     id: 5,
     question:
-      "Can I see examples of past model photoshoots in your   marquee? ",
+      "Can Vista Hospitality handle last-minute changes or unexpected requirements during the event?",
     answer:
-      "Certainly! Explore our Previous Model Shoots and Gallery sections for a glimpse into successful model photoshoots held in our dynamic and versatile marquee.",
+      "Flexibility is key in event management. Our experienced team is adept at handling unforeseen circumstances or last-minute changes. We remain adaptable and responsive to ensure that your event runs smoothly, even amidst unexpected situations.",
   },
 ];
 
+const ImgArray = [
+  {
+    img: corporateImg,
+  },
+  {
+    img: corporateImg1,
+  },
+  {
+    img: corporateImg2,
+  },
+  {
+    img: corporateImg3,
+  },
+  {
+    img: corporateImg4,
+  },
+];
+const ImgArrayTwo = [
+  {
+    img: corporateImg1,
+  },
+  {
+    img: corporateImg2,
+  },
+  {
+    img: corporateImg5,
+  },
+  {
+    img: corporateImg6,
+  },
+  {
+    img: corporateImg7,
+  },
+];
 export default function CorporateEvents() {
   return (
     <PageWrapper>
       <main className="corporateEvents_page ">
         <Banner
           heading="Corporate Events"
-          para="At VistaHospitality, elegance is our signature. We infuse sophistication into every detail, creating events that resonate with timeless grace and style"
+          para="At Vista Hospitality, we specialize in curating unparalleled corporate events that seamlessly blend professionalism with sophistication."
           bgImg={bannerImg}
         />
         <AboutStickySec
-          img1={img1}
-          img2={img2}
-          img3={img3}
+          carouselArray={ImgArray}
           StickyContent={StickyContent}
         />
         <section className="Event__subHero-section position-relative">
@@ -110,14 +147,7 @@ export default function CorporateEvents() {
             </div>
           </div>
         </section>
-        <FaqWithSlider
-          img1={img11}
-          img2={img22}
-          img3={img33}
-          img4={img44}
-          img5={img55}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArrayTwo} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

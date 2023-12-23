@@ -10,7 +10,7 @@ export default function ReservationSec(props) {
       <div className="container-fluid vistaCon position-relative z-2">
         <div className="row justify-content-between online-reserv-row">
           <div className="col-md-5 position-relative col-12">
-            <div className="online-reserv-img position-relative overflow-hidden">
+            <div className="online-reserv-img position-relative overflow-hidden rounded">
               <FuzzyOverla />
               {props.ResImg && (
                 <Image
@@ -36,23 +36,26 @@ export default function ReservationSec(props) {
               <HeadingThree text="Seamless Reservations, Unforgettable Celebrations" />
             </div>
           </div>
-          <div className="col-md-6 or-right-col d-flex justify-content-center align-items-center col-12">
+          <div className="col-md-6 or-right-col d-flex justify-content-center align-items-center col-12 mt-5 mt-md-0">
             <div className="or-inner-content">
               <h3 className="subheading">Your Event, Your Way</h3>
               <HeadingTwo text="Seamless Event" text2="Reservations" />
               <p className="Vista_para_sm">
                 Simplify your event planning with VistaHospitalitys Online
                 Reservation. Streamlined for convenience, its your direct path
-                to creating memorable experiences.
+                to creating memorable experiences. <br />
+                Let Vista Hospitality transform your vision into a reality.
+                Reach out to us today to discuss how we can make your next event
+                an extraordinary affair.
               </p>
               <div className="list-div pb-5">
-                <div className="or-list-margin-b mb-0 pb-0">
+                <div className="or-list-margin-b mb-0 ">
                   <HeadingFourAnimated text="01  Instant Availability" />
                 </div>
-                <div className="or-list-margin-b mb-0 pb-0">
+                <div className="or-list-margin-b mb-0">
                   <HeadingFourAnimated text="02  Customization Options" />
                 </div>
-                <div className="or-list-margin-b mb-0 pb-0">
+                <div className="or-list-margin-b mb-0">
                   <HeadingFourAnimated text="03  Secure Payments" />
                 </div>
               </div>

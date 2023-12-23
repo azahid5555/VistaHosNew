@@ -4,10 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/assets/imgs/logo.webp";
 import { useEffect, useState } from "react";
-import VistaBtnSmall from "./VistaBtnSmall";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import InquiryModal from "./InquiryModal";
+import HeadingFourAnimated from "./HeadingFourAnimated";
+import HeadingThree from "./HeadingThree";
 const navLinks = [
   { title: "Home", href: "/", class: " " },
   { title: "About Us", href: "/about-us", class: " " },
@@ -146,6 +147,144 @@ const navLinks = [
   },
   { title: "Contact Us", href: "/contact-us", class: " " },
 ];
+const mobNavLinks = [
+  { title: "Home", href: "/", class: " " },
+  { title: "About Us", href: "/about-us", class: " " },
+  {
+    title: "Events",
+    href: "/events",
+    class: "mobSubmenuCon",
+    submenu: [
+      {
+        title: "Wedding Event",
+        href: "/events/wedding-event",
+        class: "submenuCon",
+        submenu: [
+          {
+            title: "Wedding Photography",
+            href: "/events/wedding-event/wedding-photography",
+          },
+        ],
+      },
+      {
+        title: "Corporate Events",
+        href: "/events/corporate-events",
+        class: "submenuCon",
+        submenu: [
+          {
+            title: "Annual Dinner",
+            href: "/events/corporate-events/annual-dinner",
+          },
+          {
+            title: "Annual Meetings",
+            href: "/events/corporate-events/annual-meetings",
+          },
+          {
+            title: "Exibition",
+            href: "/events/corporate-events/exibition",
+          },
+          {
+            title: "Charity Events",
+            href: "/events/corporate-events/charity-events",
+          },
+          {
+            title: "Corporate Dinner Events",
+            href: "/events/corporate-events/corporate-dinner-events",
+          },
+        ],
+      },
+      {
+        title: "Parties",
+        href: "/events/party-events",
+        class: "submenuCon",
+        submenu: [
+          {
+            title: "Royal Hightea Party",
+            href: "/events/party-events/royal-hightea-party",
+          },
+          {
+            title: "HipHop Party",
+            href: "/events/party-events/hiphop-party",
+          },
+          {
+            title: "Birthday Party",
+            href: "/events/party-events/birthday-party",
+          },
+        ],
+      },
+      {
+        title: "Public Events",
+        href: "/events/public-events",
+        class: "submenuCon",
+        submenu: [
+          {
+            title: "Musical Concert",
+            href: "/events/public-events/musical-concert",
+          },
+          {
+            title: "Sufi Night",
+            href: "/events/public-events/sufi-night",
+          },
+          {
+            title: "Festivals Event",
+            href: "/events/public-events/festivals-event",
+          },
+          {
+            title: "Model Photography",
+            href: "/events/public-events/model-photography",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Menu",
+    href: "/menus",
+    class: "mobSubmenuCon",
+    submenu: [
+      {
+        title: "Classical Menu",
+        href: "/menus/classical-menu",
+      },
+    ],
+  },
+  {
+    title: "Tour",
+    href: "/tour",
+    class: "mobSubmenuCon",
+    submenu: [
+      {
+        title: "La Vista Cafe",
+        href: "/tour/la-vista-cafe",
+      },
+      {
+        title: "Vista Ava Lawn",
+        href: "/tour/vista-ava-lawn",
+      },
+      {
+        title: "Vista Birthday Park",
+        href: "/tour/vista-birthday-park",
+      },
+      {
+        title: "Vista Engagment Park",
+        href: "/tour/vista-engagment-park",
+      },
+      {
+        title: "Vista Lawn Pool Side",
+        href: "/tour/vista-lawn-pool-side",
+      },
+      {
+        title: "Vista Luxury Suits",
+        href: "/tour/vista-luxury-suits",
+      },
+      {
+        title: "Vista Marquee",
+        href: "/tour/vista-marquee",
+      },
+    ],
+  },
+  { title: "Contact Us", href: "/contact-us", class: " " },
+];
 
 export default function Header() {
   const path = usePathname();
@@ -206,6 +345,30 @@ export default function Header() {
       },
     },
   };
+  const logoVars = {
+    initial: {
+      y: 0,
+      x: 0,
+      z: 0,
+      scaleY: 1,
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+        ease: [0.37, 0, 0.63, 1],
+      },
+    },
+    open: {
+      y: 0,
+      x: 0,
+      z: 0,
+      scaleY: 1,
+      opacity: 1,
+      transition: {
+        duration: 0.7,
+        ease: [0, 0.55, 0.43, 1],
+      },
+    },
+  };
 
   const containerVars = {
     initial: {
@@ -229,15 +392,28 @@ export default function Header() {
       setIsHovered(hovered ? index : null);
     }
   };
+
+  const [mobileSubmenuOpen, setMobileSubmenuOpen] = useState(null);
+  const [subMobileSubmenuOpen, setSubMobileSubmenuOpen] = useState(null);
+
+  const toggleMobileSubmenu = (index) => {
+    setMobileSubmenuOpen((prev) => (prev === index ? null : index));
+    console.log("toggle Sub Menu");
+  };
+  const toggleSubMobileSubmenu = (index) => {
+    setSubMobileSubmenuOpen((prev) => (prev === index ? null : index));
+    console.log("toggle Sub Sub Menu");
+  };
+
   return (
     <>
       <header className={color ? "nav_borderBtm sticky-top" : " sticky-top "}>
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid container-small justify-content-between">
             <div className="logo_con">
-              <a className="navbar-brand font-heading" href="#">
+              <Link className="navbar-brand font-heading" href="/">
                 <Image src={logo} alt="logo" className="img-fluid" />
-              </a>
+              </Link>
             </div>
             <div
               className="collapse navbar-collapse justify-content-center"
@@ -315,10 +491,10 @@ export default function Header() {
               </div>
             </div>
             <button
-              className="mobMenuCon p-0 bg-transparent border-0 fs-4"
+              className="mobMenuCon p-0 bg-transparent border-0 fs-4 text-white"
               onClick={toggleMenu}
             >
-              <span className="navbar-toggler-icon"></span>
+              <i class="bi bi-list"></i>
             </button>
           </div>
         </nav>
@@ -332,32 +508,206 @@ export default function Header() {
               className="small_screen_nav_bg"
             >
               <div className="small_screen_nav_inner">
-                <div className=" justify-content-between flex-row d-flex">
-                  <h4>Vista Group</h4>
-                  <p className="" onClick={toggleMenu}>
-                    Close
-                  </p>
-                </div>
+                <motion.div
+                  className=" d-flex align-items-center mobHeaderCon container-small"
+                  variants={containerVars}
+                  initial="initial"
+                  animate="open"
+                  exit="initial"
+                >
+                  <motion.div
+                    className=" justify-content-between flex-row d-flex my-3 align-items-center"
+                    variants={logoVars}
+                  >
+                    <div className="logo_con w-25">
+                      <Image alt="logo" src={logo} className=" img-fluid" />
+                    </div>
+                    <p className="text-white" onClick={toggleMenu}>
+                      Close
+                    </p>
+                  </motion.div>
+                </motion.div>
                 <motion.div
                   variants={containerVars}
                   initial="initial"
                   animate="open"
                   exit="initial"
-                  className="h-100 d-flex flex-column justify-content-center text-dark align-items-center gap-3"
+                  className="h-100 row mobileMenuCon container-small pe-0 d-flex align-items-center"
                 >
-                  {navLinks.map((link, index) => {
-                    return (
-                      <div className=" overflow-hidden" key={index}>
-                        <motion.Link
-                          variants={mobileLinkVars}
-                          href={link.href}
-                          className="text-decoration-none nav-link pe-auto"
-                        >
-                          <AnimatedLink title={link.title} className="" />
-                        </motion.Link>
+                  <div className="col-12 col-sm-6 col-md-8 mobileMenuCon_left">
+                    <div className="mobileMenuCon_wrapper d-flex flex-column justify-content-start align-items-baseline text-dark align-items-center">
+                      {mobNavLinks.map((link, index) => {
+                        return (
+                          <div
+                            className={`overflow-hidden  MobilesubmenuCon ${link.class}`}
+                            key={index}
+                          >
+                            <motion.div
+                              variants={mobileLinkVars}
+                              className="nav-link-con"
+                              // onClick={toggleMenu}
+                              onClick={() => toggleMobileSubmenu(index)}
+                            >
+                              <div className=" d-flex ">
+                                <Link
+                                  href={link.href}
+                                  className="text-decoration-none nav-link pe-auto"
+                                >
+                                  <AnimatedLink
+                                    title={link.title}
+                                    className=""
+                                  />
+                                </Link>
+                                <span className="MobilesubmenuCon_icon">
+                                  <i
+                                    className={`bi ${
+                                      mobileSubmenuOpen === index
+                                        ? "bi-arrow-down"
+                                        : "bi-arrow-right"
+                                    }`}
+                                  ></i>
+                                </span>
+                              </div>
+                              {link.submenu && (
+                                <ul
+                                  className={`mobsubmenu ${
+                                    mobileSubmenuOpen === index ? "open" : ""
+                                  }`}
+                                >
+                                  {link.submenu.map((sublink, j) => (
+                                    <li
+                                      key={j}
+                                      className={`position-relative mobsubmenuWrapper ${sublink.class}`}
+                                      onClick={() => toggleSubMobileSubmenu(j)}
+                                    >
+                                      <div className=" d-flex align-items-center mb-2">
+                                        <Link
+                                          href={sublink.href}
+                                          className="text-decoration-none nav-link pe-auto"
+                                        >
+                                          <AnimatedLink
+                                            title={sublink.title}
+                                            className=""
+                                          />
+                                        </Link>
+                                        <span className="MobilesubmenuCon_icon MobilesubmenuCon_iconTwo">
+                                          <i
+                                            className={`bi ${
+                                              subMobileSubmenuOpen === index
+                                                ? "bi-arrow-down"
+                                                : "bi-arrow-right"
+                                            }`}
+                                          ></i>
+                                        </span>
+                                      </div>
+                                      {sublink.submenu && (
+                                        <ul
+                                          className={`InnerMobsubmenu ${
+                                            subMobileSubmenuOpen === index
+                                              ? "open"
+                                              : ""
+                                          }`}
+                                        >
+                                          {sublink.submenu.map(
+                                            (nestedSublink, k) => (
+                                              <li key={k}>
+                                                <Link
+                                                  href={nestedSublink.href}
+                                                  className="text-decoration-none nav-link pe-auto"
+                                                >
+                                                  <AnimatedLink
+                                                    title={nestedSublink.title}
+                                                    className=""
+                                                  />
+                                                </Link>
+                                              </li>
+                                            )
+                                          )}
+                                        </ul>
+                                      )}
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
+                            </motion.div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </motion.div>
+                <motion.div
+                  className="mobNav_contact flex-column justify-content-center h-100"
+                  variants={containerVars}
+                  initial="initial"
+                  animate="open"
+                  exit="initial"
+                >
+                  <div className=" overflow-hidden">
+                    <motion.div
+                      variants={mobileLinkVars}
+                      className="contactDetails_con"
+                    >
+                      <HeadingFourAnimated text="Want to talk?" />
+                      <a
+                        href="mailto:info@vistahospitality.com"
+                        className=" text-decoration-none"
+                      >
+                        <p className=" Vista_para_sm clrSec">
+                          info@vistahospitality
+                        </p>
+                      </a>
+                    </motion.div>
+                  </div>
+                  <div className=" overflow-hidden">
+                    <motion.div
+                      variants={mobileLinkVars}
+                      className="contactDetails_con"
+                    >
+                      <HeadingFourAnimated text="Want to Book a Sweet?" />
+                      <a
+                        href="mailto:info@vistahospitality.com"
+                        className=" text-decoration-none"
+                      >
+                        <p className=" Vista_para_sm clrSec">Book Now</p>
+                      </a>
+                    </motion.div>
+                  </div>
+                  <div className=" overflow-hidden">
+                    <motion.div
+                      variants={mobileLinkVars}
+                      className="contactDetails_con"
+                    >
+                      <HeadingFourAnimated text="Quick Hire Us?" />
+                      <a
+                        href="mailto:info@vistahospitality.com"
+                        className=" text-decoration-none"
+                      >
+                        <p className=" Vista_para_sm clrSec">0323747817</p>
+                      </a>
+                    </motion.div>
+                  </div>
+                  <div className=" overflow-hidden">
+                    <motion.div
+                      variants={mobileLinkVars}
+                      className="contactDetails_con"
+                    >
+                      <div className="contactbtn_Wrapper">
+                        <div className="Vista_Btn_container btn_dark vistabtnSmall">
+                          <button
+                            type="button"
+                            className="Vista_btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"
+                          >
+                            <span className="Vista_btn_text fw-bold">
+                              Inquire
+                            </span>
+                          </button>
+                        </div>
                       </div>
-                    );
-                  })}
+                    </motion.div>
+                  </div>
                 </motion.div>
               </div>
             </motion.div>

@@ -1,23 +1,18 @@
+import "@/styles/style.css";
 import CarouselInnerEvent from "@/components/Events/CarouselInnerEvent";
 import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
-import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
-import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
-import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
-import carouselImg3 from "@/public/assets/imgs/carouselInnerEvent3.webp";
-import carouselImg4 from "@/public/assets/imgs/carouselInnerEvent4.webp";
-import carouselImg5 from "@/public/assets/imgs/carouselInnerEvent5.webp";
-import img1 from "@/public/assets/imgs/corporate_event.webp";
-import img2 from "@/public/assets/imgs/corporateEventBg.webp";
-import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import img4 from "@/public/assets/imgs/charity.webp";
-import img5 from "@/public/assets/imgs/exhibition.webp";
+import BDpartyImg1 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_1.webp";
+import BDpartyImg2 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_2.webp";
+import BDpartyImg3 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_3.webp";
+import BDpartyImg4 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_4.webp";
+import BDpartyImg5 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_5.webp";
+import BDpartyImg6 from "@/public/assets/imgs/vista_hospitality_Inn_Birthday_6.webp";
+
 import featureImg from "@/public/assets/imgs/feature--1.png";
-import detailImg1 from "@/public/assets/imgs/teamDemo.jpg";
-import detailImg2 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import "@/styles/style.css";
+
 import ColorChnagingHeadThreeImage from "@/components/general/ColorChnagingHeadThreeImage";
 import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
 import TextMarqueeOneLine from "@/components/Events/TextMarqueeOneLine";
@@ -25,22 +20,22 @@ import AboutEventDetailSix from "@/components/Events/AboutEventDetailSix";
 import WhatWeDo from "@/components/aboutPage/WhatWeDo";
 const ImgArray = [
   {
-    img: carouselImg,
+    img: BDpartyImg1,
   },
   {
-    img: carouselImg1,
+    img: BDpartyImg2,
   },
   {
-    img: carouselImg2,
+    img: BDpartyImg3,
   },
   {
-    img: carouselImg3,
+    img: BDpartyImg4,
   },
   {
-    img: carouselImg4,
+    img: BDpartyImg5,
   },
   {
-    img: carouselImg5,
+    img: BDpartyImg6,
   },
 ];
 const questions = [
@@ -78,46 +73,34 @@ const questions = [
   },
 ];
 const marqueeTexts = [
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
+  "Crafting",
+  "Memories",
+  "Unforgotable",
+  "Momments",
+  "Crafting",
+  "Memories",
+  "Unforgotable",
+  "Momments",
+  "Crafting",
+  "Memories",
+  "Unforgotable",
+  "Momments",
+  "Crafting",
+  "Memories",
+  "Unforgotable",
+  "Momments",
+  "Crafting",
+  "Memories",
+  "Unforgotable",
+  "Momments",
+  "Crafting",
+  "Memories",
+  "Unforgotable",
+  "Momments",
+  "Crafting",
+  "Memories",
+  "Unforgotable",
+  "Momments",
 ];
 
 export default function BirthdayParty() {
@@ -126,42 +109,33 @@ export default function BirthdayParty() {
       <main clas="BirthdayParty">
         <HeroInnerPages
           subtitle="Birthday Party"
-          title1="VISTA BIRTHDAY"
-          title2="BLISS"
+          title1="Celebrate Your Special "
+          title2="Day in Style"
           para=""
         />
 
         <CarouselInnerEvent ImgArray={ImgArray} />
         <AboutEventDetailSix
-          subtitle="Dance Grooves"
-          mainTitle="Dynamic Dance Floor"
-          para="Immerse in the pulsating energy of Hip Grooves on our
-                      Dynamic Dance Floor. Elevate your party experience with
-                      beats that make your celebration unforgettable."
-          feature1="Beating"
-          feature1br="Sync"
-          feature2="Rhythmic"
-          feature2br="Waves"
-          detailImg1={detailImg1}
-          detailImg2={detailImg2}
+          subtitle="BIRTHDAY PARTIES"
+          mainTitle="Crafting Unforgettable Birthday Moments"
+          para="Make your birthday an unforgettable affair with Vista Hospitality, where every detail is designed to turn your celebration into a cherished memory. Our venues, culinary delights, and personalized service come together to create a birthday experience that is as unique as you are."
+          feature1="Crafting"
+          feature1br="Memories"
+          feature2="Beautiful"
+          feature2br="Momments"
+          detailImg1={BDpartyImg4}
+          detailImg2={BDpartyImg1}
           featureImg={featureImg}
         />
 
         <ColorChnagingHeadThreeImage
-          text="Step into the world of limitless possibilities at Vista Hospitality's Exhibition Showcase. Our marquee stands as a versatile and dynamic space, curated to elevate your exhibitions. With an expansive layout and cutting-edge facilities, our venue is designed to accentuate and spotlight your innovations, creating an immersive experience for both exhibitors and attendees."
-          mainTitle="Wedding and organizing "
-          mainTitleWord="Event Planning"
+          text="Experience the warmth of personalized service as our dedicated team attends to every detail of your celebration. From planning to execution, we work closely with you to ensure that your birthday party reflects your personality and preferences."
+          mainTitle="Birthday Parties at "
+          mainTitleWord="Vista Hospitality Inn"
         />
         <TextMarqueeOneLine text={marqueeTexts} />
         <WhatWeDo />
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArray} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

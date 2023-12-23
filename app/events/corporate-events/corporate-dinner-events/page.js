@@ -1,46 +1,62 @@
+import "@/styles/style.css";
 import CarouselInnerEvent from "@/components/Events/CarouselInnerEvent";
 import FaqWithSlider from "@/components/Events/FaqWithSlider";
 import HeroInnerPages from "@/components/Events/HeroInnerPages";
 import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
-import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
-import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
-import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
-import carouselImg3 from "@/public/assets/imgs/carouselInnerEvent3.webp";
-import carouselImg4 from "@/public/assets/imgs/carouselInnerEvent4.webp";
-import carouselImg5 from "@/public/assets/imgs/carouselInnerEvent5.webp";
-import img1 from "@/public/assets/imgs/corporate_event.webp";
-import img2 from "@/public/assets/imgs/corporateEventBg.webp";
-import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import img4 from "@/public/assets/imgs/charity.webp";
-import img5 from "@/public/assets/imgs/exhibition.webp";
+import corporateImg1 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_1.webp";
+import corporateImg2 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_2.webp";
+import corporateImg3 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_3.webp";
+import corporateImg4 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_4.webp";
+import corporateImg5 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_5.webp";
+import corporateImg6 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_6.webp";
+import corporateImg7 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_7.webp";
 
 import AED3Img1 from "@/public/assets/imgs/blogDemo3.webp";
 import AED3Img2 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
 
-import "@/styles/style.css";
 import ColorChnagingHeadThreeImage from "@/components/general/ColorChnagingHeadThreeImage";
 import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
 import AboutEventDetailThreeRight from "@/components/Events/AboutEventDetailThree";
 import WhatWeOffer from "@/components/Events/WhatWeOffer";
 const ImgArray = [
   {
-    img: carouselImg,
+    img: corporateImg1,
   },
   {
-    img: carouselImg1,
+    img: corporateImg2,
   },
   {
-    img: carouselImg2,
+    img: corporateImg3,
   },
   {
-    img: carouselImg3,
+    img: corporateImg4,
   },
   {
-    img: carouselImg4,
+    img: corporateImg5,
+  },
+];
+const ImgArrayTwo = [
+  {
+    img: corporateImg1,
   },
   {
-    img: carouselImg5,
+    img: corporateImg2,
+  },
+  {
+    img: corporateImg3,
+  },
+  {
+    img: corporateImg4,
+  },
+  {
+    img: corporateImg5,
+  },
+  {
+    img: corporateImg6,
+  },
+  {
+    img: corporateImg7,
   },
 ];
 const questions = [
@@ -77,6 +93,29 @@ const questions = [
       "Certainly! Explore our Previous Model Shoots and Gallery sections for a glimpse into successful model photoshoots held in our dynamic and versatile marquee.",
   },
 ];
+import icon1 from "@/public/assets/icons/weddingDay.svg";
+import icon2 from "@/public/assets/icons/weddingDay2.svg";
+import icon3 from "@/public/assets/icons/weddingDay3.svg";
+const whyChooseUS = [
+  {
+    id: 1,
+    icon: icon1,
+    title: "Elegant Venue Selection",
+    para: "Elevate your Annual Dinner with our chic venues, where sophistication meets celebration.",
+  },
+  {
+    id: 2,
+    icon: icon2,
+    title: "Culinary Delights",
+    para: "Indulge in a culinary journey of excellence, tailor-made for your Annual Dinner's significance.",
+  },
+  {
+    id: 2,
+    icon: icon3,
+    title: "Seamless Planning",
+    para: "Trust us for meticulous planning, ensuring a flawlessly orchestrated Annual Dinner that mirrors your organization's commitment to excellence.",
+  },
+];
 
 export default function corporateDinnerEvents() {
   return (
@@ -84,16 +123,16 @@ export default function corporateDinnerEvents() {
       <main className="corporateDinner_main">
         <HeroInnerPages
           subtitle="CORPORATE DINNER"
-          title1="CORPORATE EXCELLENCE "
-          title2="UNVEILED"
+          title1="Elevate Your Corporate"
+          title2="Moments"
           para=""
         />
 
         <CarouselInnerEvent ImgArray={ImgArray} />
         <ColorChnagingHeadThreeImage
-          text="Step into the world of limitless possibilities at Vista Hospitality's Exhibition Showcase. Our marquee stands as a versatile and dynamic space, curated to elevate your exhibitions. With an expansive layout and cutting-edge facilities, our venue is designed to accentuate and spotlight your innovations, creating an immersive experience for both exhibitors and attendees."
-          mainTitle="Wedding and organizing "
-          mainTitleWord="Event Planning"
+          text="Welcome to an exceptional setting where business meets elegance, and corporate gatherings become memorable experiences. At Vista Hospitality, we invite you to explore our Corporate Dinner offerings, tailored to provide a sophisticated backdrop for networking, celebrations, and strategic discussions."
+          mainTitle="Corporate Dinner at"
+          mainTitleWord="Vista Hospitality"
         />
         <section className=" position-relative">
           <div className=" container-fluid vistaCon">
@@ -101,11 +140,11 @@ export default function corporateDinnerEvents() {
               subtitle="Embracing Innovation Together."
               title1text1="Showcase Annual"
               title1text2="Exhibition"
-              para=" Step into a realm of creativity and innovation at our Annual Exhibition, where ideas unfold and inspiration ignites. Join us in celebrating the power of innovation, where every exhibit tells a unique story of creativity and ingenuity."
+              para="Immerse your corporate events in a professional ambiance conducive to meaningful discussions and networking. Our venues offer a refined setting that complements the significance of your corporate dinners, creating an environment where business and elegance seamlessly converge."
               feature1="Innovative Showcases"
               feature2="Interactive Learning Experiences"
-              img1={AED3Img1}
-              img2={AED3Img2}
+              img1={corporateImg5}
+              img2={corporateImg1}
               btntitle="Contact Us"
               btnlink="/"
             />
@@ -113,17 +152,14 @@ export default function corporateDinnerEvents() {
         </section>
         <section className="position-relative whatweofferCom bg-dark60">
           <div className=" container-fluid vistaCon">
-            <WhatWeOffer />
+            <WhatWeOffer
+              heading="Where Excellence Meets Every Celebration"
+              subHeading="WHY CHOOSE VISTA HOSPITALITY INN"
+              cardsArray={whyChooseUS}
+            />
           </div>
         </section>
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArrayTwo} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

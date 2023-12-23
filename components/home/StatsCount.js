@@ -1,7 +1,7 @@
 export default function StatsCount(props) {
   return (
     <div className="casaStatsCount_con">
-      <div className="row g-0">
+      <div className="row g-0 flex-wrap">
         {props.stats.map((e, key) => (
           <div className="col" key={key}>
             <div className="text-center stat_inner text-white">

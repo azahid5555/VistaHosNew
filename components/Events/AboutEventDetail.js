@@ -38,7 +38,7 @@ export default function HomeAboutSec(props) {
     <section className="position-relative homeAboutSec">
       <div className="container-fluid vistaCon position-relative z-2 pt-0">
         <div className="row justify-content-center">
-          <div className="col-2 mb-4 text-center">
+          <div className="col-4 col-sm-3 col-md-2 mb-4 text-center">
             <Image
               alt="Vista Hospitality Inn"
               src={Favicon}

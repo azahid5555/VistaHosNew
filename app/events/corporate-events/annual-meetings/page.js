@@ -1,4 +1,3 @@
-import AboutEventDetailThree from "@/components/Events/AboutEventDetailThree";
 import AboutEventDetailTwo from "@/components/Events/AboutEventDetailTwo";
 import CarouselInnerEvent from "@/components/Events/CarouselInnerEvent";
 import FaqWithSlider from "@/components/Events/FaqWithSlider";
@@ -9,84 +8,106 @@ import BottomCTA from "@/components/general/BottomCTA";
 import { PageWrapper } from "@/components/general/PageWrapper";
 import ReservationSec from "@/components/general/ReservationSec";
 import ReviewsSecOneLine from "@/components/general/ReviewsSecOneLine";
-import carouselImg from "@/public/assets/imgs/carouselInnerEvent0.webp";
-import carouselImg1 from "@/public/assets/imgs/carouselInnerEvent1.webp";
-import carouselImg2 from "@/public/assets/imgs/carouselInnerEvent2.webp";
-import carouselImg3 from "@/public/assets/imgs/carouselInnerEvent3.webp";
-import carouselImg4 from "@/public/assets/imgs/carouselInnerEvent4.webp";
-import carouselImg5 from "@/public/assets/imgs/carouselInnerEvent5.webp";
-import img1 from "@/public/assets/imgs/corporate_event.webp";
-import img2 from "@/public/assets/imgs/corporateEventBg.webp";
-import img3 from "@/public/assets/imgs/vista-hospitality-inn-annual-meetup copy.webp";
-import img4 from "@/public/assets/imgs/charity.webp";
-import img5 from "@/public/assets/imgs/exhibition.webp";
-
-import AED2Img1 from "@/public/assets/imgs/homeAbout.webp";
-import AED2Img2 from "@/public/assets/imgs/corporateEventBg.webp";
+import corporateImg1 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_1.webp";
+import corporateImg2 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_2.webp";
+import corporateImg3 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_3.webp";
+import corporateImg4 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_4.webp";
+import corporateImg5 from "@/public/assets/imgs/blogDemo3.webp";
+import corporateImg6 from "@/public/assets/imgs/charity.webp";
+import corporateImg7 from "@/public/assets/imgs/vista_hospitality_Inn_corporate_8.webp";
+import corporateImg8 from "@/public/assets/imgs/homeAbout.webp";
 
 import "@/styles/style.css";
 
 const ImgArray = [
   {
-    img: carouselImg,
+    img: corporateImg5,
   },
   {
-    img: carouselImg1,
+    img: corporateImg1,
   },
   {
-    img: carouselImg2,
+    img: corporateImg2,
   },
   {
-    img: carouselImg3,
+    img: corporateImg3,
   },
   {
-    img: carouselImg4,
+    img: corporateImg6,
   },
   {
-    img: carouselImg5,
+    img: corporateImg4,
+  },
+  {
+    img: corporateImg7,
+  },
+];
+const ImgArrayTwo = [
+  {
+    img: corporateImg5,
+  },
+  {
+    img: corporateImg1,
+  },
+  {
+    img: corporateImg2,
+  },
+  {
+    img: corporateImg3,
+  },
+  {
+    img: corporateImg6,
+  },
+  {
+    img: corporateImg4,
+  },
+  {
+    img: corporateImg7,
   },
 ];
 const marqueeTexts = [
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
-  "Unique",
-  "BrideStory",
-  "Beautiful",
-  "Inspiration",
+  "Elegance",
+  "Unveiled",
+  "Celebrating",
+  "Excellence",
+  "Evening",
+  "Dinner",
+  "Elegance",
+  "Unveiled",
+  "Celebrating",
+  "Excellence",
+  "Evening",
+  "Dinner",
+  "Elegance",
+  "Unveiled",
+  "Celebrating",
+  "Excellence",
+  "Evening",
+  "Dinner",
+  "Elegance",
+  "Unveiled",
+  "Celebrating",
+  "Excellence",
+  "Evening",
+  "Dinner",
+  "Elegance",
+  "Unveiled",
+  "Celebrating",
+  "Excellence",
+  "Evening",
+  "Dinner",
+  "Elegance",
+  "Unveiled",
+  "Celebrating",
+  "Excellence",
+  "Evening",
+  "Dinner",
+  "Elegance",
+  "Unveiled",
+  "Celebrating",
+  "Excellence",
+  "Evening",
+  "Dinner",
 ];
 const questions = [
   {
@@ -123,40 +144,61 @@ const questions = [
   },
 ];
 
+import icon1 from "@/public/assets/icons/weddingDay.svg";
+import icon2 from "@/public/assets/icons/weddingDay2.svg";
+import icon3 from "@/public/assets/icons/weddingDay3.svg";
+
+const whyChooseUS = [
+  {
+    id: 1,
+    icon: icon1,
+    title: "Professional Atmosphere",
+    para: "Our sophisticated venues offer a professional ambiance conducive to productive discussions.",
+  },
+  {
+    id: 2,
+    icon: icon2,
+    title: "Customized Packages",
+    para: "Tailor your Annual Meeting experience with our customizable packages.",
+  },
+  {
+    id: 2,
+    icon: icon3,
+    title: "Exceptional Service",
+    para: "Experience unparalleled service with our dedicated team of professionals. ",
+  },
+];
 export default function annualMeeting() {
   return (
     <PageWrapper>
       <main className="annual-meeting">
         <HeroInnerPages
           subtitle="ANNUAL MEETING"
-          title1="CELESTIAL CULINARY "
-          title2="NIGHT"
+          title1="Annual Meetings, Where "
+          title2="Vision Meets Progress"
           para=""
         />
         <CarouselInnerEvent ImgArray={ImgArray} />
-        <ReservationSec video="/assets/ReservationVideo.MP4" />
+        <ReservationSec ResImg={corporateImg8} />
         <section className="position-relative whatweofferCom bg-dark60">
           <div className=" container-fluid vistaCon">
-            <WhatWeOffer />
+            <WhatWeOffer
+              heading="Where Excellence Meets Every Celebration"
+              subHeading="WHY CHOOSE VISTA HOSPITALITY INN"
+              cardsArray={whyChooseUS}
+            />
           </div>
         </section>
         <AboutEventDetailTwo
           subtitle="THE BEST OF THE BEST"
-          title1text1="Enchanting Gala Evening"
-          title1text2="Experience"
-          para="Indulge in an evening of unparalleled elegance and sophistication at our annual dinner. Immerse yourself in a world of exquisite cuisine, captivating entertainment, and enchanting moments that will linger in your memories."
-          img1={AED2Img1}
-          img2={AED2Img2}
+          title1text1="Plan Your Annual Meeting with"
+          title1text2="Vista Hospitality"
+          para="Enhance your meeting with our catering services, offering a range of culinary delights to keep your attendees refreshed and energized. Trust our experienced event planning team to handle every detail, allowing you to focus on the substance of your Annual Meeting."
+          img1={corporateImg8}
+          img2={corporateImg3}
         />
         <TextMarqueeOneLine text={marqueeTexts} />
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArrayTwo} questions={questions} />
         <ReviewsSecOneLine />
         <BottomCTA />
       </main>

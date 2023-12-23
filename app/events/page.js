@@ -15,58 +15,81 @@ import img5 from "@/public/assets/imgs/carousel4.webp";
 
 import featureImg1 from "@/public/assets/imgs/golden__leave.png";
 import featureImg2 from "@/public/assets/imgs/golden__paint.png";
+import featureImg3 from "@/public/assets/imgs/elegant.png";
+import EvnetsTypesMain from "@/components/Events/EvnetsTypesMain";
+
 const questions = [
   {
     id: 1,
-    question: "What types of events are possible? ",
+    question:
+      "How do I inquire about booking an event venue with Vista Hospitality? ",
     answer:
-      "The Vista Hospitality INN is a versatile event venue that can accommodate a wide range of events, including weddings, corporate meetings, banquets, private parties, fundraisers, conferences, trade shows, product launches, galas, awards ceremonies, concerts, plays, dance recitals, bar mitzvahs, bat mitzvahs, sweet 16 parties, graduation parties, retirement parties, anniversaries, birthday parties, and more.",
+      "To inquire about booking a venue for your event, please reach out to our dedicated events team through our contact page or by calling our provided contact numbers.",
   },
   {
     id: 2,
     question:
-      "Are there specific features for model photoshoots in   your marquee? ",
+      "What types of events can be hosted at Vista Hospitality's venues? ",
     answer:
-      "Certainly! Explore our Previous Model Shoots and Gallery sections for a glimpse into successful model photoshoots held in our dynamic and versatile marquee.",
+      "Our venues cater to a diverse range of events, including weddings, corporate gatherings, birthday parties, anniversaries, and more. We provide spaces suitable for various occasions.",
   },
   {
     id: 3,
-    question: "What are the catering options available? ",
+    question:
+      "Can Vista Hospitality assist with event planning and coordination services? ",
     answer:
-      "The Vista Hospitality INN offers a variety of menus prepared by the full-service on-site kitchen and a team of experienced chefs. If you prefer outside catering vendors, please discuss with our sales team.",
+      "Absolutely! Our experienced event planners offer comprehensive planning and coordination services, ensuring your event is meticulously organized and executed flawlessly.",
   },
   {
     id: 4,
-    question: "What are the parking options available? ",
+    question:
+      "Are catering services available for events hosted at Vista Hospitality venues?",
     answer:
-      "The Vista Hospitality has a large parking lot that can accommodate up to 500 cars. The venue also has a valet parking service available for an additional fee.",
+      "Yes, we offer catering services with a diverse menu selection to suit your event's culinary preferences. External caterers can also be accommodated with prior arrangement.",
   },
   {
     id: 5,
     question:
-      "Can I see examples of past model photoshoots in your   marquee? ",
+      "What safety measures and protocols are in place at Vista Hospitality venues?",
     answer:
-      "Certainly! Explore our Previous Model Shoots and Gallery sections for a glimpse into successful model photoshoots held in our dynamic and versatile marquee.",
+      "Your safety is our priority. Our venues adhere to strict safety standards, including regular maintenance, emergency procedures, and compliance with all necessary regulations.",
   },
 ];
 const featureList = [
   {
     id: 1,
-    img: featureImg1,
+    img: featureImg3,
     title: "ELEGANT",
     desc: "Sophisticated spaces and stunning decor for your occasion.",
   },
   {
     id: 2,
-    img: featureImg2,
+    img: featureImg1,
     title: "VERSATILE",
     desc: "Spaces for weddings, conferences, trade shows, and more.",
   },
   {
     id: 3,
-    img: featureImg1,
+    img: featureImg2,
     title: "PERSONAL",
     desc: "Experienced team for personalized service and tailored events.",
+  },
+];
+const ImgArrayTwo = [
+  {
+    img: img1,
+  },
+  {
+    img: img2,
+  },
+  {
+    img: img3,
+  },
+  {
+    img: img4,
+  },
+  {
+    img: img5,
   },
 ];
 export default function Events() {
@@ -87,6 +110,11 @@ export default function Events() {
         </section>
         <section className="Event__feature-section position-relative">
           <div className=" container-fluid vistaCon py-0">
+            <EvnetsTypesMain />
+          </div>
+        </section>
+        <section className="Event__feature-section position-relative">
+          <div className=" container-fluid vistaCon py-0">
             <FeaturesLists featureList={featureList} />
           </div>
         </section>
@@ -95,14 +123,7 @@ export default function Events() {
             <HomeAboutSec text="Welcome to Vista Hospitality, where we redefine hospitality with elegance and innovation. From the enchanting Vista Marquess to the delightful Vista Luxury Sweets, each moment is crafted with passion. Join us in creating unforgettable memories at Vista, where your journey is our priority." />
           </div>
         </section>
-        <FaqWithSlider
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          img5={img5}
-          questions={questions}
-        />
+        <FaqWithSlider carouselArray={ImgArrayTwo} questions={questions} />
         <BottomCTA />
       </main>
     </PageWrapper>

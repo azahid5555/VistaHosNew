@@ -284,8 +284,10 @@ About Us Page Styling
 .whatwedo-col-card:hover .whatwedo-col-card-innercontent i {
   color: white !important;
 }
-.whatwedo-col-card:hover .whatwedo-a-svg-link svg {
-  fill: #fff;
+.whatwedo-col-card .whatwedo-a-svg-link img {
+  text-align: start;
+  width: auto;
+  height: 60px;
 }
 .whatwedo-services-item-link {
   position: absolute;
@@ -329,6 +331,9 @@ About Us Page Styling
   position: -webkit-sticky;
   position: sticky;
   top: 120px;
+}
+.wedding__FAQ-section .right-column .description .icon--wrapper {
+  z-index: 99;
 }
 .autoplay-progress {
   position: absolute;
@@ -392,7 +397,8 @@ About Us Page Styling
   bottom: 0;
 }
 .or-slog-div h3 {
-  margin-left: 62px;
+  margin-left: 50px;
+  margin-right: 12px;
   color: var(--white-color);
 }
 .or-right-col {
@@ -725,7 +731,7 @@ About Us Page Styling
   font-family: var(--font-heading-light);
   margin: 0;
   white-space: nowrap !important;
-  width: 100vw;
+  width: 110vw;
   line-height: 0.88;
   background-color: var(--black-color);
   mix-blend-mode: multiply;
@@ -820,7 +826,7 @@ About Us Page Styling
 .Blog__section .swiper::before {
   content: "";
   height: 93%;
-  width: 250px;
+  width: 200px;
   background-image: linear-gradient(
     to right,
     rgba(17, 16, 16, 1),
@@ -922,7 +928,32 @@ About Us Page Styling
   margin-right: -300px;
   margin-bottom: 11px;
 }
-
+.marquee-carousel.marquee-carousel-2 {
+  margin-left: -300px;
+}
+.reviews_con .marquee-items {
+  -webkit-transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+  -moz-transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+  -o-transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: -webkit-box;
+  position: relative;
+  width: 100%;
+  height: 150px;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.reviews_con .marquee .marquee-item {
+  padding: 16px 9.5px;
+  border: 1px solid #5958587c;
+}
+.reviews_con .marquee-item {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  width: 300px;
+  height: 100%;
+  margin-right: 11px;
+}
 /*********************
  Events Pages Styling 
 **********************/
@@ -1064,9 +1095,11 @@ Wedding Event Pages Styling
 /* !Details of photographer section css & photography precious moment font css */
 
 .photographer_detail-left .flower-image {
+  width: 212px;
+  height: 212px;
   position: absolute;
-  top: calc(50% + 90px);
-  left: calc(50% + 81px);
+  bottom: -106px;
+  right: -106px;
   transform: rotate(-34deg);
   z-index: 0;
 }
@@ -1079,10 +1112,6 @@ Wedding Event Pages Styling
   width: 100%;
 }
 
-.photographer_detail-left .flower-image {
-  width: 212px;
-  height: 212px;
-}
 .photographer_detail-left .flower-image img {
   object-fit: cover;
   width: 100%;
@@ -1157,16 +1186,16 @@ Wedding Event Pages Styling
 .album__image--content .album__images--3 {
   position: absolute;
   bottom: calc(50% - 67px);
-  right: calc(50% - 342px);
+  right: 20px;
   z-index: -1;
-  width: 400px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   transform: rotate(-50deg);
 }
 .album__image--content .album__images--2 {
   position: absolute;
-  bottom: calc(50% - 345px);
-  left: calc(50% - 20px);
+  bottom: calc(50% - 300px);
+  right: -10%;
   width: 340px;
   height: 350px;
   z-index: 9;
@@ -1493,89 +1522,438 @@ Wedding Event Pages Styling
   background-attachment: fixed;
 }
 
-.recepie_price:after {
+.recepie_price h4 {
+  font-size: 18px;
+  letter-spacing: -2px;
+  position: relative;
+  width: fit-content;
+}
+.recepie_price h4::after {
   content: "";
   position: absolute;
   justify-content: center;
   height: 2px;
   width: 65px;
   background: var(--primary-color);
-  left: 2;
+  right: 0;
+  bottom: -5px;
 }
 
-/* Responsoive STyles */
+.birthdayParkAdvantages h4.vista_hos_title4 {
+  font-size: 20px;
+}
 
-@media (min-width: 768px) {
-  .marquee-carousel.marquee-carousel-1 {
-    margin-bottom: 16px;
+.tourWelcome .rightImgCon img {
+  width: 100%;
+  height: 250px !important;
+  object-fit: cover !important;
+}
+/* Responsoive STyles */
+/*----------------------------------------------------------  
+ ---------------------------------------------------------- */
+/* Large Screen */
+@media only screen and (max-width: 1200px) {
+  .bottomCta_sec .BottomCta_link .BottomCta_link_inner {
+    height: 600px;
+  }
+}
+/* Medium Screen */
+@media only screen and (max-width: 992px) {
+  h2.vista_hos_title2 {
+    font-size: 38px;
+  }
+  p.Vista_para_sm {
+    font-size: 16px;
+  }
+  h4.vista_hos_title4 {
+    font-size: 22px;
+  }
+  .Vista_btn {
+    height: 60px;
+    width: 180px;
+  }
+  .Vista_Btn_container.vistaBtn_large a {
+    width: 280px;
+  }
+  .possibilitiesSec .marquees_con {
+    padding: 20px 20px;
+  }
+  .possibilities_card_item {
+    flex-basis: calc(100% / 2);
+    max-width: calc(100% / 2);
+    height: 50vh;
+  }
+  .possibilities_card_item:nth-child(1),
+  .possibilities_card_item:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .casaStatsCount_con h3 {
+    font-size: 28px;
+  }
+  .casaStatsCount_con p {
+    font-size: 14px;
+  }
+  h5.vista_hos_title5 {
+    font-size: 19px;
+  }
+  .card .inner--card {
+    padding: 13px;
+  }
+  .bottomCta_sec .BottomCta_link .BottomCta_link_inner {
+    height: 450px;
+  }
+  .bottomCta_sec .bottomCTA_title {
+    line-height: 0.8;
+  }
+  h1.vista_hos_title {
+    font-size: 70px;
+  }
+  .online-reserv-img,
+  .online-reserv-img img {
+    height: 600px;
+  }
+  .or-right-col {
+    margin: 10px;
+  }
+  .Team_con .teamImg {
+    height: 450px;
+  }
+  .container-small {
+    padding: 0rem 3rem !important;
+  }
+  .swiper-container img {
+    height: 500px;
+  }
+  .Event_main .mainVideoSec .vistaCon {
+    padding-bottom: 30px;
+  }
+  .Event_main .mainVideoSec .vistaCon p.Vista_para_l {
+    font-size: 18px;
+  }
+  #animecolorheadingCon h3 {
+    font-size: 36px !important;
+  }
+  .animatedCard_sec {
+    min-height: 20rem;
+  }
+  .fullHeight_animatedCard .animatedCard_sec {
+    height: 100% !important;
+  }
+  .Event__subHero-section .vistaCon {
+    margin: 0;
+  }
+  .photographer_detail-left .flower-image {
+    z-index: -1;
+    width: 120px;
+    height: 120px;
+    bottom: -40px;
+    right: -40px;
+  }
+  .album__image--content .album__images--1 {
+    height: 450px;
+    width: 300px;
+  }
+  .album__image--content .album__images--2 {
+    width: 300px;
+    height: 320px;
+  }
+  .album__image--content .album__images--3 {
+    right: -50px;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .bottomCta_sec .BottomCta_link .BottomCta_link_inner {
+    height: 400px;
+  }
+}
+/* Small Screen */
+@media only screen and (max-width: 768px) {
+  footer .footerBTmImg img {
+    width: 60%;
+  }
+  .or-slog-div {
+    right: 12px;
+  }
+  .hero_section .video_hero_content {
+    width: 95%;
+  }
+  .hero_inner {
+    height: 60vh;
+  }
+  .hero_inner video {
+    width: 150% !important;
+  }
+  h1.vista_hos_title {
+    font-size: 60px;
+  }
+  .threeDAnimatedHeading_con {
+    height: 60px;
+  }
+  .or-list-margin-b {
+    width: auto;
+  }
+  .Team_con .teamImg {
+    height: 500px;
+    object-position: top;
+  }
+  .bottomCta_sec .BottomCta_link .BottomCta_link_inner {
+    height: 340px;
+  }
+  .bottomCta_sec .BottomCta_link .BottomCta_link_inner .icon {
+    top: 20px;
+    right: 20px;
+  }
+  nav .logo_con {
+    width: 28%;
+  }
+  .container-small {
+    padding: 0rem 2rem !important;
+  }
+  .about-img-right {
+    width: 300px;
+    height: 350px;
+    top: 25%;
+  }
+  p.Vista_para_l {
+    font-size: 20px;
+  }
+  .skew__line-wrapper {
+    height: 200px;
+  }
+  .Event_main .mainVideoSec .vistaCon .vistaDetailsCon .col-12:nth-child(2) {
+    margin-left: 55px;
+  }
+  #animecolorheadingCon h3 {
+    font-size: 32px !important;
+  }
+  .animatedCard_sec {
+    min-height: 18rem;
+  }
+  .Event__subHero-section .vistaCon {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .photographer_detail-left .flower-image {
+    display: none;
+  }
+  .tourWelcome .content-wrapper {
+    margin-right: 10px !important;
+    margin-bottom: 50px;
+  }
+}
+/* Small Screen */
+@media only screen and (max-width: 576px) {
+  h1.vista_hos_title {
+    font-size: 45px;
+  }
+  .hero_inner video {
+    width: fit-content !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+  }
+  h2.vista_hos_title2 {
+    font-size: 32px;
+  }
+  .possibilitiesSec .marquees_con {
+    padding: 5px;
+  }
+  .online-reserv-img,
+  .online-reserv-img img {
+    height: 500px;
+  }
+  .marqueeMain .slider h2 .icon {
+    width: 45px;
+    text-align: center;
+  }
+  .marqueeMain .slider h2 .icon img {
+    width: 80%;
+    height: 100%;
+  }
+  .marqueeMain {
+    margin: 10px 0px;
+  }
+  .casaStatsCount_con .col {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 33.3%;
+  }
+  .stats_con .img_content .casa_features_con {
+    width: 65%;
+  }
+  .stats_con .casa_features_con {
+    top: calc(40% - 150px);
+    left: calc(40% - 100px);
+  }
+  .Blog__section .swiper::after,
+  .Blog__section .swiper::before {
+    width: 50px;
+  }
+  .separator100 {
+    height: 50px;
+  }
+  nav .logo_con {
+    width: 45%;
+  }
+  .container-small {
+    padding: 0rem 1rem !important;
+  }
+  .about-img-left {
+    width: 70%;
+  }
+  .about-img-right {
+    width: 50%;
+    right: 0;
+  }
+  .about-year {
+    right: 0;
+  }
+  .skew__line-wrapper {
+    height: 180px;
+  }
+  .mainVideoSec .videoIconCon .videoIconCon_wrapper button {
+    height: 55px;
+    width: 55px;
+  }
+  .Event_main .mainVideoSec .vistaCon .vistaDetailsCon .col-12:nth-child(2) {
+    margin-left: 40px;
+  }
+  #animecolorheadingCon h3 {
+    font-size: 26px !important;
+  }
+  .album__image--content .album__images--2 {
+    right: -30px;
+  }
+  .album__image--content .album__images--3 {
+    right: 25px;
+  }
+  .album__image--content .album__images--2 {
+    right: 0;
   }
 }
 
+@media only screen and (max-width: 430px) {
+  .about-img-left {
+    width: 80%;
+    height: 370px;
+  }
+  .about-img-right {
+    width: 65%;
+    height: 330px;
+  }
+  footer .footerBTmImg img {
+    width: 90%;
+  }
+  .vistaCon {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .possibilities_card_item {
+    flex-basis: calc(100% / 1);
+    max-width: calc(100% / 1);
+    height: 30vh;
+  }
+  .possibilitiesSec .marquees_con::after,
+  .possibilitiesSec .marquees_con::before {
+    width: 100px;
+  }
+  .hero_section {
+    padding: 15px;
+  }
+  .or-slog-div h3 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .stats_con .img_content .casa_features_con {
+    width: 90%;
+  }
+  .stats_con .casa_features_con {
+    left: calc(33% - 100px);
+  }
+  .Vista_Btn_container.btn_light .Vista_btn,
+  .Vista_Btn_container.btn_dark .Vista_btn {
+    width: 250px;
+  }
+  nav .logo_con {
+    width: 55%;
+  }
+  .container-small {
+    padding: 0rem 1rem !important;
+  }
+  p.Vista_para_l {
+    font-size: 18px;
+  }
+  .Event_main .mainVideoSec .vistaDetailsCon .icon {
+    display: none;
+  }
+  .Event_main .mainVideoSec .vistaCon .vistaDetailsCon .col-12:nth-child(2) {
+    margin-left: 0px;
+  }
+  h4.vista_hos_title4 {
+    font-size: 20px;
+  }
+  .album__image--content .album__images--1 {
+    height: 380px;
+    width: 280px;
+  }
+  .album__image--content .album__images--2 {
+    bottom: calc(70% - 300px);
+  }
+  .album__image--content .album__images--3 {
+    bottom: calc(80% - 67px);
+    width: 150px;
+    height: 150px;
+  }
+  .swiper-container img {
+    height: 400px;
+  }
+  .TourMenu .lower-wrapper .recepie-desc h4 {
+    font-size: 18px;
+  }
+  .TourMenu .lower-wrapper .recepie-desc p {
+    font-size: 14px;
+  }
+  .TourMenu .lower-wrapper .recepie_price h4 {
+    font-size: 14px;
+  }
+  .recepie_price h4::after {
+    right: 0;
+    width: 45px;
+  }
+}
+
+/*---------------------------------------------------------- 
+ ---------------------------------------------------------- 
+ ---------------------------------------------------------- 
+ ---------------------------------------------------------- 
+ ---------------------------------------------------------- 
+ ---------------------------------------------------------- 
+ ---------------------------------------------------------- */
 @media (min-width: 1600px) {
   .marquee-carousel.marquee-carousel-1 {
     margin-bottom: 23px;
   }
-}
-
-.marquee-carousel.marquee-carousel-2 {
-  margin-left: -300px;
-}
-.reviews_con .marquee-items {
-  -webkit-transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
-  -moz-transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
-  -o-transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
-  display: -webkit-box;
-  position: relative;
-  width: 100%;
-  height: 150px;
-  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-@media (min-width: 768px) {
   .reviews_con .marquee-items {
     height: 200px;
   }
-}
-
-@media (min-width: 1600px) {
-  .reviews_con .marquee-items {
-    height: 200px;
-  }
-}
-.reviews_con .marquee .marquee-item {
-  padding: 16px 9.5px;
-  border: 1px solid #5958587c;
-}
-.reviews_con .marquee-item {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  overflow: hidden;
-  width: 300px;
-  height: 100%;
-  margin-right: 11px;
-}
-@media (min-width: 768px) {
-  .marquee-item {
-    width: 250px;
-    margin-right: 16px;
-  }
-}
-
-@media (min-width: 1600px) {
   .marquee-item {
     width: 300px;
     margin-right: 23px;
   }
 }
-
-@media only screen and (max-width: 768px) {
-  footer .footerBTmImg img {
-    width: 60%;
+@media (min-width: 768px) {
+  .marquee-carousel.marquee-carousel-1 {
+    margin-bottom: 16px;
   }
-}
-
-@media only screen and (max-width: 430px) {
-  footer .footerBTmImg img {
-    width: 90%;
+  .reviews_con .marquee-items {
+    height: 200px;
+  }
+  .marquee-item {
+    width: 250px;
+    margin-right: 16px;
   }
 }

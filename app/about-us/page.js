@@ -6,22 +6,22 @@ import WhatWeDo from "@/components/aboutPage/WhatWeDo";
 import AboutStickySec from "@/components/aboutPage/AboutStickySec";
 import ReservationSec from "@/components/general/ReservationSec";
 import TeamSection from "@/components/general/TeamSection";
-import bannerImg from "@/public/assets/imgs/aboutBanner.webp";
+import bannerImg from "@/public/assets/imgs/vista_hospitality_Inn_1.webp";
 
 import BlogSec from "@/components/general/BlogSec";
 import BottomCTA from "@/components/general/BottomCTA";
 
-import img1 from "@/public/assets/imgs/homeAbout.webp";
-import img2 from "@/public/assets/imgs/carousel1.webp";
-import img3 from "@/public/assets/imgs/carousel2.webp";
-import img4 from "@/public/assets/imgs/carousel3.webp";
-import img5 from "@/public/assets/imgs/carousel4.webp";
+import img1 from "@/public/assets/imgs/vista_hospitality_Inn_1.webp";
+import img2 from "@/public/assets/imgs/vista_hospitality_Inn_2.webp";
+import img3 from "@/public/assets/imgs/vista_hospitality_Inn_3.webp";
+import img4 from "@/public/assets/imgs/vista_hospitality_Inn_5.webp";
+import img5 from "@/public/assets/imgs/vista_hospitality_Inn_7.webp";
 
 const StickyContent = [
   {
     headText1: "",
-    headText2: "We’ve been doing this since 1971",
-    para: "Dedicated to delivering exceptional experiences, our close-knit team of 65+ talented professionals creates over 1,000 unique events annually",
+    headText2: "We’ve been doing this since 1998",
+    para: "Vista Hospitality has evolved into a premier destination for remarkable events. Our journey is defined by a dedication to transforming ordinary moments into unforgettable memories for our clients and their guests.",
   },
   {
     headText1: "",
@@ -30,8 +30,25 @@ const StickyContent = [
   },
   {
     headText1: "",
-    headText2: "Efficient Culinary Team",
-    para: "",
+    headText2: "Diverse Venues",
+    para: "From scenic outdoor settings to elegant indoor spaces, our array of venues provides the ideal backdrop for any occasion",
+  },
+];
+const ImgArray = [
+  {
+    img: img1,
+  },
+  {
+    img: img2,
+  },
+  {
+    img: img3,
+  },
+  {
+    img: img4,
+  },
+  {
+    img: img5,
   },
 ];
 export default function About() {
@@ -41,17 +58,13 @@ export default function About() {
         <main>
           <Banner
             heading="About Vista"
-            para="At VistaHospitality, elegance is our signature. We infuse sophistication into every detail, creating events that resonate with timeless grace and style"
+            para="At Vista Hospitality, we take pride in redefining the hospitality experience, offering a seamless blend of luxury, comfort, and personalized services to our esteemed guests. Our commitment lies in creating an unparalleled atmosphere where every stay is an unforgettable journey."
             bgImg={bannerImg}
           />
           <AboutUs />
           <WhatWeDo />
           <AboutStickySec
-            img1={img1}
-            img2={img2}
-            img3={img3}
-            img4={img4}
-            img5={img5}
+            carouselArray={ImgArray}
             StickyContent={StickyContent}
           />
           <div className=" bg-dark60 VistaSec_topBorder_grade position-relative">
